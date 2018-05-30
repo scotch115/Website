@@ -1,0 +1,41 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: inherit;
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 15%;
+    color: black;
+}
+
+
+.landing_background {
+    background-color: whitesmoke;
+}
+
+#mat {
+    font-family: "Tillium Web", sans-serif;
+    font-weight: lighter;
+    color: white;
+    font-size: medium;
+    padding: 25px;
+}
+
+#settings {
+    font-family: "Tillium Web", sans-serif;
+    font-weight: normal;
+    font-size: smaller;
+    color: #03a9f4;
+}
+
+.slate {
+    overflow-y: scroll;
+    margin-top: 25%;
+    height: 50px;
+    width: 100%;
+}
