@@ -3,7 +3,8 @@ Mock website to practice HTML/CSS/JS and a number of other skills.
 
 ``` 
 The purpose of this site is to practice web development languages, while also 
-becoming more comfortable with Docker containers and Laradock, which was used to create a Coninuous Integration Environment. 
+becoming more comfortable with Docker containers and Laradock, which was used to 
+create a Coninuous Integration Environment. 
 ```
 
 
