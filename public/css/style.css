@@ -1,0 +1,49 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: inherit;
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 15%;
+    color: black;
+}
+
+
+.landing_background {
+    background-color: steelblue;
+}
+
+#mat {
+    font-family: "Tillium Web", sans-serif;
+    font-weight: lighter;
+    color: white;
+    font-size: medium;
+    padding: 25px;
+}
+
+#settings {
+    font-family: "Tillium Web", sans-serif;
+    font-weight: normal;
+    font-size: smaller;
+    color: #03a9f4;
+}
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.card {
+    display: inline-block;
+    border: 1px solid white;
+    width: 150px;
+    height: 75px;
+    background: black;
+}
+
