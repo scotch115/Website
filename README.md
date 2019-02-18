@@ -1,11 +1,13 @@
 # Website
 Mock website to practice HTML/CSS/JS and a number of other skills.
 
-``` 
-The purpose of this site is to practice web development languages, while also 
-becoming more comfortable with Docker containers and Laradock, which was used to 
-create a Coninuous Integration Environment. 
-```
+ 
+>The purpose of this site is to practice web development languages, while also 
+>becoming more comfortable with Docker containers and Laradock, which was used to 
+>create a Coninuous Integration Environment. 
+
+This site is built with some of the following dependencies:
+
 
 
 
@@ -26,14 +28,25 @@ Laravel is accessible, yet powerful, providing tools needed for large, robust ap
 
 Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+# Laradock
 
-## Security Vulnerabilities
+<p align="center">A Docker PHP development environment that facilitates running PHP Apps on Docker</p>
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+<p align="center">
+   <a href="https://travis-ci.org/laradock/laradock"><img src="https://travis-ci.org/laradock/laradock.svg?branch=master" alt="Build status"></a>
+   <a href="https://github.com/laradock/laradock/stargazers"><a href="#backers" alt="sponsors on Open Collective"><img src="https://opencollective.com/laradock/backers/badge.svg" /></a> <a href="#sponsors" alt="Sponsors on Open Collective"><img src="https://opencollective.com/laradock/sponsors/badge.svg" /></a> <img src="https://img.shields.io/github/stars/laradock/laradock.svg" alt="GitHub stars"></a>
+   <a href="https://github.com/laradock/laradock/network"><img src="https://img.shields.io/github/forks/laradock/laradock.svg" alt="GitHub forks"></a>
+   <a href="https://github.com/laradock/laradock/issues"><img src="https://img.shields.io/github/issues/laradock/laradock.svg" alt="GitHub issues"></a>
+   <a href="https://raw.githubusercontent.com/laradock/laradock/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="GitHub license"></a>
+    <a href="http://laradock.io/contributing"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="contributions welcome"></a>
+</p>
 
-## License
+<h4 align="center" style="color:#7d58c2">Use Docker First And Learn About It Later</h4>
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+<p align="center">
+    <a href="https://zalt.me"><img src="http://forthebadge.com/images/badges/built-by-developers.svg" alt="forthebadge" width="240" ></a>
+</p>
+
+
+---
