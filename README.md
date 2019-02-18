@@ -1,4 +1,5 @@
 # Website
+[![Build Status](https://travis-ci.org/scotch115/Website.svg)](https://travis-ci.org/scotch115/Website)
 Mock website to practice HTML/CSS/JS and a number of other skills.
 
  
