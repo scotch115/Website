@@ -1,67 +1,131 @@
-<!DOCTYPE html>
-<html lang="en" style="background-color: steelblue">
-    <meta charset="UTF-8">
-        <head>
-            <title>Make Yourself at Home.</title>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-            <link rel="stylesheet" type="text/css" href="style.css">
-            <!--Import Google Icon Font-->
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-            <!--Import materialize.css-->
-            <link type="text/css" rel="stylesheet" href="css/materialize.css"/>
-            <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-            <style>
-                .card {
-                    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-                    transition: 0.3s;
-                    width: 70%;
-                    margin-top: 20%;
-                    margin-left: 15%;
-                    position: sticky;
-                    border-radius: 5px;
-                    top: 0;
-                    text-align: center;
-                }
+<!doctype html>
+<html lang="{{ app()->getLocale() }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-                .card:hover {
-                    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-                }
+        <title>Welcome</title>
 
-                .container {
-                    padding: 2px 5px;
-                }
-            </style>
-        </head>
-        <body style="background-color: inherit">
-             <div class="brand">
-                <div class="card">
-                    <div class="container">
-                        <h4>Welcome to Gamache Web Designs</h4>
-                    </div>
-                </div>
-             </div>
-             <nav style="text-align: center; position: fixed; top: 0px; width: 100%; background: black;">
-                 <a class="waves-effect waves-light btn">About us</a>
-                 <a class="waves-effect waves-light btn">Services</a>
-                 <a class="waves-effect waves-light btn">Contact</a>
-             </nav>
-        </body>
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+
+        <!-- Styles -->
+        <link rel="stylesheet" type="text/css" href="../../public/css/materialize.css">
+        <style>
+            html, body {
+                background-color: #704214;
+                color: #636b6f;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .top-right {
+                position: absolute;
+                right: 10px;
+                top: 18px;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            .title {
+                font-size: 84px;
+                color: white;
+            }
+
+            .links > a {
+                color: white;
+                padding: 0 25px;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            .m-b-md {
+                margin-bottom: 30px;
+            }
+
+
+            .center-screen {
+                position: absolute;
+                right: 8%;
+                left: 8%;
+                top: 30%;
+            }
+
+            .animated {
+
+                -webkit-animation-duration: 10s;
+                animation-duration: 10s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+            }
+
+            @-webkit-keyframes fadeIn {
+                0% {opacity: 0;}
+                100% {opacity: 1;}
+            }
+
+            @keyframes fadeIn {
+                0% {opacity: 0;}
+                100% {opacity: 1;}
+            }
+
+            .fadeIn {
+                -webkit-animation-name: fadeIn;
+                animation-name: fadeIn;
+            }
+
+            @-webkit-keyframes FadeIn {
+                0% {opacity: 0;}
+                100% {opacity: 1;}
+                {animation-delay: 2s;}
+            }
+
+            @keyframes FadeIn {
+                0% {opacity: 0;}
+                100% {opacity: 1;}
+            }
+
+            .FadeIn {
+                -webkit-animation-name: FadeIn;
+                animation-name: FadeIn;
+            }
+
+        </style>
+    </head>
+    <body
+        <div class="content center-screen animated fadeIn">
+            <div class="title m-b-md">
+                Gamache Web Designs
+            </div>
+
+            <div class="links animated FadeIn">
+                <a href="about">About</a>
+                <a href="services">Services</a>
+                <a href="contact">Contact</a>
+                <a href="https://github.com/scotch115/Website">GitHub</a>
+            </div>
+        </div>
+    </body>
 </html>
-
-<!--Use the card concept below for modal popups on site-->
-{{--<div class="row">--}}
-    {{--<div class="col s12 m6">--}}
-        {{--<div class="card blue-grey darken-1">--}}
-            {{--<div class="card-content white-text">--}}
-                {{--<span class="card-title">Card Title</span>--}}
-                {{--<p>I am a very simple card. I am good at containing small bits of information.--}}
-                    {{--I am convenient because I require little markup to use effectively.</p>--}}
-            {{--</div>--}}
-            {{--<div class="card-action">--}}
-                {{--<a href="#">This is a link</a>--}}
-                {{--<a href="#">This is a link</a>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-    {{--</div>--}}
-{{--</div>--}}
-
