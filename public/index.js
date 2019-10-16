@@ -3,6 +3,7 @@ const url = require('url');
 const fs = require('fs');
 const path = require('path');
 const express = require('express');
+const router = express.Router();
 const server = express()
 
 const port = process.argv[2] || 8080;
@@ -18,12 +19,31 @@ const mimeType = {
 http.createServer(function (req, res) {
   console.log('${req.method} ${req.url}');
   
+    router.get('/', function(req,res){
+    res.render('landing', {
+      title: 'Home'
+    });
+  });
+
+  router.get('/about', function(req, res){
+    res.render('about', {
+      title: 'About'
+    });
+  });
+
+  router.get('/contact', function(res,req){
+    res.render('contact', {
+      title: 'Contact'
+    });
+  });
+
+  module.exports = router;
+   
   const parsedUrl = url.parse(req.url);
   
   const sanitizePath = path.normalize(parsedUrl.pathname).replace(/^(\.\.[\/\\])+/, '');
-//  let pathname = path.join(__dirname, sanitizePath);
+  let pathname = path.join(__dirname, sanitizePath);
     var pathname = './landing.html';
-  
   fs.exists(pathname, function (exist) {
     if(!exist) {
       res.statusCode = 404;
