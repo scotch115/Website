@@ -7,6 +7,17 @@ Mock website to practice HTML/CSS/JS and a number of other skills.
 >becoming more comfortable with Docker containers and Laradock, which was used to 
 >create a Coninuous Integration Environment. 
 
+
+
+
+# PROJECT UPDATE
+This project has been a simple website design idea that I ahve been working on, however, it has been cast aside due to personal issues. In an attempt to rekindle the website, I will be partially rewriting this to utilize Facebook, Inc.'s React, and React Native JavaScript libraries. This will help solidify my understanding of JavaScript, while, hopefully, allowing me to develop using React Native for all platforms in the future.
+
+
+
+
+
+
 This site is built with some of the following dependencies:
 
 
