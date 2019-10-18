@@ -12,13 +12,14 @@
 
         <!-- Styles -->
         <link rel="stylesheet" type="text/css" href="../../public/css/materialize.css">
+        
         <style>
             html, body {
                 background-color: white;
                 color: white;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
-                height: 100vh;
+                height: 1000vh;
                 margin: 0;
             }
 
@@ -31,26 +32,26 @@
                 display: flex;
                 justify-content: center;
             }
-
-            .position-ref {
-                position: relative;
-            }
-
+            
             .top-right {
                 position: absolute;
                 right: 10px;
                 top: 18px;
             }
-
-            .content {
-                text-align: center;
-            }
-
+            
             .title {
+                text-align: center;
                 font-size: 84px;
                 color: black;
+                padding: 50px;
+                margin-bottom: 30px;
+                margin-top: 15%;
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+                
             }
-
+            
             .links > a {
                 color: black;
                 padding: 0 25px;
@@ -60,19 +61,7 @@
                 text-decoration: none;
                 text-transform: uppercase;
             }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-
-
-            .center-screen {
-                position: absolute;
-                right: 8%;
-                left: 8%;
-                top: 30%;
-            }
-
+            
             .animated {
 
                 -webkit-animation-duration: 10s;
@@ -111,20 +100,65 @@
                 -webkit-animation-name: FadeIn;
                 animation-name: FadeIn;
             }
-
+            
+            .main-banner {
+               width: 90%;
+               left: 5%;
+               right: 5%;
+               top: 10%;
+               height: 200px;
+               background: #ccc;
+               position: relative;
+               z-index: 0;
+               
+            }
+            
+            .main-banner > .banner-img {
+               background: #fc0;
+               position: absolute;
+               top: 0;
+               right: 0;
+               width: 50%;
+               height: 100%;
+            }
+            
+            .main-banner > .banner-l {
+              color: #fff;
+              position: relative;
+              width: 50%;
+              height: 100%;
+            
+              background-color: #01b215;
+            }
+            
+            .banner-l:before {
+              content: "";
+              width: 0px;
+              height: 0px;
+              top: 0px;
+              position: absolute;
+              
+              
+              border-top: 200px solid transparent;
+              border-left: 100px solid #01b215;
+              right: -100px;
+             }             
         </style>
     </head>
     <body>
-       <div class="content center-screen animated fadeIn">
-            <div class="title m-b-md">
+       <div class="animated fadeIn title">
                 Gamache Web Designs
-            </div>
-            <div class="links animated FadeIn">
-                <a href="about">About</a>
-                <a href="services">Services</a>
-                <a href="contact">Contact</a>
-                <a href="https://github.com/scotch115/">GitHub</a>
-            </div>
         </div>
+        <div class="animated main-banner FadeIn">
+         <!-- Want to set up scroller div panels with info from each link, rather than having multiple pages -->
+         <div class="banner-img">Banner</div>
+         <div class="banner-l">Left</div>
+         
+        </div>
+        <!--  <a href="about">About</a>
+          <a href="services">Services</a>
+          <a href="contact">Contact</a>
+          <a href="https://github.com/scotch115/">GitHub</a>
+        -->
     </body>
 </html>
