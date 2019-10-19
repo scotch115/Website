@@ -9,7 +9,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-				<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
         <!-- Styles -->
         <link rel="stylesheet" type="text/css" href="../../public/css/materialize.css">
@@ -168,7 +168,19 @@
                width: 50%;
                height: 97%;              
                font-family: 'Raleway', sans-serif 
-             }    
+             }
+						 
+	     .banner-r:before {
+               content: "";
+               width: 0px;
+               height: 0px;
+               top: 0px;
+               position: absolute;
+               border-top: 197px solid transparent;
+               border-right: 100px solid black;
+               right: 0px;
+              } 
+             
         </style>
     </head>
     <body>
@@ -191,11 +203,6 @@
 				<div class="animated services-banner FadeIn">
          <div id="imgDiv" class="banner-img">Image Banner</p></div>
          <div class="banner-r"><p style="text-indent: 20px; line-height: 2.0;" >Services :</p></div>
-        </div>
-        <div class="animated main-banner FadeIn">
-         <!-- Want to set up scroller div panels with info from each link, rather than having multiple pages -->
-         <div class="banner-img"><p style="text-indent: 20px;">Image Banner</p></div>
-           <div class="banner-l"><p style="text-indent: 20px; line-height: 2.0;" >About</p></div>
         </div>
     </body>
 </html>
