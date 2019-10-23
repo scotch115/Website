@@ -4,3 +4,6 @@ before_install:
 - npm install
 
 cache: npm
+
+exclude_patterns:
+- "/home/travis/build/scotch115/Website/node_modules/firebase/*"
