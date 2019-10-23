@@ -5,5 +5,6 @@ before_install:
 
 cache: npm
 
-exclude_patterns:
-- "/home/travis/build/scotch115/Website/node_modules/firebase/*"
+before_script:
+  - npm install firebase-tools -g
+  - cd functions && npm install
