@@ -1,3 +1,19 @@
+// const functions = require('firebase-functions');
+// const express = require('express');
+// 
+// const app = express();
+// app.get('/timestamp', (request, response) => { 
+// 	response.send('${Date.now()}');
+// });
+// 
+// app.get('/timestamp-cached', (request, response) => { 
+// 	response.set('Cache-Control', 'public, max-age-300, s-maxage-600');
+// 	response.send('${Date.now()}');
+// });
+// 
+// exports.app = functions.https.onRequest(app);
+// 
+// 
 // For running/testing using play.js on iPad
 const http = require('http');
 const url = require('url');
@@ -27,7 +43,7 @@ const server = http.createServer(function(req, res)
       res.writeHead(200, {
         'Content-Type': 'text/html'
       });
-      fs.readFile('./public/index.html', null, function(error,data){
+      fs.readFile('./landing.html', null, function(error,data){
         if (error){
           res.writeHead(404);
           res.write("Uh oh! That webpage doesn't exist! :/ \n");
@@ -95,3 +111,6 @@ const server = http.createServer(function(req, res)
  }).listen(port);
  
 console.log('Server Listening on port 8080!');
+
+// {sudo birthday}
+
