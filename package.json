@@ -1,5 +1,5 @@
 {
-  "name": "Gamache Web Designs",
+  "name": "gamache_web_designs",
   "version": "1.0.0",
   "scripts": {
     "client": "cd client && yarn start",
