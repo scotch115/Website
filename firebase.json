@@ -7,12 +7,6 @@
   },
   "hosting": {
     "public": "public",
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/landing.html"
-      }
-    ],
     "ignore": [
       "firebase.json",
       "**/.*",

@@ -3,54 +3,69 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Welcome</title>
+        <title>Welcome to Gamache Web Designs</title>
+				<link rel='icon' href='../images/favicon.ico' type='image/x-icon'/>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 				<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
         <!-- Styles -->
         <link rel="stylesheet" type="text/css" href="../../public/css/materialize.css">
-        
+
         <style>
+						/* Dark Mode theme settings */
+						:root {
+							--primary-color: white;
+							--font-color: black;
+							--invert: invert(1);
+						}
+						[data-theme="dark"] {
+							--primary-color: #353D3F;
+							--font-color: white;
+							--invert: invert(0);
+						}
+						/* BODY */
             html, body {
-                background-color: white;
-                color: white;
+                background-color: var(--primary-color);
+                color: var(--font-color);
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
-                height: 200vh;
+                height: 200vmin;
                 margin: 0;
             }
+
             .full-height {
-                height: 100vh;
+                height: 100vmin;
             }
+
             .flex-center {
                 align-items: center;
                 display: flex;
                 justify-content: center;
             }
-            
+
             .top-right {
                 position: absolute;
                 right: 10px;
                 top: 18px;
             }
-            
+
+						/* Title style */
             .title {
                 text-align: center;
-                font-size: 15vh;
-                color: black;
+                font-size: 7vmax;
+                color: var(--font-color);
                 padding: 10px;
-                margin-bottom: 15%;
+                margin-bottom: 30vmin;
                 margin-top: 20%;
                 position: -webkit-sticky;
                 position: sticky;
                 top: 0;
-                
+
             }
-            
+
             .links > a {
                 color: black;
                 padding: 0 25px;
@@ -60,7 +75,7 @@
                 text-decoration: none;
                 text-transform: uppercase;
             }
-            
+
             .animated {
                 -webkit-animation-duration: 10s;
                 animation-duration: 10s;
@@ -92,7 +107,9 @@
                 -webkit-animation-name: FadeIn;
                 animation-name: FadeIn;
             }
-            
+
+						/* About section */
+						/* TODO:  Format diagonal divs for mobile viewing*/
             .about-banner {
                width: 90%;
                left: 5%;
@@ -102,7 +119,7 @@
                position: relative;
                z-index: 0;
             }
-            
+
             .about-banner > .banner-img {
                border-style: solid;
                border-color: black;
@@ -114,20 +131,21 @@
                height: 97%;
 							 text-indent: 50px;
 							 background-image: url('../images/bannerimg2.jpg');
-							 background-size: 55vh;
+							 background-size: 50vmin;
 							 background-repeat: no-repeat;
 							 background-position: center;
+							 background-color: white;
             }
-            
+
             .about-banner > .banner-l {
               background-color: black;
               color: white;
               position: relative;
               width: 50%;
-              height: 100%;              
-              font-family: 'Raleway', sans-serif 
+              height: 100%;
+              font-family: 'Raleway', sans-serif
             }
-            
+
             .banner-l:before {
               content: "";
               width: 0px;
@@ -137,8 +155,10 @@
               border-top: 200px solid transparent;
               border-left: 100px solid black;
               right: -100px;
-             } 
-						 
+             }
+
+						 /* Services Section*/
+						 /* TODO:  Format diagonal divs for mobile viewing*/
 						 .services-banner {
                 width: 90%;
                 left: 5%;
@@ -148,7 +168,7 @@
                 position: relative;
                 z-index: 0;
              }
-             
+
              .services-banner > .banner-img {
                 border-style: solid;
                 border-color: black;
@@ -161,7 +181,7 @@
 								background: black;
 								text-indent: 50px;
              }
-             
+
              .services-banner > .banner-r {
                background-color: white;
 							 border-style: solid;
@@ -169,10 +189,10 @@
                color: black;
                position: relative;
                width: 50%;
-               height: 97%;              
-               font-family: 'Raleway', sans-serif 
+               height: 97%;
+               font-family: 'Raleway', sans-serif
              }
-						 
+
 						 .banner-r:before {
                content: "";
                width: 0px;
@@ -182,35 +202,185 @@
                border-top: 197px solid transparent;
                border-right: 100px solid black;
                right: 0px;
-              }             
-             
+              }
+
+              /* .arrow { 			// old arrow indicator
+                position: absolute;
+                background-image: url('../images/down_arrow.png');
+                background-repeat: no-repeat;
+                background-size: 10vmin;
+                height: 15vmin;
+                width: 15vmin;
+                left: 50%;
+                opacity: 0.5;
+								filter: var(--invert);
+              } */
+
+							/* Arrow scroller */
+							.scroll-down {
+								position: absolute;
+								left: 50%;
+								top: 86vmin;
+								display: block;
+								text-align: center;
+								font-size: 20px;
+								z-index: 100;
+								text-decoration: none;
+								text-shadow: 0;
+							  width: 13px;
+							  height: 13px;
+							  border-bottom: 2px solid #fff;
+							  border-right: 2px solid #fff;
+							  z-index: 9;
+							  left: 50%;
+								filter: var(--invert);
+							  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+							  -moz-transform: translate(-50%, 0%) rotate(45deg);
+							  transform: translate(-50%, 0%) rotate(45deg);
+								-webkit-animation: fade_move_down 4s ease-in-out infinite;
+								-moz-animation:    fade_move_down 4s ease-in-out infinite;
+								animation:         fade_move_down 4s ease-in-out infinite;
+							}
+
+							/*animated scroll arrow animation*/
+							@-webkit-keyframes fade_move_down {
+							  0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+							  50%  { opacity: 1;  }
+							  100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+							}
+							@-moz-keyframes fade_move_down {
+							  0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+							  50%  { opacity: 1;  }
+							  100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+							}
+							@keyframes fade_move_down {
+							  0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+							  50%  { opacity: 1;  }
+							  100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
+							}
+
+							/* Dark mode slider */
+							.theme-switch-wrapper {
+							  display: flex;
+							  align-items: right;
+							}
+							.theme-switch {
+							  display: inline-block;
+							  height: 28px;
+								width: 55px;
+							  position: absolute;
+								right: 0;
+								top: 1%;
+							}
+
+							.theme-switch input {
+							  display:none;
+							}
+
+							.slider {
+							  background-color: #ccc;
+							  bottom: 0;
+							  cursor: pointer;
+							  left: 0;
+							  position: absolute;
+							  right: 0;
+							  top: 0;
+							  transition: .4s;
+							}
+
+							.slider:before {
+							  background-color: #fff;
+							  bottom: 4px;
+							  content: "";
+							  height: 20px;
+							  left: 4px;
+							  position: absolute;
+							  transition: .4s;
+							  width: 20px;
+							}
+
+							input:checked + .slider {
+							  background-color: #66bb6a;
+							}
+
+							input:checked + .slider:before {
+							  transform: translateX(26px);
+							}
+
+							.slider.round {
+							  border-radius: 34px;
+							}
+
+							.slider.round:before {
+							  border-radius: 50%;
+							}
+
+							em {
+								margin-right: 10px;
+								font-size: 1rem;
+							}
+
         </style>
     </head>
     <body>
        <div class="animated fadeIn title">
                 Gamache Web Designs
         </div>
+        <div class="scroll-down fadeIn"></div>
+				<!-- About -->
         <div class="animated about-banner FadeIn">
          <!-- Want to set up scroller div panels with info from each link, rather than having multiple pages -->
          <div id="imgDiv" class="banner-img"></div>
            <div class="banner-l"><p style="text-indent: 20px; line-height: 2.0;" >About :</p>
-						 <p style="position: absolute; top: 5vh; left: 8%; font-size: 1.7vh; text-align: center;">
-					     Welcome to Gamache Web Designs, a private, Orlando-based web-development firm. 
-					     Here, our number one priority is customer satisfaction, and user experience. 
+						 <p style="position: absolute; top: 5vmin; left: 8%; font-size: 1.7vmin; text-align: center;">
+					     Welcome to Gamache Web Designs, a private, Orlando-based web-development firm.
+					     Here, our number one priority is customer satisfaction, and user experience.
 					     We would love you help you and your business thrive and reach more customers, with an elegant website.
 					 </p>
 					 <i style="position: absolute; bottom: 15%; right: 45%;" class="material-icons large">code</i>
 					 <i style="position: absolute; bottom: 15%; right: 25%;" class="material-icons large">add</i>
 					 <i style="position: absolute; bottom: 15%; left: 30%;" class="material-icons large">laptop_mac</i></div>
         </div>
+				<!-- Services -->
 				<div class="animated services-banner FadeIn">
          <div id="imgDiv" class="banner-img">Image Banner</p></div>
-         <div class="banner-r"><p style="text-indent: 20px; line-height: 2.0;" >Services :</p></div>
+         <div class="banner-r"><p style="text-indent: 20px; line-height: 2.0;" >
+					 <div class="github-card" data-github="scotch115" data-theme="default" style="position: relative; height: 400vmin; width: 150vmin"></div>
+					 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+				 </div>
         </div>
-        <!--  <a href="about">About</a>
-          <a href="services">Services</a>
-          <a href="contact">Contact</a>
-          <a href="https://github.com/scotch115/">GitHub</a>
-        -->
+				<!-- Dark Mode Switcher -->
+				<div class="theme-switch-wrapper">
+					<!-- <em>Dark Mode</em> -->
+	    		<label class="theme-switch" for="checkbox">
+	        	<input type="checkbox" id="checkbox" />
+	        	<div class="slider round"></div>
+					</label>
+				 </div>
     </body>
+		<script>
+			const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+			const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+			if (currentTheme) {
+		    document.documentElement.setAttribute('data-theme', currentTheme);
+
+	    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    		}
+			}
+
+			function switchTheme(e) {
+			    if (e.target.checked) {
+			        document.documentElement.setAttribute('data-theme', 'dark');
+							localStorage.setItem('theme', 'dark');
+			    }
+			    else {
+			        document.documentElement.setAttribute('data-theme', 'light');
+							localStorage.setItem('theme', 'light');
+			    }
+			}
+
+			toggleSwitch.addEventListener('change', switchTheme, false);
+		</script>
 </html>
