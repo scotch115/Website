@@ -128,7 +128,7 @@
                z-index: 0;
             }
 
-            .about-banner > .banner-img {
+             .banner-img-a {
                border-style: solid;
                border-color: black;
                color: black;
@@ -137,15 +137,15 @@
                right: 0;
                width: 50%;
                height: 97%;
-							 text-indent: 50px;
-							 background-image: url('../images/bannerimg2.jpg');
-							 background-size: 48vmin;
-							 background-repeat: no-repeat;
-							 background-position: center;
-							 background-color: white;
+			   text-indent: 50px;
+			   background-image: url('../images/bannerimg2.jpg');
+			   background-size: 48vmin;
+			   background-repeat: no-repeat;
+			   background-position: center;
+			   background-color: white;
             }
 
-            .about-banner > .banner-l {
+			.banner-l {
               background-color: black;
               color: white;
               position: relative;
@@ -177,7 +177,7 @@
                 z-index: 0;
              }
 
-             .services-banner > .banner-img {
+			.banner-img-s {
                 border-style: solid;
                 border-color: black;
                 color: white;
@@ -191,7 +191,7 @@
 								z-index: 1;
              }
 
-             .services-banner > .banner-r {
+             .banner-r {
                background-color: white;
 							 border-style: solid;
 							 border-color: black;
@@ -211,19 +211,7 @@
                border-top: 19.6vmax solid transparent;
                border-right: 100px solid black;
                right: 8.5px;
-              }
-
-              /* .arrow { 			// old arrow indicator
-                position: absolute;
-                background-image: url('../images/down_arrow.png');
-                background-repeat: no-repeat;
-                background-size: 10vmin;
-                height: 15vmin;
-                width: 15vmin;
-                left: 50%;
-                opacity: 0.5;
-								filter: var(--invert);
-              } */
+              }	
 
 							/* Arrow scroller */
 							.scroll-down {
@@ -334,14 +322,134 @@
 								justify-content: center;
 								padding-top: 10%;
 							}
+							
+							.travis {
+								position: absolute; 
+								top: 150%;
+							}
+							
+							.iot {
+								position: absolute; 
+								left: 20vmin;
+							}
+							
+							.server {
+								position: absolute; 
+								top: 5vmin
+							}
+							
+							.router {
+								position: absolute; 
+								bottom: 5vmin; 
+								left: 15vmin;
+							}
+							
+							.ios-dev {
+								position: absolute; 
+								bottom: 8vmin; 
+								left: 5vmin;
+							}
+							
+							.dm {
+								position: fixed; 
+								top: 0px; 
+								right: 5vw;
+							}
+							
 							#footer-info #icon-love{
 							    color: #e74c3c !important; 
 							    font-size: inherit !important;
 							}
+							
+							@media only screen and (max-width: 800px) {
+							/* For Tablets*/
+							
+							}
+							
+							@media only screen and (max-width: 500px) {
+							/* For Phones */
+							
+							.title {
+								font-size: 4vmax;
+							}
+							
+							.scroll-down {
+								position: absolute;
+								top: 170vmin;
+							}
+							.about-banner {
+								position: absolute;
+								top: 100%;
+							}
+							
+							.services-banner {
+								position: absolute;
+								top: 128%;
+							}
+							
+							.banner-l {
+								position: absolute;
+								width: 100%;
+								}
+							.banner-l:before {
+								display: none;
+								}
+								
+							.banner-r {
+								position: absolute;
+								width: 98%;
+								top: 230%;
+								}
+								
+							.banner-r:before {
+								display: none;
+								}
+								
+							.banner-img-a {
+								position: absolute;
+								width: 98%;
+								top: 115%;	
+								background-size: 80vmin;
+							}
+							
+							.banner-img-s {
+								position: absolute;
+								width: 98%;
+								top: 115%;
+							}
+							
+							.card {
+								padding-top: 160%;
+							}
+							
+							.travis {
+								top: 380%;
+							}
+							
+							.iot {
+								left: 45vmin;
+							}
+							
+							.router {
+								left: 65vmin;
+							}
+							
+							.ios-dev {
+								left: 25vmin;
+							}
+							
+							.theme-switch {
+								width: 20px;
+								height: 10px;
+							}	
+							
+							
+						}
+							
         </style>
     </head>
     <body>
-			<p style="position: fixed; top: 0px; right: 5vw;">🌙</p>
+			<p class="dm">🌙</p>
 
        <div class="animated fadeIn title">
                 Gamache Web Designs
@@ -350,7 +458,7 @@
 				<!-- About -->
         <div class="animated about-banner FadeIn">
          <!-- Want to set up scroller div panels with info from each link, rather than having multiple pages -->
-         <div id="imgDiv" class="banner-img"></div>
+         <div id="imgDiv" class="banner-img-a"></div>
            <div class="banner-l"><p style="text-indent: 20px; line-height: 2.0;" >About :</p>
 						 <p style="position: absolute; top: 3vmax; left: 8%; font-size: 1.2vmax; text-align: center;">
 					     Welcome to Gamache Web Designs, a private, Orlando-based web-development firm.
@@ -363,23 +471,23 @@
         </div>
 				<!-- Services -->
 				<div class="animated services-banner FadeIn">
-         <div id="imgDiv" class="banner-img"><p>Services : </p>
+         <div id="imgDiv" class="banner-img-s"><p>Services : </p>
 					 <p style="position: absolute; top: 3vmax; right: 8%; font-size: 1.2vmax; justify: center;">
 						 Using modern web-development practices and development languages, you can rest assured that your site will
 						 not just look good, but it will perform well, and is secure. We expect the best from others, and only the best from ourselves.
 					 </p>
 				 </div>
          <div class="banner-r"><p style="text-indent: 20px; line-height: 2.0;" >
-					 <img src="https://img.icons8.com/ios-glyphs/60/000000/internet-of-things.png" style="position: absolute; left: 20vmin;">
-					 <img src="https://img.icons8.com/ios-glyphs/60/000000/server.png" style="position: absolute; top: 5vmin">
-					 <img src="https://img.icons8.com/ios-glyphs/60/000000/wifi-router.png" style="position: absolute; bottom: 5vmin; left: 15vmin;">
-					 <img src="https://img.icons8.com/ios-glyphs/60/000000/ios-development.png" style="position: absolute; bottom: 8vmin; left: 5vmin;">
+					 <img src="https://img.icons8.com/ios-glyphs/60/000000/internet-of-things.png" class="iot" >
+					 <img src="https://img.icons8.com/ios-glyphs/60/000000/server.png" class="server">
+					 <img src="https://img.icons8.com/ios-glyphs/60/000000/wifi-router.png" class="router">
+					 <img src="https://img.icons8.com/ios-glyphs/60/000000/ios-development.png" class="ios-dev">
 				 </div>
 				 <div class="card">
 					 <div class="github-card" data-github="scotch115" data-theme="medium" data-width="300"></div>
  					 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-					 <img src="https://travis-ci.com/scotch115/Website.svg?branch=master" style="position: absolute; top: 238%;"/>
-					 <p style="position: absolute; top: 300%;"> Made with ♥️ in Orlando </p>
+					 <img class="travis" src="https://travis-ci.com/scotch115/Website.svg?branch=master" />
+					 <!-- <p style="position: absolute; top: 300%;"> Made with ♥️ in Orlando </p> fix this later --> 
 				 </div>
         </div>
 				<!-- Dark Mode Switcher -->
