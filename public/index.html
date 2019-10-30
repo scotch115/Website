@@ -263,11 +263,11 @@
 							}
 							.theme-switch {
 							  display: inline-block;
-							  height: 27px;
-								width: 54px;
+							  height: 20px;
+								width: 45px;
 							  position: fixed;
-								right: 0;
-								top: 1.2vw;
+								right: 5px;
+								top: 20px;
 							}
 
 							.theme-switch input {
@@ -287,13 +287,13 @@
 
 							.slider:before {
 							  background-color: #fff;
-							  bottom: 4px;
+							  bottom: 3px;
 							  content: "";
-							  height: 20px;
+							  height: 15px;
 							  left: 4px;
 							  position: absolute;
 							  transition: .4s;
-							  width: 20px;
+							  width: 15px;
 							}
 
 							input:checked + .slider {
@@ -301,7 +301,7 @@
 							}
 
 							input:checked + .slider:before {
-							  transform: translateX(26px);
+							  transform: translateX(20px);
 							}
 
 							.slider.round {
@@ -352,8 +352,9 @@
 							
 							.dm {
 								position: fixed; 
-								top: 0px; 
-								right: 5vw;
+								top: 0; 
+								right: 8vw;
+								font-size: 15px;
 							}
 							
 							#footer-info #icon-love{
@@ -407,9 +408,11 @@
 								
 							.banner-img-a {
 								position: absolute;
-								width: 98%;
-								top: 115%;	
+								width: 98.1%;
+								top: 100%;
+								left: 0;
 								background-size: 80vmin;
+								background-position: left;
 							}
 							
 							.banner-img-s {
@@ -443,6 +446,22 @@
 								height: 10px;
 							}	
 							
+							.slider:before {
+								height: 8px;
+								width: 8px;
+								bottom: 1px;
+								left: 2px;
+							}
+							
+							input:checked + .slider:before {
+							  transform: translateX(8px);
+							}
+							
+							dm {
+								position: absolute;
+								top: 0px;
+								font-size: 2px;
+							}
 							
 						}
 							
