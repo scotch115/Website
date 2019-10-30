@@ -1,5 +1,7 @@
 # Website
 [![Build Status](https://travis-ci.com/scotch115/Website.svg?branch=master)](https://travis-ci.com/scotch115/Website)
+<img src="https://img.shields.io/github/languages/count/scotch115/website" />
+<img src="https://img.shields.io/github/issues/scotch115/website" />
 
 Personal website to practice HTML/CSS/JS and a number of other skills.
 
