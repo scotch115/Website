@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
 				<meta property="og:title" content="Gamache Web Designs" />
 				<meta property="og:image" content="../images/link_preview.png" />
@@ -330,24 +330,25 @@
 							
 							.iot {
 								position: absolute; 
-								left: 20vmin;
+								left: 60%;
 							}
 							
 							.server {
 								position: absolute; 
-								top: 5vmin
+								top: 5vmin;
+								left: 20vmin;
 							}
 							
 							.router {
 								position: absolute; 
 								bottom: 5vmin; 
-								left: 15vmin;
+								left: 40%;
 							}
 							
 							.ios-dev {
 								position: absolute; 
 								bottom: 8vmin; 
-								left: 5vmin;
+								left: 10%;
 							}
 							
 							.dm {
@@ -367,7 +368,7 @@
 							
 							} */
 							
-							@media only screen and (max-width: 500px) {
+							@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio : 3) and (orientation: portrait) {
 							/* For Phones */
 							
 							.title {
@@ -440,22 +441,6 @@
 							
 							.ios-dev {
 								left: 25vmin;
-							}
-							
-							.theme-switch {
-								width: 20px;
-								height: 10px;
-							}	
-							
-							.slider:before {
-								height: 8px;
-								width: 8px;
-								bottom: 1px;
-								left: 2px;
-							}
-							
-							input:checked + .slider:before {
-							  transform: translateX(8px);
 							}
 							
 							dm {
