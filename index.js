@@ -27,7 +27,7 @@ const server = http.createServer(function(req, res)
       res.writeHead(200, {
         'Content-Type': 'text/html'
       });
-      fs.readFile('../public/index.html', null, function(error,data){
+      fs.readFile('./public/index.html', null, function(error,data){
         if (error){
           res.writeHead(404);
           res.write("Uh oh! That webpage doesn't exist! :/ \n");
@@ -37,55 +37,7 @@ const server = http.createServer(function(req, res)
         res.end();
      });
      break;
-    
-    case '/about':
-    fs.readFile('./about.html', function(error, data){
-      if (error) {
-        res.writeHead(404);
-        res.write(error);
-        res.end();
-      } else {
-        res.writeHead(200, {
-          'Content-Type': 'text/html'
-        });
-        res.write(data);
-        res.end();
-      }
-    });
-    break;
-    
-    case '/services':
-    fs.readFile('./services.html', function(error, data){
-      if (error) {
-        res.writeHead(404);
-        res.write(error);
-        res.end();
-      } else {
-        res.writeHead(200, {
-          'Content-Type': 'text/html'
-        });
-        res.write(data);
-        res.end();
-      }
-    });
-    break;
-    
-    case '/contact':
-    fs.readFile('./contact.html', function(error, data){
-      if (error) {
-        res.writeHead(404);
-        res.write(error);
-        res.end();
-      } else {
-        res.writeHead(200, {
-          'Content-Type': 'text/html'
-        });
-        res.write(data);
-        res.end();
-      }
-    });
-    break;
-    
+      
   default:
     res.writeHead(404);
     res.write("Uh oh, this doesn't look right...");
