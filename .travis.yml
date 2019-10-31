@@ -7,4 +7,3 @@ cache: npm
 
 before_script:
   - npm install firebase-tools -g
-  - cd functions && npm install
