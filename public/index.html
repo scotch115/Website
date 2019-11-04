@@ -26,6 +26,7 @@
 							--font-color: black;
 							--invert: invert(1);
 						}
+
 						[data-theme="dark"] {
 							--primary-color: #353D3F;
 							--font-color: white;
@@ -211,7 +212,7 @@
                border-top: 19.6vmax solid transparent;
                border-right: 100px solid black;
                right: 8.5px;
-              }	
+              }
 
 							/* Arrow scroller */
 							.scroll-down {
@@ -322,59 +323,58 @@
 								justify-content: center;
 								padding-top: 10%;
 							}
-							
+
 							.travis {
-								position: absolute; 
+								position: absolute;
 								top: 150%;
 							}
-							
+
 							.iot {
-								position: absolute; 
+								position: absolute;
 								left: 60%;
 							}
-							
+
 							.server {
-								position: absolute; 
+								position: absolute;
 								top: 5vmin;
 								left: 20vmin;
 							}
-							
+
 							.router {
-								position: absolute; 
-								bottom: 5vmin; 
+								position: absolute;
+								bottom: 5vmin;
 								left: 40%;
 							}
-							
+
 							.ios-dev {
-								position: absolute; 
-								bottom: 8vmin; 
+								position: absolute;
+								bottom: 8vmin;
 								left: 10%;
 							}
-							
-							.dm {
-								position: fixed; 
-								top: 0; 
-								right: 8vw;
-								font-size: 15px;
+
+							#dm {
+								position: absolute;
+								right: 50px;
+								font-size: 12px;
 							}
-							
+
 							#footer-info #icon-love{
-							    color: #e74c3c !important; 
+							    color: #e74c3c !important;
 							    font-size: inherit !important;
 							}
-							
+
 							/* @media only screen and (max-width: 800px) {
 							For Tablets
-							
+
 							} */
-							
+
 							@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio : 3) and (orientation: portrait) {
 							/* For Phones */
-							
+
 							.title {
 								font-size: 5vmax;
 							}
-							
+
 							.scroll-down {
 								position: absolute;
 								top: 100vmin;
@@ -383,12 +383,12 @@
 								position: absolute;
 								top: 70%;
 							}
-							
+
 							.services-banner {
 								position: absolute;
 								top: 100%;
 							}
-							
+
 							.banner-l {
 								position: absolute;
 								width: 100%;
@@ -396,17 +396,17 @@
 							.banner-l:before {
 								display: none;
 								}
-								
+
 							.banner-r {
 								position: absolute;
 								width: 98%;
 								top: 200%;
 								}
-								
+
 							.banner-r:before {
 								display: none;
 								}
-								
+
 							.banner-img-a {
 								position: absolute;
 								width: 98.1%;
@@ -415,46 +415,67 @@
 								background-size: 80vmin;
 								background-position: left;
 							}
-							
+
 							.banner-img-s {
 								position: absolute;
 								width: 98%;
 								top: 100%;
 							}
-							
+
 							.card {
 								padding-top: 160%;
 								padding-bottom: 5%;
 							}
-							
+
 							.travis {
 								top: 380%;
 							}
-							
+
 							.iot {
 								left: 45vmin;
 							}
-							
+
 							.router {
 								left: 65vmin;
 							}
-							
+
 							.ios-dev {
 								left: 25vmin;
 							}
-							
-							dm {
-								position: absolute;
-								top: 0px;
-								font-size: 2px;
+
+							.theme-switch {
+							  height: 34px;
+							  width: 60px;
 							}
-							
+
+							.slider {
+							  bottom: 0;
+							  left: 0;
+							  right: 0;
+							  top: 0;
+							  transition: .4s;
+							}
+
+							.slider:before {
+							  background-color: #fff;
+							  bottom: 4px;
+							  content: "";
+							  height: 26px;
+							  left: 4px;
+							  position: absolute;
+							  transition: .4s;
+							  width: 26px;
+							}
+
+							input:checked + .slider:before {
+							  transform: translateX(26px);
+							}
+
 						}
-							
+
         </style>
     </head>
     <body>
-			<p class="dm">🌙</p>
 
        <div class="animated fadeIn title">
                 Gamache Web Designs
@@ -492,13 +513,14 @@
 					 <div class="github-card" data-github="scotch115" data-theme="medium" data-width="300"></div>
  					 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 					 <img class="travis" src="https://travis-ci.com/scotch115/Website.svg?branch=master" />
-					 <!-- <p style="position: absolute; top: 300%;"> Made with ♥️ in Orlando </p> fix this later --> 
+					 <!-- <p style="position: absolute; top: 300%;"> Made with ♥️ in Orlando </p> fix this later -->
 				 </div>
         </div>
 				<!-- Dark Mode Switcher -->
 				<div class="theme-switch-wrapper">
 					<!-- <em>Dark Mode</em> -->
 	    		<label class="theme-switch" for="checkbox">
+						<label id="dm"></label>
 	        	<input type="checkbox" id="checkbox" />
 	        	<div class="slider round"></div>
 					</label>
@@ -516,14 +538,28 @@
     		}
 			}
 
+			if (currentTheme === 'light')
+			{
+				document.getElementById('dm').innerHTML = '🌙';
+			}
+
+			if (currentTheme === 'dark')
+			{
+				document.getElementById('dm').innerHTML = '☀️';
+			}
+
 			function switchTheme(e) {
 			    if (e.target.checked) {
 			        document.documentElement.setAttribute('data-theme', 'dark');
 							localStorage.setItem('theme', 'dark');
+							document.getElementById('dm').innerHTML = '☀️';
+
 			    }
 			    else {
 			        document.documentElement.setAttribute('data-theme', 'light');
 							localStorage.setItem('theme', 'light');
+							document.getElementById('dm').innerHTML = '🌙';
+
 			    }
 			}
 			toggleSwitch.addEventListener('change', switchTheme, false);
