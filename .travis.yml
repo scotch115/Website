@@ -5,5 +5,14 @@ before_install:
 
 cache: npm
 
-before_script:
+before_deploy:
   - npm install firebase-tools -g
+#  - cd functions && npm install
+#  - cd ..
+
+# deploy:
+ # provider: firebase
+ # token:
+  # secure: "HPgw0Zx89sCuPp8pciqUoZTujBkPG+00h7kKzmSOCM4umCgiSGMroY/uMoQSA0Eu+FHxI+QsC0M20FyVPtLuAhFfVtr79oATQidtd9a5yoaG9NbrE2aBia8ZsMfVtzWfmrv2Y4y62zyhWzxgasKb+G1pCsfdOJQUaqoXTEzBRXjS87MlsEboodIXuzSYxGVRnyvg/MD8rFwjnBY837mLOh4jygkBzWIwrFau9AxxgpF9L5n8emyzO9cGQAldgsdnc5hFFJ5gI1YgStQmBrh7ReHP9L4nRwX7FRRRQa6REws2mewzNw16NU0/mPxUNX9MMTR+48f5a3aHKk+GNIAJInaXB1y3TzP+fXH6Hfe/dpaESLGyogAVlSac1y+NyLg9n6nNdfGRiPW7N9vG+rTP21nCQR2RGEcZFuDweaGEFo98EUgAaCmz5F6IKlzA2gK+YLn62JmBxDPQd2QqKp/OLQDNl854SMbA/mXaES9RnTrkrF5BVDTeI1ZM/t+lBIAWzG2AbgxlcTdb/6tixdnuPazcizVS8g8cfVVsaLFCrn1SMuN+B5htjiGlD6AhDkWfTlHQxFUyyhb3VIiUA62cwVgxebc/0wG0lFXNeNLrozKfP8RTjb8aXLI7jUiORqTE9wirwVwK4BDu2riyN0r4b6uRe79LNfSj8h2nWB+NlTM="
+ # skip_cleanup: true
+
