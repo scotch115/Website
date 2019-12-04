@@ -7,7 +7,7 @@ cache: npm
 
 before_deploy:
   - npm install firebase-tools -g
-  - cd functions && npm install
+  # - cd functions && npm install
   - cd ..
 
 deploy:
