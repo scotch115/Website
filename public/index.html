@@ -18,9 +18,9 @@
 				<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Styles -->
          <link rel="stylesheet" href="css/style.css" type="text/css">
-         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
          <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-         <script type="text/javascript" src="../src/chartScript.js"></script>
+         <script type="text/javascript" src="../js/chartScript.js"></script>
     </head>
     <body>
        <div class="animated fadeIn title" >
@@ -71,6 +71,7 @@
 					</label>
 				</div>
     </body>
+    
 		<script>
 			const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 			const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
