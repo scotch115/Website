@@ -10,7 +10,7 @@
 [data-theme="dark"] {
 --primary-color: #353D3F;
 --font-color: white;
---block-background: black;
+--block-background: #353D3F;
 --border-color: white;
 --invert: invert(0);
 }
@@ -205,7 +205,7 @@ right: -100px;
  border-top: 19.6vmax solid transparent;
  border-right: 100px solid black;
  right: 8.5px;
-}	
+}
 
 /* Arrow scroller */
 .scroll-down {
@@ -318,42 +318,42 @@ em {
 }
 
 .travis {
-	position: absolute; 
+	position: absolute;
 	top: 150%;
 }
 
 .iot {
-	position: absolute; 
+	position: absolute;
 	left: 60%;
 }
 
 .server {
-	position: absolute; 
+	position: absolute;
 	top: 5vmin;
 	left: 20vmin;
 }
 
 .router {
-	position: absolute; 
-	bottom: 5vmin; 
+	position: absolute;
+	bottom: 5vmin;
 	left: 40%;
 }
 
 .ios-dev {
-	position: absolute; 
-	bottom: 8vmin; 
+	position: absolute;
+	bottom: 8vmin;
 	left: 10%;
 }
 
 .dm {
-	position: fixed; 
-	top: 0; 
+	position: fixed;
+	top: 0;
 	right: 10vw;
 	font-size: 15px;
 }
 
 #footer-info #icon-love{
-		color: #e74c3c !important; 
+		color: #e74c3c !important;
 		font-size: inherit !important;
 }
 
@@ -390,17 +390,17 @@ For Tablets
 	.banner-l:before {
 		display: none;
 		}
-		
+
 	.banner-r {
 		position: absolute;
 		width: 98%;
 		top: 200%;
 		}
-		
+
 	.banner-r:before {
 		display: none;
 		}
-		
+
 	.banner-img-a {
 		position: absolute;
 		width: 98.1%;
@@ -445,71 +445,71 @@ For Tablets
 
 }
 
-	.withLove { 
-		position: absolute; 
-		left: 30vw; 
-		top: 99vh; 
+	.withLove {
+		position: absolute;
+		left: 30vw;
+		top: 99vh;
 	}
 	.workParagraph {
-		position: absolute; 
-		top: 3vmax; 
-		right: 8%; 
-		font-size: 1.2vmax; 
+		position: absolute;
+		top: 3vmax;
+		right: 8%;
+		font-size: 1.2vmax;
 		justify: center;
 	}
-	
-	.work { 
-		border-style: solid; 
-		border-color: black; 
-		color: white; 
-		position: relative; 
-		top: 0; 
-		width: 99%; 
-		height: 97%; 
-		background: black; 
-		text-indent: 40px; 
-		z-index: 1; 
+
+	.work {
+		border-style: solid;
+		border-color: black;
+		color: white;
+		position: relative;
+		top: 0;
+		width: 99%;
+		height: 97%;
+		background: black;
+		text-indent: 40px;
+		z-index: 1;
 	}
-	
-	.xp { 
-		border-style: solid; 
-		border-color: black; 
-		color: white; 
-		position: absolute; 
-		top: 0; 
-		width: 99%; 
-		height: 97%; 
-		background: black; 
-		text-indent: 40px; 
-		z-index: 1; 
+
+	.xp {
+		border-style: solid;
+		border-color: black;
+		color: white;
+		position: absolute;
+		top: 0;
+		width: 99%;
+		height: 97%;
+		background: black;
+		text-indent: 40px;
+		z-index: 1;
 	}
-	
-	.xpParagraph { 
-		position: absolute; 
-		top: 3vmax; 
-		right: 8%; 
-		font-size: 1.2vmax; 
-		justify: center; 
+
+	.xpParagraph {
+		position: absolute;
+		top: 3vmax;
+		right: 8%;
+		font-size: 1.2vmax;
+		justify: center;
 	}
-	
-	.abt { 
-		text-indent: 20px; 
-		line-height: 2.0; 
+
+	.abt {
+		text-indent: 20px;
+		line-height: 2.0;
 	}
-	
-	.abtParagraph { 
-		position: absolute; 
-		top: 3vmax; 
-		left: 8%; 
-		font-size: 1.2vmax; 
+
+	.abtParagraph {
+		position: absolute;
+		top: 3vmax;
+		left: 8%;
+		font-size: 1.2vmax;
 		text-align: center;
 	}
-	
+
 	.profileHeader {
-		height: 30%; 
-		width: 23%; 
-		position: absolute; 
-		top: 20%; 
-		left: 8vw; 
+		height: 30%;
+		width: 23%;
+		position: absolute;
+		top: 20%;
+		left: 8vw;
 		margin-top: -10vw;
 	}

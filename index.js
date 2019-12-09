@@ -18,38 +18,37 @@ const mimeType = {
   '.css': 'text/css'
 };
 
-/* const server = http.createServer(function(req, res) 
+app.use(express.static("public"));
+
+const server = http.createServer(function(req, res)
 {
-  var path = url.parse(req.url).pathname;
-  switch (path) {
-    case '/':
-      res.statusCode = 200;
-      res.writeHead(200, {
-        'Content-Type': 'text/html'
-      });
-      fs.readFile('./public/index.html', null, function(error,data){
-        if (error){
-          res.writeHead(404);
-          res.write("Uh oh! That webpage doesn't exist! :/ \n");
-        } else {
-          res.write(data);
-        }
-        res.end();
-     });
-     break;
-      
-  default:
-    res.writeHead(404);
-    res.write("Uh oh, this doesn't look right...");
-    res.end();
-    break;
-    }
+  // var path = url.parse(req.url).pathname;
+  // switch (path) {
+  //   case '/':
+  //     res.statusCode = 200;
+  //     res.writeHead(200, {
+  //       'Content-Type': 'text/html'
+  //     });
+      // fs.readFile('./public/index.html', null, function(error,data){
+      //   if (error){
+      //     res.writeHead(404);
+      //     res.write("Uh oh! That webpage doesn't exist! :/ \n");
+			// } else {
+        //   res.write(data);
+        // }
+        // res.end();
+     // };
+     // break;
+
+  // default:
+  //   res.writeHead(404);
+  //   res.write("Uh oh, this doesn't look right...");
+  //   res.end();
+  //   break;
+  //   }
+	app.get('/', function(req, res) {
+		res.sendFile(__dirname + '/public/index.html');
+	});
  }).listen(port);
- 
+
 console.log('Server Listening on port 8080!');
-*/
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true });
-
-app.get('/api/hello', (req, res) => {
