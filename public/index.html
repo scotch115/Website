@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
 				<meta property="og:title" content="Gamache Web Designs" />
-				<meta property="og:image" content="../images/link_preview.png" />
+				<meta property="og:image" content="../images/profilepic.png" />
 
 
-        <title>Welcome to Gamache Web Designs</title>
+        <title>Jordan Gamache - Welcome!</title>
 				<link rel='icon' href='../images/favicon.ico' type='image/x-icon'/>
 				<link rel='apple-touch-icon' sizes="114x114" href="../images/apple-touch-icon.png" />
 
@@ -17,479 +17,20 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 				<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Styles -->
-        <link rel="stylesheet" type="text/css" href="../../public/css/materialize.css">
-
-        <style>
-						/* Dark Mode theme settings */
-						:root {
-							--primary-color: white;
-							--font-color: black;
-							--invert: invert(1);
-						}
-
-						[data-theme="dark"] {
-							--primary-color: #353D3F;
-							--font-color: white;
-							--invert: invert(0);
-						}
-						/* BODY */
-            html, body {
-                background-color: var(--primary-color);
-                color: var(--font-color);
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 250vmin;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vmin;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-						/* Title style */
-            .title {
-                text-align: center;
-                font-size: 6vw;
-                color: var(--font-color);
-                padding: 10px;
-                margin-bottom: 30vmin;
-                margin-top: 20%;
-                position: -webkit-sticky;
-                position: sticky;
-                top: 0;
-				background-color: var(--primary-color);
-				opacity: 1;
-				z-index: 10;
-
-            }
-            
-
-            .links > a {
-                color: black;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .animated {
-                -webkit-animation-duration: 6s;
-                animation-duration: 6s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-            }
-            @-webkit-keyframes fadeIn {
-                0% {opacity: 0;}
-                100% {opacity: 1;}
-            }
-            @keyframes fadeIn {
-                0% {opacity: 0;}
-                100% {opacity: 1;}
-            }
-            .fadeIn {
-                -webkit-animation-name: fadeIn;
-                animation-name: fadeIn;
-            }
-            @-webkit-keyframes FadeIn {
-                0% {opacity: 0;}
-                100% {opacity: 1;}
-                {animation-delay: 2s;}
-            }
-            @keyframes FadeIn {
-                0% {opacity: 0;}
-                100% {opacity: 1;}
-            }
-            .FadeIn {
-                -webkit-animation-name: FadeIn;
-                animation-name: FadeIn;
-            }
-
-						/* About section */
-						/* TODO:  Format diagonal divs for mobile viewing*/
-            .about-banner {
-               width: 90%;
-               left: 5%;
-               right: 5%;
-               top: 15%;
-               height: 20vmax;
-               position: relative;
-               z-index: 0;
-            }
-
-             .banner-img-a {
-               border-style: solid;
-               border-color: black;
-               color: black;
-               position: absolute;
-               top: 0;
-               right: 0;
-               width: 50%;
-               height: 97%;
-							 text-indent: 50px;
-							 background-image: url('../images/bannerimg2.jpg');
-							 background-size: 48vmin;
-							 background-repeat: no-repeat;
-							 background-position: center;
-							 background-color: white;
-            }
-
-			.banner-l {
-              background-color: black;
-              color: white;
-              position: relative;
-              width: 50%;
-              height: 100%;
-              font-family: 'Raleway', sans-serif
-            }
-
-            .banner-l:before {
-              content: "";
-              width: 0px;
-              height: 0px;
-              top: 0px;
-              position: absolute;
-              border-top: 20vmax solid transparent;
-              border-left: 100px solid black;
-              right: -100px;
-             }
-
-						 /* Services Section*/
-						 /* TODO:  Format diagonal divs for mobile viewing*/
-						 .services-banner {
-                width: 90%;
-                left: 5%;
-                right: 5%;
-                top: 20%;
-                height: 20vmax;
-                position: relative;
-                z-index: 0;
-             }
-
-			.banner-img-s {
-                border-style: solid;
-                border-color: black;
-                color: white;
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 50%;
-                height: 97%;
-								background: black;
-								text-indent: 40px;
-								z-index: 1;
-             }
-
-             .banner-r {
-               background-color: white;
-							 border-style: solid;
-							 border-color: black;
-               color: black;
-               position: relative;
-               width: 50%;
-               height: 97%;
-               font-family: 'Raleway', sans-serif
-             }
-
-						 .banner-r:before {
-               content: "";
-               width: 0px;
-               height: 0px;
-               top: 0px;
-               position: absolute;
-               border-top: 19.6vmax solid transparent;
-               border-right: 100px solid black;
-               right: 8.5px;
-              }
-
-							/* Arrow scroller */
-							.scroll-down {
-								position: absolute;
-								left: 50%;
-								top: 86vmin;
-								display: block;
-								text-align: center;
-								font-size: 20px;
-								z-index: 100;
-								text-decoration: none;
-								text-shadow: 0;
-							  width: 13px;
-							  height: 13px;
-							  border-bottom: 2px solid #fff;
-							  border-right: 2px solid #fff;
-							  z-index: 9;
-							  left: 50%;
-								filter: var(--invert);
-							  -webkit-transform: translate(-50%, 0%) rotate(45deg);
-							  -moz-transform: translate(-50%, 0%) rotate(45deg);
-							  transform: translate(-50%, 0%) rotate(45deg);
-								-webkit-animation: fade_move_down 4s ease-in-out infinite;
-								-moz-animation:    fade_move_down 4s ease-in-out infinite;
-								animation:         fade_move_down 4s ease-in-out infinite;
-							}
-
-							/*animated scroll arrow animation*/
-							@-webkit-keyframes fade_move_down {
-							  0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
-							  50%  { opacity: 1;  }
-							  100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
-							}
-							@-moz-keyframes fade_move_down {
-							  0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
-							  50%  { opacity: 1;  }
-							  100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
-							}
-							@keyframes fade_move_down {
-							  0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
-							  50%  { opacity: 1;  }
-							  100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
-							}
-
-							/* Dark mode slider */
-							.theme-switch-wrapper {
-							  display: flex;
-							  align-items: right;
-							}
-							.theme-switch {
-							  display: inline-block;
-							  height: 20px;
-								width: 45px;
-							  position: fixed;
-								right: 5px;
-								top: 20px;
-							}
-
-							.theme-switch input {
-							  display:none;
-							}
-
-							.slider {
-							  background-color: #ccc;
-							  bottom: 0;
-							  cursor: pointer;
-							  left: 0;
-							  position: absolute;
-							  right: 0;
-							  top: 0;
-							  transition: .4s;
-							}
-
-							.slider:before {
-							  background-color: #fff;
-							  bottom: 3px;
-							  content: "";
-							  height: 15px;
-							  left: 4px;
-							  position: absolute;
-							  transition: .4s;
-							  width: 15px;
-							}
-
-							input:checked + .slider {
-							  background-color: #66bb6a;
-							}
-
-							input:checked + .slider:before {
-							  transform: translateX(20px);
-							}
-
-							.slider.round {
-							  border-radius: 34px;
-							}
-
-							.slider.round:before {
-							  border-radius: 50%;
-							}
-
-							em {
-								margin-right: 10px;
-								font-size: 1rem;
-							}
-
-							.card {
-								display: flex;
-								justify-content: center;
-								padding-top: 10%;
-							}
-
-							.travis {
-								position: absolute;
-								top: 150%;
-							}
-
-							.iot {
-								position: absolute;
-								left: 60%;
-							}
-
-							.server {
-								position: absolute;
-								top: 5vmin;
-								left: 20vmin;
-							}
-
-							.router {
-								position: absolute;
-								bottom: 5vmin;
-								left: 40%;
-							}
-
-							.ios-dev {
-								position: absolute;
-								bottom: 8vmin;
-								left: 10%;
-							}
-
-							#dm {
-								position: absolute;
-								right: 50px;
-								font-size: 12px;
-							}
-
-							#footer-info #icon-love{
-							    color: #e74c3c !important;
-							    font-size: inherit !important;
-							}
-
-							/* @media only screen and (max-width: 800px) {
-							For Tablets
-
-							} */
-
-							@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio : 3) and (orientation: portrait) {
-							/* For Phones */
-
-							.title {
-								font-size: 5vmax;
-							}
-
-							.scroll-down {
-								position: absolute;
-								top: 100vmin;
-							}
-							.about-banner {
-								position: absolute;
-								top: 70%;
-							}
-
-							.services-banner {
-								position: absolute;
-								top: 100%;
-							}
-
-							.banner-l {
-								position: absolute;
-								width: 100%;
-								}
-							.banner-l:before {
-								display: none;
-								}
-
-							.banner-r {
-								position: absolute;
-								width: 98%;
-								top: 200%;
-								}
-
-							.banner-r:before {
-								display: none;
-								}
-
-							.banner-img-a {
-								position: absolute;
-								width: 98.1%;
-								top: 100%;
-								left: 0;
-								background-size: 80vmin;
-								background-position: left;
-							}
-
-							.banner-img-s {
-								position: absolute;
-								width: 98%;
-								top: 100%;
-							}
-
-							.card {
-								padding-top: 160%;
-								padding-bottom: 5%;
-							}
-
-							.travis {
-								top: 380%;
-							}
-
-							.iot {
-								left: 45vmin;
-							}
-
-							.router {
-								left: 65vmin;
-							}
-
-							.ios-dev {
-								left: 25vmin;
-							}
-
-							.theme-switch {
-							  height: 34px;
-							  width: 60px;
-							}
-
-							.slider {
-							  bottom: 0;
-							  left: 0;
-							  right: 0;
-							  top: 0;
-							  transition: .4s;
-							}
-
-							.slider:before {
-							  background-color: #fff;
-							  bottom: 4px;
-							  content: "";
-							  height: 26px;
-							  left: 4px;
-							  position: absolute;
-							  transition: .4s;
-							  width: 26px;
-							}
-
-							input:checked + .slider:before {
-							  transform: translateX(26px);
-							}
-
-						}
-
-        </style>
+        
+        <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
-
        <div class="animated fadeIn title" >
-       <img src="./images/profile.svg" style="height: 20vw; width: 20vw; position: absolute; top: 60%; left: 10vw; margin-top: -10vw;"/>
-				&nbsp &nbsp &nbsp &nbsp Gamache Web Designs
+       <img src="./images/profilepic.png" style="height: 30vw; width: 23vw; position: absolute; top: 20%; left: 8vw; margin-top: -10vw;"/>
+				&nbsp &nbsp &nbsp &nbsp Jordan Gamache
         </div>
         <div class="scroll-down fadeIn"></div>
 				<!-- About -->
         <div class="animated about-banner FadeIn">
-         <!-- Want to set up scroller div panels with info from each link, rather than having multiple pages -->
-         <div id="imgDiv" class="banner-img-a"></div>
-           <div class="banner-l"><p style="text-indent: 20px; line-height: 2.0;" >About :</p>
+           <div style="border-style: solid; border-color: var(--border-color); color: var(--font-color); position: absolute; top: 0; width: 99%; height: 97%; background: var(--block-background); text-indent: 40px; z-index: 1;"><p style="text-indent: 20px; line-height: 2.0;" >About :</p>
 						 <p style="position: absolute; top: 3vmax; left: 8%; font-size: 1.2vmax; text-align: center;">
-						 My name is Jordan Gamache, and I am a Front-End web developer looking to expand my business. Checkout my <a href="https://github.com/scotch115" style="text-decoration: none;">GitHub</a>, or keep scrolling to learn more about me and what I do!
+						 My name is Jordan Gamache, and I am a Front-End web developer looking to expand my business. Checkout my <a href="https://github.com/scotch115">GitHub</a>, or keep scrolling to learn more about me and what I do!
 					 </p>
 					 <i style="position: absolute; bottom: 12%; left: 30%;" class="material-icons large">code</i>
 					 <i style="position: absolute; bottom: 12%; left: 45%;" class="material-icons large">add</i>
@@ -497,15 +38,15 @@
         </div>
 				<!-- Services/Experience -->
 				<div class="animated services-banner FadeIn">
-	            <div style="border-style: solid; border-color: black; color: white; position: absolute; top: 0; width: 99%; height: 97%; background: black; text-indent: 40px; z-index: 1;"><p>Experience : </p>
-					 <p style="position: absolute; top: 3vmax; right: 8%; font-size: 1.2vmax; justify: center;">
+	            <div style="border-style: solid; border-color: var(--border-color); color: var(-font-color); position: absolute; top: 0; width: 99%; height: 97%; background: var(--block-background); text-indent: 40px; z-index: 1;"><p>Experience : </p>
+					 <p style="position: absolute; top: 3vmax; font-size: 1.2vmax; text-align: center; margin: 10px;">
 					 Familiar with a variety of software development languages, I primarily use web development tools such as HTML5, CSS3, JavaScript, as well as a handful of JavaScript libraries like Node.js and Express.js and am proficient in Java, Swift and C. My passion for web development comes from the ability to quickly turn an idea into a reality with a little bit of elbowgrease, and then spend extra time making the end result look and feel good to the user. 
 					 </p>
 				 </div>
 				 <!-- Work -->
-				<div class="animated FadeIn" style="top: 50vh; width: 100%; left: 0; height: 20vmax; position: relative; z-index: 0;">
-	            <div style="border-style: solid; border-color: black; color: white; position: relative; top: 0; width: 99%; height: 97%; background: black; text-indent: 40px; z-index: 1;"><p>Work: </p>
-					 <p style="position: absolute; top: 3vmax; right: 8%; font-size: 1.2vmax; justify: center;">
+				<div class="animated FadeIn" style="position: relative; top: 30vh; width: 100%; left: 0; height: 20vmax; z-index: 0;">
+	            <div style="border-style: solid; border-color: var(--border-color); color: var(--font-color); position: relative; top: 0; width: 99%; height: 97%; background: var(--block-background); text-indent: 40px; z-index: 1;"><p>Work: </p>
+					 <p style="position: absolute; top: 3vmax; right: 8%; font-size: 1.2vmax; text-align: center; margin: 10px;">
 					 Currently, I work as a Genius Bar Technical Specialist at Apple, and am in my 4th year at the University of Central Florida pursuing a B.S. in Interdisciplinary Studies focusing on Computational Science and Commerce, and minoring in Information and National Security.
 					 </p>
 				 </div>
@@ -515,7 +56,7 @@
 					 <img src="https://img.icons8.com/ios-glyphs/60/000000/wifi-router.png" class="router">
 					 <img src="https://img.icons8.com/ios-glyphs/60/000000/ios-development.png" class="ios-dev">
 				 </div> -->
-				 <p style="position: absolute; left: 30vw; top: 99vh;"> Made with ♥️ in Orlando </p>
+				 <div style="position: absolute; width: 99vw; top: 90vh; text-align: center"> Made with ♥️ in Orlando </div>
         </div>
 				<!-- Dark Mode Switcher -->
 				<div class="theme-switch-wrapper">

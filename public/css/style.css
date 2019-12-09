@@ -2,12 +2,16 @@
 :root {
 --primary-color: white;
 --font-color: black;
+--block-background: white;
+--border-color: black;
 --invert: invert(1);
 }
 
 [data-theme="dark"] {
 --primary-color: #353D3F;
 --font-color: white;
+--block-background: black;
+--border-color: white;
 --invert: invert(0);
 }
 
@@ -19,6 +23,10 @@ html, body {
 	font-weight: 100;
 	height: 250vmin;
 	margin: 0;
+}
+
+a {
+	text-decoration: none;
 }
 
 .full-height {
@@ -299,7 +307,7 @@ input:checked + .slider:before {
 }
 
 em {
-	margin-right: 10px;
+	margin-right: 25px;
 	font-size: 1rem;
 }
 
@@ -340,7 +348,7 @@ em {
 .dm {
 	position: fixed; 
 	top: 0; 
-	right: 8vw;
+	right: 10vw;
 	font-size: 15px;
 }
 
@@ -436,3 +444,72 @@ For Tablets
 	}
 
 }
+
+	.withLove { 
+		position: absolute; 
+		left: 30vw; 
+		top: 99vh; 
+	}
+	.workParagraph {
+		position: absolute; 
+		top: 3vmax; 
+		right: 8%; 
+		font-size: 1.2vmax; 
+		justify: center;
+	}
+	
+	.work { 
+		border-style: solid; 
+		border-color: black; 
+		color: white; 
+		position: relative; 
+		top: 0; 
+		width: 99%; 
+		height: 97%; 
+		background: black; 
+		text-indent: 40px; 
+		z-index: 1; 
+	}
+	
+	.xp { 
+		border-style: solid; 
+		border-color: black; 
+		color: white; 
+		position: absolute; 
+		top: 0; 
+		width: 99%; 
+		height: 97%; 
+		background: black; 
+		text-indent: 40px; 
+		z-index: 1; 
+	}
+	
+	.xpParagraph { 
+		position: absolute; 
+		top: 3vmax; 
+		right: 8%; 
+		font-size: 1.2vmax; 
+		justify: center; 
+	}
+	
+	.abt { 
+		text-indent: 20px; 
+		line-height: 2.0; 
+	}
+	
+	.abtParagraph { 
+		position: absolute; 
+		top: 3vmax; 
+		left: 8%; 
+		font-size: 1.2vmax; 
+		text-align: center;
+	}
+	
+	.profileHeader {
+		height: 30%; 
+		width: 23%; 
+		position: absolute; 
+		top: 20%; 
+		left: 8vw; 
+		margin-top: -10vw;
+	}

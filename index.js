@@ -18,7 +18,7 @@ const mimeType = {
   '.css': 'text/css'
 };
 
-const server = http.createServer(function(req, res) 
+/* const server = http.createServer(function(req, res) 
 {
   var path = url.parse(req.url).pathname;
   switch (path) {
@@ -47,3 +47,9 @@ const server = http.createServer(function(req, res)
  }).listen(port);
  
 console.log('Server Listening on port 8080!');
+*/
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true });
+
+app.get('/api/hello', (req, res) => {
