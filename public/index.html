@@ -17,10 +17,10 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 				<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Styles -->
-         <link rel="stylesheet" href="/css/style.css" type="text/css">
-         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+         <link rel="stylesheet" href="css/style.css" type="text/css">
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
          <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-         <script type="text/javascript" src="/src/chartScript.js"></script>
+         <script type="text/javascript" src="../js/chartScript.js"></script>
     </head>
     <body>
        <div class="animated fadeIn title" >
@@ -31,7 +31,7 @@
         					 <canvas id="mycanvas" width="256" height="256"></canvas>
 				<!-- About -->
         <div class="animated about-banner FadeIn">
-           <div style="border-style: solid; border-color: var(--border-color); color: var(--font-color); position: absolute; top: 0; width: 99%; height: 97%; background: var(--block-background); text-indent: 40px; z-index: 1;"><p style="text-indent: 20px; line-height: 2.0;" >About :</p>
+           <div style="border-style: solid; border-color: var(--border-color); color: var(--font-color); position: absolute; top: 0; width: 99%; height: 97%; background: var(--block-background); text-indent: 40px; z-index: 1;">
 						 <p style="position: absolute; top: 3vmax; left: 8%; font-size: 1.2vmax; text-align: center;">
 						 My name is Jordan Gamache, and I am a Front-End web developer looking to expand my business. Checkout my <a href="https://github.com/scotch115">GitHub</a>, or keep scrolling to learn more about me and what I do!
 					 </p>
@@ -41,24 +41,18 @@
         </div>
 				<!-- Services/Experience -->
 				<div class="animated services-banner FadeIn">
-	            <div style="border-style: solid; border-color: var(--border-color); color: var(-font-color); position: absolute; top: 0; width: 99%; height: 97%; background: var(--block-background); text-indent: 40px; z-index: 1;"><p>Experience : </p>
+	            <div style="border-style: solid; border-color: var(--border-color); color: var(-font-color); position: absolute; top: 0; width: 99%; height: 97%; background: var(--block-background); text-indent: 40px; z-index: 1;">
 					 <p style="position: absolute; top: 3vmax; font-size: 1.2vmax; text-align: center; margin: 10px;">
 					 Familiar with a variety of software development languages, I primarily use web development tools such as HTML5, CSS3, JavaScript, as well as a handful of JavaScript libraries like Node.js and Express.js and am proficient in Java, Swift and C. My passion for web development comes from the ability to quickly turn an idea into a reality with a little bit of elbowgrease, and then spend extra time making the end result look and feel good to the user.
 					 </p>
 				 </div>
 				 <!-- Work -->
-				<div class="animated FadeIn" style="position: relative; top: 30vh; width: 100%; left: 0; height: 20vmax; z-index: 0;">
-	            <div style="border-style: solid; border-color: var(--border-color); color: var(--font-color); position: relative; top: 0; width: 99%; height: 97%; background: var(--block-background); text-indent: 40px; z-index: 1;"><p>Work: </p>
+				<div class="animated FadeIn" style="position: relative; top: 45vh; width: 100%; left: 0; height: 20vmax; z-index: 0;">
+	            <div style="border-style: solid; border-color: var(--border-color); color: var(--font-color); position: relative; top: 0; width: 99%; height: 97%; background: var(--block-background); text-indent: 40px; z-index: 1;">
 					 <p style="position: absolute; top: 3vmax; right: 8%; font-size: 1.2vmax; text-align: center; margin: 10px;">
 					 Currently, I work as a Genius Bar Technical Specialist at Apple, and am in my 4th year at the University of Central Florida pursuing a B.S. in Interdisciplinary Studies focusing on Computational Science and Commerce, and minoring in Information and National Security.
 					 </p>
 				 </div>
-<!--         <div class="banner-r"><p style="text-indent: 20px; line-height: 2.0;" >
-					 <img src="https://img.icons8.com/ios-glyphs/60/000000/internet-of-things.png" class="iot" >
-					 <img src="https://img.icons8.com/ios-glyphs/60/000000/server.png" class="server">
-					 <img src="https://img.icons8.com/ios-glyphs/60/000000/wifi-router.png" class="router">
-					 <img src="https://img.icons8.com/ios-glyphs/60/000000/ios-development.png" class="ios-dev">
-				 </div> -->
 				 <div style="position: absolute; width: 99vw; top: 90vh; text-align: center"> Made with ♥️ in Orlando </div>
         </div>
 				<!-- Dark Mode Switcher -->
@@ -71,6 +65,7 @@
 					</label>
 				</div>
     </body>
+    
 		<script>
 			const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 			const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
