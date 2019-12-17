@@ -5,14 +5,16 @@
 --block-background: white;
 --border-color: black;
 --invert: invert(1);
+--box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 [data-theme="dark"] {
---primary-color: #353D3F;
+--primary-color: black;
 --font-color: white;
 --block-background: #353D3F;
 --border-color: white;
 --invert: invert(0);
+--box-shadow: box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 (255, 255, 255, 0.19);
 }
 
 /* BODY */
@@ -79,21 +81,6 @@ a {
 	animation-fill-mode: both;
 }
 
-@-webkit-keyframes fadeIn {
-	0% {opacity: 0;}
-	100% {opacity: 1;}
-}
-
-@keyframes fadeIn {
-	0% {opacity: 0;}
-	100% {opacity: 1;}
-}
-
-.fadeIn {
-	-webkit-animation-name: fadeIn;
-	animation-name: fadeIn;
-}
-
 @-webkit-keyframes FadeIn {
 	0% {opacity: 0;}
 	100% {opacity: 1;}
@@ -112,100 +99,27 @@ a {
 
 /* About section */
 /* TODO:  Format diagonal divs for mobile viewing*/
-.about-banner {
- width: 90%;
- left: 5%;
- right: 5%;
- top: 15%;
+.banner {
+ top: 15vh;
  height: 20vmax;
  position: relative;
- z-index: 0;
+ border-radius: 25px;
+ transition: box-shadow .3s;
+ width: 90vw;
+ height: 15vw;
+ border: 1.5px solid var(--border-color);
+ margin: 15px;
+ padding-top: 10px;
+ top: 2vw;
+ text-align: center;
+ line-height: 1em;
+ background-color: var(--block-background);
 }
 
-.banner-img-a {
- border-style: solid;
- border-color: black;
- color: black;
- position: absolute;
- top: 0;
- right: 0;
- width: 50%;
- height: 97%;
- text-indent: 50px;
- background-image: url('../images/bannerimg2.jpg');
- background-size: 48vmin;
- background-repeat: no-repeat;
- background-position: center;
- background-color: white;
+.banner:hover {
+ box-shadow: var(--box-shadow);
 }
 
-.banner-l {
-background-color: black;
-color: white;
-position: relative;
-width: 50%;
-height: 100%;
-font-family: 'Raleway', sans-serif
-}
-
-.banner-l:before {
-content: "";
-width: 0px;
-height: 0px;
-top: 0px;
-position: absolute;
-border-top: 20vmax solid transparent;
-border-left: 100px solid black;
-right: -100px;
-}
-
-/* Services Section*/
-/* TODO:  Format diagonal divs for mobile viewing*/
-.services-banner {
-	width: 90%;
-	left: 5%;
-	right: 5%;
-	top: 20%;
-	height: 20vmax;
-	position: relative;
-	z-index: 0;
-}
-
-.banner-img-s {
-	border-style: solid;
-	border-color: black;
-	color: white;
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 50%;
-	height: 97%;
-	background: black;
-	text-indent: 40px;
-	z-index: 1;
-}
-
-.banner-r {
- background-color: white;
- border-style: solid;
- border-color: black;
- color: black;
- position: relative;
- width: 50%;
- height: 97%;
- font-family: 'Raleway', sans-serif
-}
-
-.banner-r:before {
- content: "";
- width: 0px;
- height: 0px;
- top: 0px;
- position: absolute;
- border-top: 19.6vmax solid transparent;
- border-right: 100px solid black;
- right: 8.5px;
-}
 
 /* Arrow scroller */
 .scroll-down {
@@ -306,55 +220,12 @@ input:checked + .slider:before {
 	border-radius: 50%;
 }
 
-em {
-	margin-right: 25px;
-	font-size: 1rem;
-}
-
-.card {
-	display: flex;
-	justify-content: center;
-	padding-top: 10%;
-}
-
-.travis {
-	position: absolute;
-	top: 150%;
-}
-
-.iot {
-	position: absolute;
-	left: 60%;
-}
-
-.server {
-	position: absolute;
-	top: 5vmin;
-	left: 20vmin;
-}
-
-.router {
-	position: absolute;
-	bottom: 5vmin;
-	left: 40%;
-}
-
-.ios-dev {
-	position: absolute;
-	bottom: 8vmin;
-	left: 10%;
-}
 
 .dm {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	right: 15vw;
 	font-size: 15px;
-}
-
-#footer-info #icon-love{
-		color: #e74c3c !important;
-		font-size: inherit !important;
 }
 
 /* @media only screen and (max-width: 800px) {
@@ -373,143 +244,10 @@ For Tablets
 		position: absolute;
 		top: 100vmin;
 	}
-	.about-banner {
+	
+	.banner {
 		position: absolute;
 		top: 70%;
 	}
 
-	.services-banner {
-		position: absolute;
-		top: 100%;
-	}
-
-	.banner-l {
-		position: absolute;
-		width: 100%;
-		}
-	.banner-l:before {
-		display: none;
-		}
-
-	.banner-r {
-		position: absolute;
-		width: 98%;
-		top: 200%;
-		}
-
-	.banner-r:before {
-		display: none;
-		}
-
-	.banner-img-a {
-		position: absolute;
-		width: 98.1%;
-		top: 100%;
-		left: 0;
-		background-size: 80vmin;
-		background-position: left;
-	}
-
-	.banner-img-s {
-		position: absolute;
-		width: 98%;
-		top: 100%;
-	}
-
-	.card {
-		padding-top: 160%;
-		padding-bottom: 5%;
-	}
-
-	.travis {
-		top: 380%;
-	}
-
-	.iot {
-		left: 45vmin;
-	}
-
-	.router {
-		left: 65vmin;
-	}
-
-	.ios-dev {
-		left: 25vmin;
-	}
-
-	dm {
-		position: absolute;
-		top: 0px;
-		font-size: 2px;
-	}
-
 }
-
-	.withLove {
-		position: absolute;
-		left: 30vw;
-		top: 99vh;
-	}
-	.workParagraph {
-		position: absolute;
-		top: 3vmax;
-		right: 8%;
-		font-size: 1.2vmax;
-		justify: center;
-	}
-
-	.work {
-		border-style: solid;
-		border-color: black;
-		color: white;
-		position: relative;
-		top: 0;
-		width: 99%;
-		height: 97%;
-		background: black;
-		text-indent: 40px;
-		z-index: 1;
-	}
-
-	.xp {
-		border-style: solid;
-		border-color: black;
-		color: white;
-		position: absolute;
-		top: 0;
-		width: 99%;
-		height: 97%;
-		background: black;
-		text-indent: 40px;
-		z-index: 1;
-	}
-
-	.xpParagraph {
-		position: absolute;
-		top: 3vmax;
-		right: 8%;
-		font-size: 1.2vmax;
-		justify: center;
-	}
-
-	.abt {
-		text-indent: 20px;
-		line-height: 2.0;
-	}
-
-	.abtParagraph {
-		position: absolute;
-		top: 3vmax;
-		left: 8%;
-		font-size: 1.2vmax;
-		text-align: center;
-	}
-
-	.profileHeader {
-		height: 30%;
-		width: 23%;
-		position: absolute;
-		top: 20%;
-		left: 8vw;
-		margin-top: -10vw;
-	}
