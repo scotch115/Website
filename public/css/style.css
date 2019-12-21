@@ -97,29 +97,32 @@ a {
 	animation-name: FadeIn;
 }
 
-/* About section */
-/* TODO:  Format diagonal divs for mobile viewing*/
 .banner {
- top: 15vh;
- height: 20vmax;
  position: relative;
- border-radius: 25px;
+ width: 25vw;
+ height: 30vw;
+ left: 8vw;
+ /* border-radius: 25px; */
  transition: box-shadow .3s;
- width: 90vw;
- height: 15vw;
  border: 1.5px solid var(--border-color);
  margin: 15px;
+ margin-top: 50vh;
  padding-top: 10px;
+ display: inline-block;
  top: 2vw;
  text-align: center;
- line-height: 1em;
- background-color: var(--block-background);
+ line-height: 1em;		
 }
 
 .banner:hover {
  box-shadow: var(--box-shadow);
 }
 
+.typewrite {
+	text-align: center;
+	text-decoration: none;
+	color: var(--font-color);
+}
 
 /* Arrow scroller */
 .scroll-down {
