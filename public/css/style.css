@@ -250,7 +250,30 @@ For Tablets
 
 	.scroll-down {
 		position: absolute;
-		top: 86vh;
+		top: 76vh;
+	}
+	
+	.main {
+		top: 70vh;
+	}
+	
+	.banner {
+		width: 90vw !important;
+		height: 30vw !important;
+	}
+
+}
+
+@media only screen and (device-width: 768px) and (device-height: 922px) and (orientation: portrait) {
+/* For iPads in portrait */
+
+	.title {
+		font-size: 8vmax;
+	}
+
+	.scroll-down {
+		position: absolute;
+		top: 76vh;
 	}
 	
 	.main {
