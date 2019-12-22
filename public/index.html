@@ -27,32 +27,33 @@
     <body>
        <div class="animated FadeIn title" >
 <!--       <a id="profilePic" href="https://github.com/scotch115"><img src="./images/profilepic.png" style="height: 25vw; width: 19vw; position: absolute; top: 30%; left: 10vw; margin-top: -10vw; text-decoration: none"/></a> -->
-			<a href="" class="typewrite" data-period="2000" data-type='[ "Hi, I’m Jordan.", "I’m Creative.", "I Love to Develop.", "I Love to Learn."]'>
+			<a href="" class="typewrite" data-period="2000" data-type='[ "Hi, I’m Jordan.", "I Love to Build.", "I’m Passionate.", "I’m a Quick Learner.", "I Love a Good Challenge."]'>
 			<span class="wrap"></span>
 			</a>
         </div>
         <div class="scroll-down fadeIn"></div>
-				
+	<div class="main">
 				<!-- About -->
         <div class="animated banner FadeIn">
-						 <p style="position: absolute; top: 3vmax; left: 8%; font-size: 1.2vmax; text-align: center;">
-						 My name is Jordan Gamache, and I am a Front-End web developer looking to expand my business. Checkout my <a href="https://github.com/scotch115">GitHub</a>, or keep scrolling to learn more about me and what I do!
+					 <p style="font-size: 1.2vmax; margin: 10px;">
+						 My name is Jordan Gamache, and I am a Front-End web developer looking to expand my business. Checkout my <a href="https://github.com/scotch115" style="text-decoration: none;">GitHub</a>, or keep scrolling to learn more about me and what I do!
 					 </p>
         </div>
 				
 				<!-- Services/Experience -->
 				<div class="animated banner FadeIn">
-					 <p style="position: absolute; top: 3vmax; font-size: 1.2vmax; text-align: center; margin: 10px;">
+					 <p style="font-size: 1.2vmax; margin: 10px;">
 					 I work with a variety of software development languages, I currently use web development tools such as HTML5, CSS3, JavaScript, as well as a handful of JavaScript libraries like Node.js and Express.js and am proficient in Java, Swift and C. My passion for web development comes from the ability to quickly turn an idea into a reality with a little bit of elbowgrease, and then spend extra time making the end result look and feel good to the user.
 					 </p>
 				 </div>
 				
 				 <!-- Work -->
 				<div class="animated FadeIn banner">
-					 <p style="position: absolute; top: 3vmax; right: 8%; font-size: 1.2vmax; text-align: center; margin: 10px;">
+					 <p style="font-size: 1.2vmax; margin: 10px;">
 					 Currently, I work as a Genius Bar Technical Specialist at Apple, and am in my 4th year at the University of Central Florida pursuing a B.S. in Interdisciplinary Studies focusing on Computational Science and Commerce, and minoring in Information and National Security.
 					 </p>
 				 </div>
+			</div>
 				 <div class="animated FadeIn" style="position: absolute; width: 80vw; top: 220vh; left: 43vw "> Made with ♥️ in Orlando </div>
 				 </div>
 				 
@@ -65,40 +66,7 @@
 					</label>
 				</div>
 				-->
-    </body>
-    
-		<script>
-			const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-			const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-			if (currentTheme) {
-		    document.documentElement.setAttribute('data-theme', currentTheme);
-	    if (currentTheme === 'dark') {
-        toggleSwitch.checked = true;
-    		}
-			}
-			if (currentTheme === 'light')
-			{
-				document.getElementById('dm').innerHTML = '🌙';
-			}
-			if (currentTheme === 'dark')
-			{
-				document.getElementById('dm').innerHTML = '☀️';
-			}
-			function switchTheme(e) {
-			    if (e.target.checked) {
-			        document.documentElement.setAttribute('data-theme', 'dark');
-							localStorage.setItem('theme', 'dark');
-							document.getElementById('dm').innerHTML = '☀️';
-			    }
-			    else {
-			        document.documentElement.setAttribute('data-theme', 'light');
-							localStorage.setItem('theme', 'light');
-							document.getElementById('dm').innerHTML = '🌙';
-			    }
-			}
-			toggleSwitch.addEventListener('change', switchTheme, false);
-		</script>
-		
+    </body>	
 		<script>
 			var TxtType = function(el, toRotate, period) {
 	        	this.toRotate = toRotate;
@@ -153,8 +121,41 @@
 		        // INJECT CSS
 		        var css = document.createElement("style");
 		        css.type = "text/css";
-		        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+		        css.innerHTML = ".typewrite > .wrap { border-right: 1.5px solid black}";
 		        document.body.appendChild(css);
 		    };
 		</script>
+		<!--
+		<script>
+			const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+			const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+			if (currentTheme) {
+		    document.documentElement.setAttribute('data-theme', currentTheme);
+	    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    		}
+			}
+			if (currentTheme === 'light')
+			{
+				document.getElementById('dm').innerHTML = '🌙';
+			}
+			if (currentTheme === 'dark')
+			{
+				document.getElementById('dm').innerHTML = '☀️';
+			}
+			function switchTheme(e) {
+			    if (e.target.checked) {
+			        document.documentElement.setAttribute('data-theme', 'dark');
+							localStorage.setItem('theme', 'dark');
+							document.getElementById('dm').innerHTML = '☀️';
+			    }
+			    else {
+			        document.documentElement.setAttribute('data-theme', 'light');
+							localStorage.setItem('theme', 'light');
+							document.getElementById('dm').innerHTML = '🌙';
+			    }
+			}
+			toggleSwitch.addEventListener('change', switchTheme, false);
+		</script>
+		-->
 </html>
