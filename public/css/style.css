@@ -268,7 +268,8 @@ For Tablets
 /* For iPads in portrait */
 
 	.title {
-		font-size: 8vmax;
+		font-size: 10vh;
+		margin-top: 30%;
 	}
 
 	.scroll-down {
@@ -283,6 +284,10 @@ For Tablets
 	.banner {
 		width: 90vw !important;
 		height: 30vw !important;
+	}
+	
+	.banner > p {
+		font-size: 3vh;
 	}
 
 }
