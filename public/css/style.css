@@ -104,6 +104,7 @@ a {
 	top: 100vh;
 	float: left;
 	display: inline-block;
+	background-color: red;
 }
 
 .banner {
@@ -254,7 +255,7 @@ For Tablets
 	}
 	
 	.main {
-		top: 70vh;
+		top: 90vh;
 	}
 	
 	.banner {
@@ -264,7 +265,7 @@ For Tablets
 
 }
 
-@media only screen and (device-width: 768px) and (device-height: 922px) and (orientation: portrait) {
+@media only screen and (device-width: 768px) and (device-height: 992px) and (orientation: portrait) {
 /* For iPads in portrait */
 
 	.title {
@@ -277,7 +278,7 @@ For Tablets
 	}
 	
 	.main {
-		top: 70vh;
+		top: 85vh;
 	}
 	
 	.banner {
