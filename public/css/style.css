@@ -251,7 +251,7 @@ For Tablets
 /* For Phones */
 
 	.title {
-		font-size: 5vmax;
+		font-size: 10vh;
 	}
 
 	.scroll-down {
@@ -265,7 +265,12 @@ For Tablets
 	
 	.banner {
 		width: 90vw !important;
-		height: 30vw !important;
+		height: 50vw !important;
+	}
+	
+	.banner > p {
+		font-size: 10vh;
+		font-weight: bold;
 	}
 
 }
