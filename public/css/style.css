@@ -55,9 +55,10 @@ a {
 	padding: 10px;
 	margin-bottom: 30vmin;
 	margin-top: 20%;
+	/*
 	position: -webkit-sticky;
 	position: sticky;
-	top: 0;
+	top: 0;*/
 	background-color: var(--primary-color);
 	opacity: 1;
 	z-index: 10;
