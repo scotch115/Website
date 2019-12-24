@@ -1,4 +1,4 @@
-export const lightTheme = {
+const themeLight = {
 	primaryColor: 'white',
 	fontColor: 'black',
 	blockBackground: 'white',
@@ -6,10 +6,14 @@ export const lightTheme = {
 	invert: 'invert(1)',
 }
 
-export const darkTheme = {
+const themeDark = {
 	primaryColor: '#353D3F',
 	fontColor: 'white',
 	blockBackground: '#353D3F',
 	borderColor: 'white',
 	invert: 'invert(0)',
 }
+
+const theme = mode => (mode === "dark" ? themeDark : themeLight);
+
+export default theme;

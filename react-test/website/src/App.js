@@ -1,24 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ThemeProvider } from 'styled-components';
-import { lightTheme, darkTheme } from './theme';
-import { GlobalStyles } from './global';
-import { useState } from 'react';
+import styled from "@emotion/styled";
+import { useTheme } from "./ThemeContext";
 import './App.css';
+
+
+const Wrapper = styled("div")`
+	background: ${props => props.theme.primaryColor};
+	width: 100vw;
+	height: 100vh;
+	body {
+		color: ${props => props.theme.fontColor};
+	}
+	.about-banner {
+		background-color: ${props => props.theme.blockBackground};
+		border-color: ${props => props.theme.borderColor};
+	}
+`;
+
 
 function App() {
 
-	const [theme, setTheme] = useState('light');
+	const themeState = useTheme();
 
-	const toggleTheme = () => {
-		if (theme === 'light') {
-			setTheme('dark');
-		} else {
-			setTheme('light');
-		}
-	}
   return (
-		<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
     <div className="App">
 			<div className="animated fadeIn title" >
 				<img src={require('./images/profilepic.png')} alt="profile" style={{height: "25vw", width: "19vw", position: "absolute", top: "-100px", left: "10vw"}}/>
@@ -47,15 +52,14 @@ function App() {
 			 </div>
 				<div style={{ position: "absolute", width: "99vw", top: "255vh", textAlign: "center" }}> Made with ♥️ in Orlando </div>
 			 <div className="theme-switch-wrapper">
-				 <label className="theme-switch" for="checkbox" onClick={toggleTheme}>
+				 <label className="theme-switch" for="checkbox" onClick={() => themeState.toggle()}>
+				 	{themeState.dark ? "Switch to Light Mode" : "Switch to Dark Mode"}
 					 <label id="dm"></label>
 					 <input type="checkbox" id="checkbox" />
 					 <div className="slider round"></div>
 				 </label>
 			 </div>
-		</div>
-		<GlobalStyles />
-		</ThemeProvider>
+			</div>
   );
 }
 
