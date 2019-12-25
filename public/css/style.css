@@ -123,6 +123,7 @@ a {
 
 .banner > p {
 	font-weight: 2px;
+	font-size: 20vh;
 }
 
 .banner:hover {
@@ -251,7 +252,7 @@ For Tablets
 /* For Phones */
 
 	.title {
-		font-size: 10vh;
+		font-size: 8vh;
 	}
 
 	.scroll-down {
@@ -269,8 +270,7 @@ For Tablets
 	}
 	
 	.banner > p {
-		font-size: 10vh;
-		font-weight: bold;
+		font-size: 20vh;
 	}
 
 }
