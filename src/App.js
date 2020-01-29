@@ -12,14 +12,11 @@ class App extends React.Component {
 			  <header className="navbar">
 			      <div className="container">
 			        <div className="navbar-brand">
-			          <a className="navbar-item">
-			            <img src="images/profilepic.jpeg" alt="Profile" width="30" height="50" />
-			          </a>
-			          <a role="button" className="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" is-active="false">
+			          <div role="button" className="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" is-active="false">
 			            <span aria-hidden="true"></span>
 			            <span aria-hidden="true"></span>
 			            <span aria-hidden="true"></span>
-			          </a>
+			          </div>
 			        </div>
 			        <div id="navMenu" className="navbar-menu">
 			          <div className="navbar-end">
@@ -70,7 +67,7 @@ class App extends React.Component {
 			    <div className="tile is-ancestor">
 			      <div className="tile is-vertical is-parent">
 			        <article className="tile is-child box">
-			        <p className="title">Hi 👋🏻</p>
+			        <p className="title">Hi <span role="img" aria-label="wave">👋🏻</span></p>
 			        I'm Jordan Gamache, a freelance web developer with a passion for front end UI/UX and JavaScript frameworks.
 			         <div className="has-text-centered" style={{padding: "10px"}}>
 			         </div>
