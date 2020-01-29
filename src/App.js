@@ -72,7 +72,7 @@ class App extends React.Component {
 			        <p className="title">Hi <span role="img" aria-label="wave">👋🏻</span></p>
 			        I'm Jordan Gamache, a freelance web developer with a passion for front end UI/UX and JavaScript frameworks.
 							<div className="has-text-centered" style={{padding: "10px"}}></div>
-							<img src="images/contact.jpeg" style={{width: "350px"}}/>
+							<img src="images/contact.jpeg" alt="profilePicture" style={{width: "350px"}}/>
 			        </article>
 			        <article className="tile is-child box">
 			          <p className="title">Languages I Speak</p>
@@ -130,9 +130,9 @@ class App extends React.Component {
 						    <div className="field is-expanded">
 						      <div className="field has-addons">
 						        <p className="control">
-						          <a className="button is-static">
+						          <div className="button is-static">
 						            +1
-						          </a>
+						          </div>
 						        </p>
 						        <p className="control is-expanded">
 						          <input className="input" type="tel" placeholder="Your phone number"></input>
