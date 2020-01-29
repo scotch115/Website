@@ -4,6 +4,7 @@ import './App.css';
 
 
 class App extends React.Component {
+
 	render(){
 		return (
 	    <div className="App" style={{backgroundColor: "rgb(241, 241, 241)"}}>
@@ -97,7 +98,7 @@ class App extends React.Component {
 				 </div>
 				 <div style={{height: "20vh"}}></div>
 				 <div className="section-body">
-					 <form className="container box" action="mailto:jordangamache115@gmail.com" method="POST">
+					 <form className="container box" action="https://usebasin.com/f/88688e738fdc" method="POST">
 					 	<div className="title">
 					 		Let's work together!
 					 	</div>
@@ -108,7 +109,7 @@ class App extends React.Component {
 						  <div className="field-body">
 						    <div className="field">
 						      <p className="control is-expanded has-icons-left">
-						        <input className="input" type="text" placeholder="Name"></input>
+						        <input className="input" name="name" type="text" placeholder="Name"></input>
 						        <span className="icon is-small is-left">
 						          <i className="fa fa-user"></i>
 						        </span>
@@ -116,7 +117,7 @@ class App extends React.Component {
 						    </div>
 						    <div className="field">
 						      <p className="control is-expanded has-icons-left has-icons-right">
-						        <input className="input is-success" type="email" placeholder="Email"></input>
+						        <input className="input is-success" type="email" name="email" placeholder="Email" ></input>
 						        <span className="icon is-small is-left">
 						          <i className="fa fa-envelope"></i>
 						        </span>
@@ -129,48 +130,29 @@ class App extends React.Component {
 						</div>
 
 						<div className="field is-horizontal">
-						  <div className="field-label"></div>
-						  <div className="field-body">
-						    <div className="field is-expanded">
-						      <div className="field has-addons">
-						        <p className="control">
-						          <div className="button is-static">
-						            +1
-						          </div>
-						        </p>
-						        <p className="control is-expanded">
-						          <input className="input" type="tel" placeholder="Your phone number"></input>
-						        </p>
-						      </div>
-						      <p className="help">Do not enter the country code</p>
-						    </div>
-						  </div>
-						</div>
-
-						<div className="field is-horizontal">
 						  <div className="field-label is-normal">
 						    <label className="label">Subject</label>
 						  </div>
 						  <div className="field-body">
 						    <div className="field">
 						      <div className="control">
-						        <input className="input " type="text" placeholder="e.g. Partnership opportunity"></input>
+						        <input className="input " type="text" name="subject" placeholder="e.g. Website Redesign Request"></input>
 						      </div>
-						      <p className="help">
-						        *This field is required
-						      </p>
 						    </div>
 						  </div>
 						</div>
 
 						<div className="field is-horizontal">
 						  <div className="field-label is-normal">
-						    <label className="label">Question</label>
+						    <label className="label">Message</label>
 						  </div>
 						  <div className="field-body">
 						    <div className="field">
 						      <div className="control">
-						        <textarea className="textarea" placeholder="Explain how we can help you"></textarea>
+						        <textarea className="textarea" name="message" placeholder="Explain how we can help you"></textarea>
+										<p className="help">
+							        *This field is required
+							      </p>
 						      </div>
 						    </div>
 						  </div>
@@ -182,7 +164,7 @@ class App extends React.Component {
 						  <div className="field-body">
 						    <div className="field">
 						      <div className="control">
-						        <button className="button is-success">
+						        <button type="submit" className="button is-success">
 						          Send message
 						        </button>
 						      </div>
@@ -206,8 +188,7 @@ class App extends React.Component {
 			</div>
 	  );
 	}
+
 }
-
-
 
 export default App;
