@@ -16,7 +16,7 @@ Personal website to practice HTML/CSS/JS and a number of other skills.
 
 
 # PROJECT UPDATE
-This project has been a simple website design idea that I ahve been working on, however, it has been cast aside due to personal issues. In an attempt to rekindle the website, I will be partially rewriting this to utilize Facebook, Inc.'s React, and React Native JavaScript libraries. This will help solidify my understanding of JavaScript, while, hopefully, allowing me to develop using React Native for all platforms in the future.
+This project has been a simple website design idea that I ahve been working on, however, it has been cast aside due to personal issues. In an attempt to rekindle the website, I will be partially rewriting this to utilize Facebook, Inc.'s React JavaScript library. This will help solidify my understanding of JavaScript, while, hopefully, allowing me to develop using React for all platforms in the future.
 
 
 ### To Run Server
@@ -26,7 +26,7 @@ npm install
 ```
 then run:
 ```
-node index.js
+npm start
 ```
 
 This will start the node server, and the website will load.
