@@ -6,9 +6,9 @@ import './App.css';
 class App extends React.Component {
 	render(){
 		return (
-	    <div className="App">
+	    <div className="App" style={{backgroundColor: "rgb(241, 241, 241)"}}>
 				<section className="hero is-large">
-			  <div className="hero-head">
+			  <div className="hero-head"  style={{backgroundColor: "white"}}>
 			  <header className="navbar">
 			      <div className="container">
 			        <div className="navbar-brand">
@@ -54,7 +54,7 @@ class App extends React.Component {
 			    </header>
 			   </div>
 
-			   <div className="hero-body" sytle="background-color: white;">
+			   <div className="hero-body"  style={{backgroundColor: "white"}}>
 			    <div className="container has-text-centered">
 			      <h1 className="title">
 			        <img src="images/JGlogo.jpeg" alt="logo" width="170" height="190"/>
@@ -64,13 +64,15 @@ class App extends React.Component {
 			      </p>
 			    </div>
 			   </div>
+				 <div style={{height: "10vh"}}></div>
+				 <div className="container">
 			    <div className="tile is-ancestor">
 			      <div className="tile is-vertical is-parent">
 			        <article className="tile is-child box">
 			        <p className="title">Hi <span role="img" aria-label="wave">👋🏻</span></p>
 			        I'm Jordan Gamache, a freelance web developer with a passion for front end UI/UX and JavaScript frameworks.
-			         <div className="has-text-centered" style={{padding: "10px"}}>
-			         </div>
+							<div className="has-text-centered" style={{padding: "10px"}}></div>
+							<img src="images/contact.jpeg" style={{width: "350px"}}/>
 			        </article>
 			        <article className="tile is-child box">
 			          <p className="title">Languages I Speak</p>
@@ -87,8 +89,105 @@ class App extends React.Component {
 			          Senior at University of Central Florida studying Interdisciplinary Studies in Computational Science and Commerce, with a Minor in National Intelligence and Security. I am beginning to work as a freelance web developer, looking to bring businesses a beautiful, clean website to reach more customers, and keep them. Check out my resumé or send me an email and let's talk!
 			        </article>
 			      </div>
-			   </div>
-			   <div style={{height: "30vh"}}></div>
+			    </div>
+				 </div>
+				 <div style={{height: "20vh"}}></div>
+				 <div className="section-body">
+					 <div className="container box">
+					 	<div className="title">
+					 		Let's work together!
+					 	</div>
+						  <div className="field is-horizontal">
+						  <div className="field-label is-normal">
+						    <label className="label">From</label>
+						  </div>
+						  <div className="field-body">
+						    <div className="field">
+						      <p className="control is-expanded has-icons-left">
+						        <input className="input" type="text" placeholder="Name"></input>
+						        <span className="icon is-small is-left">
+						          <i className="fa fa-user"></i>
+						        </span>
+						      </p>
+						    </div>
+						    <div className="field">
+						      <p className="control is-expanded has-icons-left has-icons-right">
+						        <input className="input is-success" type="email" placeholder="Email"></input>
+						        <span className="icon is-small is-left">
+						          <i className="fa fa-envelope"></i>
+						        </span>
+						        <span className="icon is-small is-right">
+						          <i className="fa fa-check"></i>
+						        </span>
+						      </p>
+						    </div>
+						  </div>
+						</div>
+
+						<div className="field is-horizontal">
+						  <div className="field-label"></div>
+						  <div className="field-body">
+						    <div className="field is-expanded">
+						      <div className="field has-addons">
+						        <p className="control">
+						          <a className="button is-static">
+						            +1
+						          </a>
+						        </p>
+						        <p className="control is-expanded">
+						          <input className="input" type="tel" placeholder="Your phone number"></input>
+						        </p>
+						      </div>
+						      <p className="help">Do not enter the country code</p>
+						    </div>
+						  </div>
+						</div>
+
+						<div className="field is-horizontal">
+						  <div className="field-label is-normal">
+						    <label className="label">Subject</label>
+						  </div>
+						  <div className="field-body">
+						    <div className="field">
+						      <div className="control">
+						        <input className="input " type="text" placeholder="e.g. Partnership opportunity"></input>
+						      </div>
+						      <p className="help">
+						        *This field is required
+						      </p>
+						    </div>
+						  </div>
+						</div>
+
+						<div className="field is-horizontal">
+						  <div className="field-label is-normal">
+						    <label className="label">Question</label>
+						  </div>
+						  <div className="field-body">
+						    <div className="field">
+						      <div className="control">
+						        <textarea className="textarea" placeholder="Explain how we can help you"></textarea>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+						<div className="field is-horizontal">
+						  <div className="field-label">
+						  </div>
+						  <div className="field-body">
+						    <div className="field">
+						      <div className="control">
+						        <button className="button is-success">
+						          Send message
+						        </button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					 </div>
+				</div>
+				<div style={{height: "10vh"}}></div>
 			   <footer className="hero-foot">
 			    <div className="content has-text-centered">
 			     Made with <i className="fa fa-heart" style={{color: "#E90606", margin: "0 3px", fontSize: "10px"}}></i> in Orlando
