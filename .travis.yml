@@ -10,7 +10,6 @@ cache: npm
 
 before_deploy:
   - npm install firebase-tools -g
-  - npm install -D jest-dom
   - npm run build
 
 deploy:
