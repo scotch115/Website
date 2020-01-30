@@ -93,21 +93,31 @@
 	});
 	</script>
 	<script>
-			const toggleSwitch = document.getElementById("logoButton");
-			const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-			if (currentTheme) {
-		    document.documentElement.setAttribute('data-theme', currentTheme);
-			function switchTheme(e) {
-			    if (e.target === currentTheme) {
-			        document.documentElement.setAttribute('data-theme', 'dark');
-							localStorage.setItem('theme', 'dark');
-			    }
-			    else {
-			        document.documentElement.setAttribute('data-theme', 'light');
-							localStorage.setItem('theme', 'light');
-			    }
+		document.addEventListener('DOMContentLoaded', () => {
+			const $modal = Array.prototype.slice.call(document.querySelectorAll('.modal-button'), 0);
+			const $delete = Array.prototype.slice.call(document.querySelectorAll('.delete'), 0);
+			if ($modal.length > 0)
+			{
+				$modal.forEach( el => {
+					el.addEventListener('click', () => {
+						const target = el.dataset.target;
+						const $target = document.getElementById(target);
+
+						el.classList.toggle('is-active');
+		        $target.classList.toggle('is-active');
+					});
+				});
+				$delete.forEach( el => {
+					el.addEventListener('click', () => {
+						const targetDelete = el.dataset.target;
+						const $targetDelete = document.getElementById(targetDelete);
+
+						el.classList.toggle('is-active');
+		        $targetDelete.classList.toggle('is-active');
+					});
+				});
 			}
-			toggleSwitch.addEventListener('change', switchTheme, false);
-		</script>
+		});
+	</script>
  </body>
 </html>

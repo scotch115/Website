@@ -18,32 +18,34 @@ class App extends React.Component {
 			        </div>
 			        <div id="navMenu" className="navbar-menu">
 			          <div className="navbar-end">
+								<span className="navbar-item">
+									<button className="button is-danger modal-button" data-target="modal-stack" aria-haspopup="true">
+									<i className="fa fa-react" ></i>
+									<span>Stack</span>
+									</button>
+								</span>
 			            <span className="navbar-item">
-			              <a className="button is-link is-inverted" href="files/resume.pdf" download style={{color: "black"}}>
-			                <span className="icon">
-			                  <i className="fa fa-file" style={{padding: "10px", width: "50px", textAlign: "center", textDecoration: "none", border: "2px solid black", borderRadius: "50%"}}></i>
-			                </span>
+			              <a className="button is-success" href="files/resume.pdf" download>
+											<span className="icon">
+												<i className="fa fa-file"></i>
+											</span>
+											<span>Resume</span>
 			              </a>
 			            </span>
+									<span className="navbar-item">
+										<a className="button is-link" href="https://www.linkedin.com/in/jordan-gamache-374417165">
+											<span className="icon">
+												<i className="fa fa-linkedin" ></i>
+											</span>
+											<span>LinkedIn</span>
+										</a>
+									</span>
 			            <span className="navbar-item">
-			              <a className="button is-link is-inverted" href="https://www.linkedin.com/in/jordan-gamache-374417165" style={{color: "black"}}>
+			              <a className="button is-black" href="https://github.com/scotch115">
 			                <span className="icon">
-			                  <i className="fa fa-linkedin" style={{padding: "10px", width: "50px", textAlign: "center", textDecoration: "none", border: "2px solid black", borderRadius: "50%"}}></i>
+			                  <i className="fa fa-github"></i>
 			                </span>
-			              </a>
-			            </span>
-			            <span className="navbar-item">
-			              <a className="button is-link is-inverted" href="mailto:jordangamache115@gmail.com" style={{color: "black"}}>
-			                <span className="icon">
-			                  <i className="fa fa-send" style={{padding: "10px", width: "50px", textAlign: "center", textDecoration: "none", border: "2px solid black", borderRadius: "50%"}}></i>
-			                </span>
-			              </a>
-			            </span>
-			            <span className="navbar-item">
-			              <a className="button is-link is-inverted" href="https://github.com/scotch115" style={{color: "black"}}>
-			                <span className="icon">
-			                  <i className="fa fa-github" style={{padding: "10px", width: "50px", textAlign: "center", textDecoration: "none", border: "2px solid black", borderRadius: "50%"}}></i>
-			                </span>
+											<span>GitHub</span>
 			              </a>
 			            </span>
 			          </div>
@@ -51,14 +53,27 @@ class App extends React.Component {
 			      </div>
 			    </header>
 			   </div>
-
+				 <div className="modal" id="modal-stack">
+				 	<div className="modal-background"></div>
+					<div className="modal-card">
+						<header className="modal-card-head">
+							<p className="modal-card-title">FERN Stack</p>
+							<button className="delete" aria-label="close" data-target="modal-stack"></button>
+						</header>
+						<section className="modal-card-body">
+							<p>
+								This website is built on the FERN stack...
+							</p>
+						</section>
+					</div>
+				 </div>
 			   <div className="hero-body"  style={{backgroundColor: "white"}}>
 			    <div className="container has-text-centered">
 			      <h1 className="title">
 			        <img src="images/JGlogo.png" alt="logo" width="170" height="190"/>
 			      </h1>
 			      <p className="subtitle">
-			        <strong> Jordan Gamache </strong> 
+			        <strong> Jordan Gamache </strong>
 			      </p>
 			    </div>
 			   </div>
@@ -173,7 +188,7 @@ class App extends React.Component {
 				<div style={{height: "10vh"}}></div>
 			   <footer className="hero-foot">
 			    <div className="content has-text-centered">
-			     Made with <i className="fa fa-heart" style={{color: "#E90606", margin: "0 3px", fontSize: "10px"}}></i> in Orlando
+			     Made with <i className="fa fa-heart" style={{color: "rgb(235, 43, 86)", margin: "0 3px", fontSize: "10px"}}></i> in Orlando
 			    <div className=" content has-text-centered">
 			      <a href="https://bulma.io">
 			      <img src="https://bulma.io/images/made-with-bulma--black.png" alt="Made with Bulma" width="128" height="24" />
