@@ -58,7 +58,7 @@ class App extends React.Component {
 			   <div className="hero-body"  style={{backgroundColor: "white"}}>
 			    <div className="container has-text-centered">
 			      <h1 className="title">
-			        <img src="images/JGlogo.jpeg" alt="logo" width="170" height="190"/>
+			        <img src="images/JGlogo.jpeg" id="logoButton" alt="logo" width="170" height="190"/>
 			      </h1>
 			      <p className="subtitle">
 			        <strong> Jordan Gamache </strong>
