@@ -1,7 +1,7 @@
 /* Dark Mode theme settings */
-/*
+
 :root {
---primary-color: white;
+--primary-color: rgb(241, 241, 241);
 --font-color: black;
 --block-background: white;
 --border-color: black;
@@ -28,6 +28,7 @@ html, body {
 	margin: 0;
 }
 
+/*
 a {
 	text-decoration: none;
 }
