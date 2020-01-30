@@ -61,8 +61,8 @@ class App extends React.Component {
 							<button className="delete" aria-label="close" data-target="modal-stack"></button>
 						</header>
 						<section className="modal-card-body">
-							<h1>This website is built on the FERN stack.</h1>
-							<p> FERN is an acronym for a Full Stack (or all inclusive) method of web development. In particular, the FERN stack incorporates some of the most popular frameworks and tools to accompany traditional web development techniques. FERN uses **F**irebase, **E**xpress.js, **R**eact.js, and **N**ode.js. These allow the site to be flexible, responsive, lightweight, and yet still powerful and precise. The FERN stack is my personal favorite and most comfortable method for building Web Apps like this one, however I have /some/ familiarity with the MERN (MongoDB/Express/React/Node) stack as well.</p>
+							<p className="title">This website is built on the FERN stack.</p>
+							<p> FERN is an acronym for a Full Stack (or all inclusive) method of web development. In particular, the FERN stack incorporates some of the most popular frameworks and tools to accompany traditional web development techniques. FERN uses Firebase, Express.js, React.js, and Node.js. These allow the site to be flexible, responsive, lightweight, and yet still powerful and precise. The FERN stack is my personal favorite and most comfortable method for building Web Apps like this one, however I have /some/ familiarity with the MERN (MongoDB/Express/React/Node) stack as well.</p>
 						</section>
 					</div>
 				 </div>
