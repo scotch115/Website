@@ -2,6 +2,9 @@
   "name": "gamache_web_designs",
   "version": "1.0.0",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@fortawesome/react-fontawesome": "^0.1.8",
     "body-parser": "^1.18.3",
     "express": "^4.17.1",
     "node-static": "0.7.11",
