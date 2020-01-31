@@ -1,5 +1,5 @@
 /* Dark Mode theme settings */
-
+/*
 :root {
 --primary-color: rgb(241, 241, 241);
 --font-color: black;
@@ -134,8 +134,8 @@ a {
 	text-decoration: none;
 	color: var(--font-color);
 }
-*/
-/* Arrow scroller */
+
+// Arrow scroller //
 .scroll-down {
 	display: block;
 	font-size: 30px;
@@ -153,7 +153,7 @@ a {
 	-moz-animation:    fade_move_down 4s ease-in-out infinite;
 	animation:         fade_move_down 4s ease-in-out infinite;
 }
-// animated scroll arrow animation
+
 @-webkit-keyframes fade_move_down {
 	0%   { -webkit-transform:translate(0,-10px); opacity: 0;  }
 	50%  { opacity: 1;  }
@@ -171,7 +171,7 @@ a {
 }
 
 /*
-// Dark mode slider 
+// Dark mode slider
 .theme-switch-wrapper {
 	display: flex;
 	align-items: right;
@@ -237,7 +237,7 @@ input:checked + .slider:before {
 
 
 @media only screen and (max-width: 768px) and (orientation: portrait) {
-// For Phones 
+// For Phones
 
 	.title {
 		font-size: 8vh;
@@ -247,16 +247,16 @@ input:checked + .slider:before {
 		position: absolute;
 		top: 70vh;
 	}
-	
+
 	.main {
 		top: 90vh;
 	}
-	
+
 	.banner {
 		width: 90vw !important;
 		height: 50vw !important;
 	}
-	
+
 	.banner > p {
 		font-size: 20vh;
 	}
@@ -264,7 +264,7 @@ input:checked + .slider:before {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) and (orientation: portrait) {
-// For iPads in portrait 
+// For iPads in portrait
 
 	.title {
 		font-size: 10vh;
@@ -275,16 +275,16 @@ input:checked + .slider:before {
 		position: absolute;
 		top: 70vh;
 	}
-	
+
 	.main {
 		top: 85vh;
 	}
-	
+
 	.banner {
 		width: 90vw !important;
 		height: 30vw !important;
 	}
-	
+
 	.banner > p {
 		font-size: 3vh;
 		font-weight: 500;
