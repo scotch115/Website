@@ -113,7 +113,7 @@ class App extends React.Component {
 				 <div className="section-body">
 					 <form className="container box" action="https://usebasin.com/f/88688e738fdc" method="POST">
 					 	<div className="title">
-					 		Want to work together? 
+					 		Want to work together?
 					 	</div>
 						  <div className="field is-horizontal">
 						  <div className="field-label is-normal">
