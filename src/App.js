@@ -37,7 +37,7 @@ class App extends React.Component {
 									<span className="navbar-item">
 										<a className="button is-link" href="https://www.linkedin.com/in/jordan-gamache-374417165">
 											<span className="icon">
-												<i className="fa fa-linkedin" ></i>
+												<i className="fab fa-linkedin" ></i>
 											</span>
 											<span>LinkedIn</span>
 										</a>
@@ -45,7 +45,7 @@ class App extends React.Component {
 			            <span className="navbar-item">
 			              <a className="button is-black" href="https://github.com/scotch115">
 			                <span className="icon">
-			                  <i className="fa fa-github"></i>
+			                  <i className="fab fa-github"></i>
 			                </span>
 											<span>GitHub</span>
 			              </a>
