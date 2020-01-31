@@ -1,4 +1,6 @@
 import React from 'react';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 
 class App extends React.Component {
 
@@ -20,8 +22,10 @@ class App extends React.Component {
 			          <div className="navbar-end">
 								<span className="navbar-item">
 									<button className="button is-danger modal-button" data-target="modal-stack" aria-haspopup="true">
-									<i className="fab fa-react" ></i>
-									<span>Stack</span>
+									<span className="icon">
+										<i className="fab fa-react" ></i>
+										</span>
+										<span >Stack</span>
 									</button>
 								</span>
 			            <span className="navbar-item">
@@ -187,7 +191,7 @@ class App extends React.Component {
 				<div style={{height: "10vh"}}></div>
 			   <footer className="hero-foot">
 			    <div className="content has-text-centered">
-			     Made with <i className="fa fa-heart" style={{color: "rgb(235, 43, 86)", margin: "0 3px", fontSize: "10px"}}></i> in Orlando
+			     Made with <i className="fa fa-heart" style={{color: "rgb(235, 43, 86)", margin: "0 3px", fontSize: "10px"}}></i> & <i className="fa fa-coffee" style={{color: "lightbrown", margin: "0 3px", fontSize: "10px"}}></i>in Orlando
 			    <div className=" content has-text-centered">
 			      <a href="https://bulma.io">
 			      <img src="https://bulma.io/images/made-with-bulma--black.png" alt="Made with Bulma" width="128" height="24" />
