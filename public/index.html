@@ -43,82 +43,99 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
 		<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+			<!-- TODO: Add SDKs for Firebase products that you want to use
+		     https://firebase.google.com/docs/web/setup#available-libraries -->
+			<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+			<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+			<script>
+			  // Your web app's Firebase configuration
+			  var firebaseConfig = {
+			    apiKey: "AIzaSyA27-1Jii_ZQQRHsELqqVxe1nvvu5dKMOI",
+			    authDomain: "gamache-web-designs.firebaseapp.com",
+			    databaseURL: "https://gamache-web-designs.firebaseio.com",
+			    projectId: "gamache-web-designs",
+			    storageBucket: "gamache-web-designs.appspot.com",
+			    messagingSenderId: "1089835004024",
+			    appId: "1:1089835004024:web:1c4cef45064232054b7d8d",
+			    measurementId: "G-2DT9PEQG31"
+			  };
+			  // Initialize Firebase
+			  firebase.initializeApp(firebaseConfig);
+			  firebase.analytics();
+			</script>
+			<script>
+			  document.addEventListener('DOMContentLoaded', () => {
 
-	<script>
-	  // Your web app's Firebase configuration
-	  var firebaseConfig = {
-	    apiKey: "AIzaSyA27-1Jii_ZQQRHsELqqVxe1nvvu5dKMOI",
-	    authDomain: "gamache-web-designs.firebaseapp.com",
-	    databaseURL: "https://gamache-web-designs.firebaseio.com",
-	    projectId: "gamache-web-designs",
-	    storageBucket: "gamache-web-designs.appspot.com",
-	    messagingSenderId: "1089835004024",
-	    appId: "1:1089835004024:web:1c4cef45064232054b7d8d",
-	    measurementId: "G-2DT9PEQG31"
-	  };
-	  // Initialize Firebase
-	  firebase.initializeApp(firebaseConfig);
-	  firebase.analytics();
-	</script>
-	<script>
-	  document.addEventListener('DOMContentLoaded', () => {
+			  // Get all "navbar-burger" elements
+			  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-	  // Get all "navbar-burger" elements
-	  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+			  // Check if there are any navbar burgers
+			  if ($navbarBurgers.length > 0) {
 
-	  // Check if there are any navbar burgers
-	  if ($navbarBurgers.length > 0) {
+			    // Add a click event on each of them
+			    $navbarBurgers.forEach( el => {
+			      el.addEventListener('click', () => {
 
-	    // Add a click event on each of them
-	    $navbarBurgers.forEach( el => {
-	      el.addEventListener('click', () => {
+			        // Get the target from the "data-target" attribute
+			        const target = el.dataset.target;
+			        const $target = document.getElementById(target);
 
-	        // Get the target from the "data-target" attribute
-	        const target = el.dataset.target;
-	        const $target = document.getElementById(target);
+			        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+			        el.classList.toggle('is-active');
+			        $target.classList.toggle('is-active');
 
-	        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-	        el.classList.toggle('is-active');
-	        $target.classList.toggle('is-active');
+			      });
+			    });
+			  }
 
-	      });
-	    });
-	  }
+			});
+			</script>
+			<script>
+				document.addEventListener('DOMContentLoaded', () => {
+					const $modal = Array.prototype.slice.call(document.querySelectorAll('.modal-button'), 0);
+					const $delete = Array.prototype.slice.call(document.querySelectorAll('.delete'), 0);
+					if ($modal.length > 0)
+					{
+						$modal.forEach( el => {
+							el.addEventListener('click', () => {
+								const target = el.dataset.target;
+								const $target = document.getElementById(target);
 
-	});
-	</script>
-	<script>
-		document.addEventListener('DOMContentLoaded', () => {
-			const $modal = Array.prototype.slice.call(document.querySelectorAll('.modal-button'), 0);
-			const $delete = Array.prototype.slice.call(document.querySelectorAll('.delete'), 0);
-			if ($modal.length > 0)
-			{
-				$modal.forEach( el => {
-					el.addEventListener('click', () => {
-						const target = el.dataset.target;
-						const $target = document.getElementById(target);
+								el.classList.toggle('is-active');
+				        $target.classList.toggle('is-active');
+							});
+						});
+						$delete.forEach( el => {
+							el.addEventListener('click', () => {
+								const targetDelete = el.dataset.target;
+								const $targetDelete = document.getElementById(targetDelete);
 
-						el.classList.toggle('is-active');
-		        $target.classList.toggle('is-active');
-					});
+								el.classList.toggle('is-active');
+				        $targetDelete.classList.toggle('is-active');
+							});
+						});
+					}
 				});
-				$delete.forEach( el => {
-					el.addEventListener('click', () => {
-						const targetDelete = el.dataset.target;
-						const $targetDelete = document.getElementById(targetDelete);
+			</script>
+			<script>
+				document.addEventListener("visibilitychange", () => {
+		    if (document.visibilityState === "visible") {
+		      fetch(`/index.html?_=${Date.now()}`)
+		        .then(res => res.text())
+		        .then(htmlString => {
+		          let doc = new DOMParser().parseFromString(htmlString, "text/html");
+		          let latestVersion = doc
+		            .querySelector("meta[name='app-version']")
+		            .getAttribute("content");
 
-						el.classList.toggle('is-active');
-		        $targetDelete.classList.toggle('is-active');
-					});
-				});
-			}
-		});
-	</script>
+		          if (latestVersion !== currentVersion) {
+		            window.location.reload(true);
+		          }
+		        });
+		    	}
+		  	});
+			</script>
  </body>
 </html>
