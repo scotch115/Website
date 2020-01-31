@@ -104,7 +104,7 @@ class App extends React.Component {
 			        <article className="tile is-child box">
 			          <p className="title">Experience</p>
 								<div className="has-text-centered" style={{padding: "10px"}}></div>
-			          Senior at University of Central Florida studying Interdisciplinary Studies in Computational Science and Commerce, with a Minor in National Intelligence and Security. I am beginning to work as a freelance web developer, looking to bring businesses a beautiful, clean website to reach more customers, and keep them. Check out my resumé or send me an email and let's talk!
+			          I am a Senior at the University of Central Florida studying Interdisciplinary Studies in Computational Science and Commerce, with a Minor in National Intelligence and Security. I am beginning to work as a freelance web developer, looking to bring businesses a beautiful, clean website to reach more customers, and keep them. Check out my resumé or send me an email and let's talk!
 			        </article>
 			      </div>
 			    </div>
@@ -113,7 +113,7 @@ class App extends React.Component {
 				 <div className="section-body">
 					 <form className="container box" action="https://usebasin.com/f/88688e738fdc" method="POST">
 					 	<div className="title">
-					 		Let's work together!
+					 		Want to work together? 
 					 	</div>
 						  <div className="field is-horizontal">
 						  <div className="field-label is-normal">
@@ -189,7 +189,7 @@ class App extends React.Component {
 				<div style={{height: "10vh"}}></div>
 			   <footer className="hero-foot">
 			    <div className="content has-text-centered">
-			     Made with <i className="fa fa-heart" style={{color: "rgb(235, 43, 86)", margin: "0 3px", fontSize: "10px"}}></i> & <i className="fa fa-coffee" style={{color: "lightbrown", margin: "0 3px", fontSize: "10px"}}></i>in Orlando
+			     Made with <i className="fa fa-heart" style={{color: "rgb(235, 43, 86)"}}></i> & <i className="fa fa-coffee" style={{color: "rgb(44, 31, 22)"}}></i>in Orlando
 			    <div className=" content has-text-centered">
 			      <a href="https://bulma.io">
 			      <img src="https://bulma.io/images/made-with-bulma--black.png" alt="Made with Bulma" width="128" height="24" />
