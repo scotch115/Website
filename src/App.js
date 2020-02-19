@@ -70,9 +70,9 @@ class App extends React.Component {
 				 </div>
 			   <div className="hero-body"  style={{backgroundColor: "white"}}>
 			    <div className="container has-text-centered">
-			      <h1 className="title">
-			        <img src="images/JGlogo.png" alt="logo" width="170" height="190"/>
-			      </h1>
+			      <div className="title">
+			        <img className="JGlogo" src="images/JGlogo.png" alt="logo" width="170" height="190"/>
+			      </div>
 			      <p className="subtitle">
 			        <strong> Jordan Gamache </strong>
 			      </p>
@@ -88,6 +88,13 @@ class App extends React.Component {
 							<figure className="image container is-256x256">
 								<img src="images/profilepic.png" alt="profilePicture"/>
 							</figure>
+							</article>
+						</div>
+						<div className="tile is-vertical is-parent">
+			        <article className="tile is-child box">
+			          <p className="title">Experience</p>
+								<div className="has-text-centered" style={{padding: "10px"}}></div>
+			          I am a Senior at the University of Central Florida studying Interdisciplinary Studies in Computational Science and Commerce, with a Minor in National Intelligence and Security. I am beginning to work as a freelance web developer, looking to bring businesses a beautiful, clean website to reach more customers, and keep them. Check out my resumé or send me an email and let's talk!
 			        </article>
 			        <article className="tile is-child box">
 			          <p className="title">Languages I Speak</p>
@@ -99,14 +106,7 @@ class App extends React.Component {
 								<div className="has-text-centered" style={{padding: "10px"}}></div>
 			          Atom, GitHub, Node, Express, Firebase, Travis, React, Working Copy (on iOS), Xcode, Bulma, Terminal
 			        </article>
-			        </div>
-			        <div className="tile is-vertical is-parent">
-			        <article className="tile is-child box">
-			          <p className="title">Experience</p>
-								<div className="has-text-centered" style={{padding: "10px"}}></div>
-			          I am a Senior at the University of Central Florida studying Interdisciplinary Studies in Computational Science and Commerce, with a Minor in National Intelligence and Security. I am beginning to work as a freelance web developer, looking to bring businesses a beautiful, clean website to reach more customers, and keep them. Check out my resumé or send me an email and let's talk!
-			        </article>
-			      </div>
+		        </div>
 			    </div>
 				 </div>
 				 <div style={{height: "20vh"}}></div>
