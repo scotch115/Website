@@ -4,7 +4,7 @@ class App extends React.Component {
 
 	render(){
 		return (
-	    <div className="App" style={{backgroundColor: "rgb(241, 241, 241)"}}>
+	    <div className="App" style={{backgroundColor: "rgb(241, 241, 241)", padding: "10px"}}>
 				<section className="hero is-large">
 			  <div className="hero-head"  style={{backgroundColor: "white"}}>
 			  <header className="navbar">

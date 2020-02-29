@@ -12,6 +12,7 @@ before_deploy:
   - npm install firebase-tools -g
 script:
   - npm run build
+  - firebase deploy
 deploy:
  provider: firebase
  token:
