@@ -5,7 +5,7 @@ class App extends React.Component {
 	render(){
 		return (
 	    <div className="App" style={{backgroundColor: "rgb(241, 241, 241)", padding: "10px"}}>
-				<section className="hero is-large">
+				<section className="hero is-large" style={{ borderRadius: "10px"}}>
 			  <div className="hero-head"  style={{backgroundColor: "white"}}>
 			  <header className="navbar">
 			      <div className="container">
