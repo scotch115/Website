@@ -4,8 +4,8 @@ class App extends React.Component {
 
 	render(){
 		return (
-	    <div className="App" style={{backgroundColor: "rgb(241, 241, 241)", padding: "10px"}}>
-				<section className="hero is-large" style={{ borderRadius: "10px"}}>
+	    <div className="App" style={{backgroundColor: "rgb(241, 241, 241)"}}>
+				<section className="hero is-large">
 			  <div className="hero-head"  style={{backgroundColor: "white"}}>
 			  <header className="navbar">
 			      <div className="container">
@@ -79,7 +79,7 @@ class App extends React.Component {
 			    </div>
 			   </div>
 				 <div style={{height: "10vh"}}></div>
-				 <div className="container">
+				 <div className="container" style={{padding: "10px"}}>
 			    <div className="tile is-ancestor">
 			      <div className="tile is-vertical is-parent">
 			        <article className="tile is-child box">
