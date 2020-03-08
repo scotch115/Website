@@ -109,7 +109,6 @@ class App extends React.Component {
 		        </div>
 			    </div>
 				 </div>
-				 // <div style={{height: "20vh"}}></div>
 				 <div className="card">
 				 	<div className="card-image">
 
