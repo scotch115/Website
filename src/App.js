@@ -109,7 +109,19 @@ class App extends React.Component {
 		        </div>
 			    </div>
 				 </div>
-				 <div style={{height: "20vh"}}></div>
+				 // <div style={{height: "20vh"}}></div>
+				 <div className="card">
+				 	<div className="card-image">
+
+					</div>
+					<div className="card-content">
+						<div className="title"> Project 1
+						</div>
+					</div>
+					<div className="content">
+						This is a project card where I will eventually load all the projects I have worked on that I want to display here.
+					</div>
+				 </div>
 				 <div className="section-body">
 					 <form className="container box" action="https://usebasin.com/f/88688e738fdc" method="POST">
 					 	<div className="title">
