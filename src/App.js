@@ -106,20 +106,9 @@ class App extends React.Component {
 								<div className="has-text-centered" style={{padding: "10px"}}></div>
 			          Atom, GitHub, Node, Express, Firebase, Travis, React, Working Copy (on iOS), Xcode, Bulma, Terminal
 			        </article>
-		        </div>
-			    </div>
-				 </div>
-				 <div className="card">
-				 	<div className="card-image">
-
-					</div>
-					<div className="card-content">
-						<div className="title"> Project 1
+		        	</div>
 						</div>
-					</div>
-					<div className="content">
-						This is a project card where I will eventually load all the projects I have worked on that I want to display here.
-					</div>
+						<div style={{padding: "10vh"}}></div>
 				 </div>
 				 <div className="section-body">
 					 <form className="container box" action="https://usebasin.com/f/88688e738fdc" method="POST">
