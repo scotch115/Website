@@ -99,12 +99,12 @@ class App extends React.Component {
 			        <article className="tile is-child box">
 			          <p className="title">Languages I Speak</p>
 								<div className="has-text-centered" style={{padding: "10px"}}></div>
-			          HTML, CSS, JavaScript, Swift, C, Java
+			          HTML, CSS, JavaScript, Swift, C, Java, Dart
 			        </article>
 			        <article className="tile is-child box">
 			          <p className="title">Dev Tools</p>
 								<div className="has-text-centered" style={{padding: "10px"}}></div>
-			          Atom, GitHub, Node, Express, Firebase, Travis, React, Working Copy (on iOS), Xcode, Bulma, Terminal
+			          Atom, GitHub, Node, Express, Firebase, Flutter, Visual Studio Code, Travis, React, Working Copy (on iOS), Xcode, Bulma, Terminal
 			        </article>
 		        	</div>
 						</div>
