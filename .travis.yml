@@ -11,6 +11,7 @@ cache: npm
 before_deploy:
   - npm install firebase-tools -g
 script:
+  - npm install
   - npm run build
 deploy:
  provider: firebase
