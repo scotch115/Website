@@ -1,13 +1,29 @@
 import React from 'react';
+import './App.css';
 
 class App extends React.Component {
+
+	componentDidMount() {
+    window.addEventListener("scroll", this.resizeHeaderOnScroll);
+  }
+  resizeHeaderOnScroll() {
+    const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+      shrinkOn = 300,
+      headerEl = document.getElementById("header");
+
+    if (distanceY > shrinkOn) {
+      headerEl.classList.add("smaller");
+    } else {
+      headerEl.classList.remove("smaller");
+    }
+  }
 
 	render(){
 		return (
 	    <div className="App" style={{backgroundColor: "rgb(241, 241, 241)"}}>
 				<section className="hero is-large">
 			  <div className="hero-head"  style={{backgroundColor: "white"}}>
-			  <header className="navbar">
+			  <header className="navbar" style={{height: "20px", position: "fixed", right: "10px", marginTop: "20px"}}>
 			      <div className="container">
 			        <div className="navbar-brand">
 			          <div role="button" className="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" is-active="false">
@@ -68,18 +84,19 @@ class App extends React.Component {
 						</section>
 					</div>
 				 </div>
-			   <div className="hero-body"  style={{backgroundColor: "white"}}>
+			   <header id="header" style={{backgroundColor: "white", height: "500px"}}>
 			    <div className="container has-text-centered">
-			      <div className="title">
-			        <img className="JGlogo" src="images/JGlogo.png" alt="logo" width="170" height="190"/>
+					<div id="spacer"> </div>
+			      <div className="title" >
+			        <img className="JGlogo" id="logo" src="images/JGlogo.png" alt="logo" width="170" height="190"/>
 			      </div>
-			      <p className="subtitle">
+			      <p className="subtitle" id="subtitle">
 			        <strong> Jordan Gamache </strong>
 			      </p>
 			    </div>
-			   </div>
+			   </header>
 				 <div style={{height: "10vh"}}></div>
-				 <div className="container" style={{padding: "10px"}}>
+				 <div className="container">
 			    <div className="tile is-ancestor">
 			      <div className="tile is-vertical is-parent">
 			        <article className="tile is-child box">
