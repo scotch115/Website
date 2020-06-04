@@ -147,5 +147,12 @@
 		    	}
 		  	});
 			</script>
+			<script>
+				document.onvisibilitychange = function () {
+         		 document.visibilityState === "visible"
+		             ? (document.title = "Portfolio")
+		             : (document.title = "Psst! Come look at this!");
+		       };
+			</script>
  </body>
 </html>
