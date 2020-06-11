@@ -46,8 +46,10 @@ header {
 
 #project {
 	transition: 1s;
+	opacity: 0.7;
 }
 
 #project:hover {
 	transform: scale(1.1);
+	opacity: 1;
 }
