@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1402c58a7f649468933dd25a53ccf3db",
+    "revision": "37ceb4d4b6e20ebbd18aee527e136a87",
     "url": "/index.html"
   },
   {
-    "revision": "89023f8b517edc80491a",
+    "revision": "dc6502dfefac722f64fc",
     "url": "/static/css/main.dd8569de.chunk.css"
   },
   {
@@ -16,20 +16,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.5f67b28f.chunk.js.LICENSE"
   },
   {
-    "revision": "89023f8b517edc80491a",
-    "url": "/static/js/main.cd250cf4.chunk.js"
+    "revision": "dc6502dfefac722f64fc",
+    "url": "/static/js/main.6ad8f337.chunk.js"
   },
   {
     "revision": "d3e10cd3d7341a134395",
     "url": "/static/js/runtime-main.a40e5f47.js"
   },
   {
-    "revision": "7c9f77496b2b050129e297713b35b018",
-    "url": "/static/media/simply-sc.7c9f7749.png"
+    "revision": "4ac7b34b795fc8b36f716fcf38e050b7",
+    "url": "/static/media/simply-sc.4ac7b34b.png"
   },
   {
-    "revision": "a1cfe1448a2d2db7adefba64cecbcdda",
-    "url": "/static/media/snowcap.a1cfe144.png"
+    "revision": "371361508be82658227fc405207f3a43",
+    "url": "/static/media/snowcap.37136150.png"
   },
   {
     "revision": "a906f6e060ad18b99d858bef80787223",
