@@ -1,5 +1,10 @@
 import React from 'react';
 import './App.css';
+import Project from './Project';
+import sb from './simply-sc.png';
+import tg from './tg.png';
+import sc from './snowcap.png';
+import tn from './treknoise.png';
 
 class App extends React.Component {
 
@@ -125,7 +130,18 @@ class App extends React.Component {
 			        </article>
 		        	</div>
 						</div>
-						<div style={{padding: "10vh"}}></div>
+						<div className="tile is-child">
+							<article className="tile is-child container box">
+							<p className="title">Websites: </p>
+								<div className="columns">
+									<div className="column"><Project title="Simply Boba" link="https://simply-boba.web.app" img={sb} /></div>
+									<div className="column"><Project title="Trek Noise" link="https://trek-noise.web.app" img={tn}/></div>
+									<div className="column"><Project title="Tom Gamache Books" link="https://tomgamachebooks.web.app" img={tg}/></div>
+									<div className="column"><Project title="Snowcap Coffee" link="https://snowcap-coffee.web.app" img={sc}/></div>
+								</div>
+							</article>
+						</div>
+						<div style={{padding: "5vh"}}></div>
 				 </div>
 				 <div className="section-body">
 					 <form className="container box" action="https://usebasin.com/f/88688e738fdc" method="POST">

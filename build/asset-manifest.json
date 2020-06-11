@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/static/js/main.82fc5842.chunk.js",
-    "main.js.map": "/static/js/main.82fc5842.chunk.js.map",
+    "main.css": "/static/css/main.dd8569de.chunk.css",
+    "main.js": "/static/js/main.cd250cf4.chunk.js",
+    "main.js.map": "/static/js/main.cd250cf4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a40e5f47.js",
     "runtime-main.js.map": "/static/js/runtime-main.a40e5f47.js.map",
-    "static/js/2.200583e5.chunk.js": "/static/js/2.200583e5.chunk.js",
-    "static/js/2.200583e5.chunk.js.map": "/static/js/2.200583e5.chunk.js.map",
+    "static/js/2.5f67b28f.chunk.js": "/static/js/2.5f67b28f.chunk.js",
+    "static/js/2.5f67b28f.chunk.js.map": "/static/js/2.5f67b28f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8205f18c861921d97a9efcfbf08e65d6.js": "/precache-manifest.8205f18c861921d97a9efcfbf08e65d6.js",
+    "precache-manifest.c2a0425615a499232ec964b72cb4f845.js": "/precache-manifest.c2a0425615a499232ec964b72cb4f845.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.200583e5.chunk.js.LICENSE": "/static/js/2.200583e5.chunk.js.LICENSE"
+    "static/css/main.dd8569de.chunk.css.map": "/static/css/main.dd8569de.chunk.css.map",
+    "static/js/2.5f67b28f.chunk.js.LICENSE": "/static/js/2.5f67b28f.chunk.js.LICENSE",
+    "static/media/simply-sc.png": "/static/media/simply-sc.7c9f7749.png",
+    "static/media/snowcap.png": "/static/media/snowcap.a1cfe144.png",
+    "static/media/tg.png": "/static/media/tg.a906f6e0.png",
+    "static/media/treknoise.png": "/static/media/treknoise.f561c1f2.png"
   },
   "entrypoints": [
     "static/js/runtime-main.a40e5f47.js",
-    "static/js/2.200583e5.chunk.js",
-    "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.82fc5842.chunk.js"
+    "static/js/2.5f67b28f.chunk.js",
+    "static/css/main.dd8569de.chunk.css",
+    "static/js/main.cd250cf4.chunk.js"
   ]
 }

@@ -43,3 +43,11 @@ header {
 	padding-bottom: 10px;
 	transition: ease-in-out;
 }
+
+#project {
+	transition: 1s;
+}
+
+#project:hover {
+	transform: scale(1.1);
+}
