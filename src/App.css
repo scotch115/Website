@@ -53,3 +53,36 @@ header {
 	transform: scale(1.1);
 	opacity: 1;
 }
+
+#card1 {
+	animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#card2 {
+	animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#card3 {
+	animation: fadeInAnimation ease 7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#card4 {
+	animation: fadeInAnimation ease 9s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+	 0% {
+			 opacity: 0;
+	 }
+	 100% {
+			 opacity: 1;
+	 }
+}

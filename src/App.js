@@ -97,7 +97,7 @@ class App extends React.Component {
 			   <header id="header" style={{backgroundColor: "white", height: "500px"}}>
 			    <div className="container has-text-centered">
 					<div id="spacer"> </div>
-			      <div className="title" >
+			      <div className="title">
 			        <img className="JGlogo" id="logo" src="images/JGlogo.png" alt="logo" width="170" height="190"/>
 			      </div>
 			      <p className="subtitle" id="subtitle">
@@ -109,14 +109,14 @@ class App extends React.Component {
 				 <div className="container">
 			    <div className="tile is-ancestor">
 			      <div className="tile is-vertical is-6 is-parent">
-			        <article className="tile is-child box">
+			        <article className="tile is-child box" id="card1">
 			        <p className="title">Hi there! <span role="img" aria-label="wave">👋🏻</span></p>
 							<img src={hello} alt="hello" style={{position: "relative", float: "right", top: "0", height: "250px"}}></img>
 							<p>
 			        	I'm Jordan Gamache, a freelance web developer with a passion for front end UI/UX and JavaScript frameworks.
 							</p>
 							</article>
-			        <article className="tile is-child box" style={{}}>
+			        <article className="tile is-child box" id="card2">
 			          <p className="title">Experience</p>
 								<img src={wireframe} alt="wireframe" style={{position: "relative", float: "right", top: "0", height: "200px"}}></img>
 								<div className="has-text-centered" style={{padding: "10px"}}></div>
@@ -124,13 +124,13 @@ class App extends React.Component {
 			        </article>
 							</div>
 							<div className="tile is-6 is-vertical is-parent">
-			        <article className="tile is-child box">
+			        <article className="tile is-child box" id="card3">
 			          <p className="title">Languages</p>
 								<img src={webApp} alt="webApp" style={{position: "relative", top: "0", height: "200px", float: "right"}}></img>
 								<div className="has-text-centered" style={{padding: "10px"}}></div>
 			          HTML, CSS, JavaScript, Swift, C, Java, Dart
 			        </article>
-			        <article className="tile is-child box">
+			        <article className="tile is-child box" id="card4">
 			          <p className="title">Development Tools</p>
 								<img src={developer} alt="developer" style={{position: "relative", top: "0", height: "200px", float: "right	"}}></img>
 								<div className="has-text-centered" style={{padding: "10px"}}></div>
@@ -140,7 +140,7 @@ class App extends React.Component {
 						</div>
 						<div style={{padding: "40px"}}></div>
 						<div className="tile is-child">
-							<article className="tile is-child container box">
+							<article className="tile is-child container box" id="card">
 							<p className="title">Projects</p>
 								<div className="columns">
 								<div className="column"><Project title="Snowcap Coffee" link="https://snowcap-coffee.web.app" img={sc}/></div>

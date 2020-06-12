@@ -2,15 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import fof from './fof';
 import * as serviceWorker from './serviceWorker';
-import { Route, BrowserRouter as Router } from 'react-router-dom';
+import { Route, BrowserRouter, Switch } from 'react-router-dom';
+
 
 const routing = (
-	<Router>
+	<BrowserRouter>
 		<div>
-			<Route exact path="/" component={App} />
+			<Switch>
+				<Route exact path="/" component={App} />
+				<Route component={fof} />
+			</Switch>
 		</div>
-	</Router>
+	</BrowserRouter>
 )
 
 
