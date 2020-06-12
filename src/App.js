@@ -6,6 +6,10 @@ import tg from './tg.png';
 import sc from './snowcap.png';
 import tn from './treknoise.png';
 import show from './showcase-sc.png';
+import wireframe from './wireframe.png';
+import webApp from './web_app.png';
+import developer from './developer.png';
+import hello from './hello.png';
 
 class App extends React.Component {
 
@@ -49,7 +53,7 @@ class App extends React.Component {
 									</button>
 								</span>
 			            <span className="navbar-item">
-			              <a className="button is-success" href="files/resume.pdf" download>
+			              <a className="button is-success" href="files/JordanGamacheResume.pdf" download>
 											<span className="icon">
 												<i className="fa fa-file"></i>
 											</span>
@@ -104,38 +108,42 @@ class App extends React.Component {
 				 <div style={{height: "10vh"}}></div>
 				 <div className="container">
 			    <div className="tile is-ancestor">
-			      <div className="tile is-vertical is-parent">
+			      <div className="tile is-vertical is-6 is-parent">
 			        <article className="tile is-child box">
 			        <p className="title">Hi there! <span role="img" aria-label="wave">👋🏻</span></p>
-			        I'm Jordan Gamache, a freelance web developer with a passion for front end UI/UX and JavaScript frameworks.
-							<figure className="image container is-256x256">
-								<img src="images/profilepic.png" alt="profilePicture"/>
-							</figure>
+							<img src={hello} alt="hello" style={{position: "relative", float: "right", top: "0", height: "250px"}}></img>
+							<p>
+			        	I'm Jordan Gamache, a freelance web developer with a passion for front end UI/UX and JavaScript frameworks.
+							</p>
 							</article>
-						</div>
-						<div className="tile is-vertical is-parent">
-			        <article className="tile is-child box">
+			        <article className="tile is-child box" style={{}}>
 			          <p className="title">Experience</p>
+								<img src={wireframe} alt="wireframe" style={{position: "relative", float: "right", top: "0", height: "200px"}}></img>
 								<div className="has-text-centered" style={{padding: "10px"}}></div>
 			          I am a Senior at the University of Central Florida studying Interdisciplinary Studies in Computational Science and Commerce, with a Minor in National Intelligence and Security. I am beginning to work as a freelance web developer, looking to bring businesses a beautiful, clean website to reach more customers, and keep them. Check out my resumé or send me an email and let's talk!
 			        </article>
+							</div>
+							<div className="tile is-6 is-vertical is-parent">
 			        <article className="tile is-child box">
-			          <p className="title">Languages I Speak</p>
+			          <p className="title">Languages</p>
+								<img src={webApp} alt="webApp" style={{position: "relative", top: "0", height: "200px", float: "right"}}></img>
 								<div className="has-text-centered" style={{padding: "10px"}}></div>
 			          HTML, CSS, JavaScript, Swift, C, Java, Dart
 			        </article>
 			        <article className="tile is-child box">
-			          <p className="title">Dev Tools</p>
+			          <p className="title">Development Tools</p>
+								<img src={developer} alt="developer" style={{position: "relative", top: "0", height: "200px", float: "right	"}}></img>
 								<div className="has-text-centered" style={{padding: "10px"}}></div>
 			          Atom, GitHub, Node, Express, Firebase, Flutter, Visual Studio Code, Travis, React, Working Copy (on iOS), Xcode, Bulma, Terminal
 			        </article>
 		        	</div>
 						</div>
+						<div style={{padding: "40px"}}></div>
 						<div className="tile is-child">
 							<article className="tile is-child container box">
-							<p className="title">Websites: </p>
+							<p className="title">Projects</p>
 								<div className="columns">
-									<div className="column"><Project title="Snowcap Coffee" link="https://snowcap-coffee.web.app" img={sc}/></div>
+								<div className="column"><Project title="Snowcap Coffee" link="https://snowcap-coffee.web.app" img={sc}/></div>
 									<div className="column"><Project title="Simply Boba" link="https://simply-boba.web.app" img={sb} /></div>
 									<div className="column"><Project title="Trek Noise" link="https://trek-noise.web.app" img={tn}/></div>
 									<div className="column"><Project title="Daily - To-Do App" link="https://showcase-daily.web.app" img={show}/></div>
@@ -165,7 +173,7 @@ class App extends React.Component {
 						    </div>
 						    <div className="field">
 						      <p className="control is-expanded has-icons-left has-icons-right">
-						        <input className="input is-success" type="email" name="email" placeholder="Email" ></input>
+						        <input className="input is-link" type="email" name="email" placeholder="Email" ></input>
 						        <span className="icon is-small is-left">
 						          <i className="fa fa-envelope"></i>
 						        </span>
@@ -212,7 +220,7 @@ class App extends React.Component {
 						  <div className="field-body">
 						    <div className="field">
 						      <div className="control">
-						        <button type="submit" className="button is-success">
+						        <button type="submit" className="button is-link">
 						          Send message
 						        </button>
 						      </div>
