@@ -61,19 +61,19 @@ header {
 }
 
 #card2 {
-	animation: fadeInAnimation ease 5s;
+	animation: fadeInAnimation ease 4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
 #card3 {
-	animation: fadeInAnimation ease 7s;
+	animation: fadeInAnimation ease 5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
 #card4 {
-	animation: fadeInAnimation ease 9s;
+	animation: fadeInAnimation ease 6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
