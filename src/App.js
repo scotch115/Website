@@ -10,6 +10,7 @@ import wireframe from './wireframe.png';
 import webApp from './web_app.png';
 import developer from './developer.png';
 import hello from './hello.png';
+import munchShow from './munch.png';
 
 class App extends React.Component {
 
@@ -142,11 +143,12 @@ class App extends React.Component {
 						<div className="tile is-child">
 							<article className="tile is-child container box" id="card">
 							<p className="title">Projects</p>
-								<div className="columns">
+								<div className="columns is-multiline">
 								<div className="column"><Project title="Snowcap Coffee" link="https://snowcap-coffee.web.app" img={sc}/></div>
 									<div className="column"><Project title="Simply Boba" link="https://simply-boba.web.app" img={sb} /></div>
 									<div className="column"><Project title="Trek Noise" link="https://trek-noise.web.app" img={tn}/></div>
 									<div className="column"><Project title="Daily - To-Do App" link="https://showcase-daily.web.app" img={show}/></div>
+									<div className="column"><Project title="Munch - Restaurant App" link="https://munchshowcase.web.app" img={munchShow}/></div>
 									<div className="column"><Project title="Tom Gamache Books" link="https://tomgamachebooks.web.app" img={tg}/></div>
 								</div>
 							</article>
