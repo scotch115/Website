@@ -135,7 +135,7 @@ class App extends React.Component {
 			          <p className="title">Development Tools</p>
 								<img src={developer} alt="developer" style={{position: "relative", top: "0", height: "200px", float: "right	"}}></img>
 								<div className="has-text-centered" style={{padding: "10px"}}></div>
-			          Atom, GitHub, Node, Express, Firebase, Flutter, Visual Studio Code, Travis, React, Working Copy (on iOS), Xcode, Bulma, Terminal
+			          Atom, GitHub, NodeJS, ExpressJS, Firebase, Flutter, Visual Studio Code, Travis, ReactJS, EmberJS, Working Copy (on iOS), Xcode, Bulma, Terminal
 			        </article>
 		        	</div>
 						</div>
