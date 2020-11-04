@@ -11,6 +11,8 @@ import webApp from './web_app.png';
 import developer from './developer.png';
 import hello from './hello.png';
 import munchShow from './munch.png';
+import rocket from './rocket_project.png';
+import flightCPU from './flightComputer.PNG';
 
 class App extends React.Component {
 
@@ -112,14 +114,14 @@ class App extends React.Component {
 			      <div className="tile is-vertical is-6 is-parent">
 			        <article className="tile is-child box" id="card1">
 			        <p className="title">Hi there! <span role="img" aria-label="wave">👋🏻</span></p>
-							<img src={hello} alt="hello" style={{position: "relative", float: "right", top: "0", height: "250px"}}></img>
+							<img src={hello} alt="hello" style={{position: "relative", float: "right", top: "0", height: "45vmin"}}></img>
 							<p>
 			        	I'm Jordan Gamache, a freelance web developer with a passion for front end UI/UX and JavaScript frameworks.
 							</p>
 							</article>
 			        <article className="tile is-child box" id="card2">
 			          <p className="title">Experience</p>
-								<img src={wireframe} alt="wireframe" style={{position: "relative", float: "right", top: "0", height: "200px"}}></img>
+								<img src={wireframe} alt="wireframe" style={{position: "relative", float: "right", top: "0", height: "40vmin"}}></img>
 								<div className="has-text-centered" style={{padding: "10px"}}></div>
 			          I am a Senior at the University of Central Florida studying Interdisciplinary Studies in Computational Science and Commerce, with a Minor in National Intelligence and Security. I am beginning to work as a freelance web developer, looking to bring businesses a beautiful, clean website to reach more customers, and keep them. Check out my resumé or send me an email and let's talk!
 			        </article>
@@ -127,15 +129,15 @@ class App extends React.Component {
 							<div className="tile is-6 is-vertical is-parent">
 			        <article className="tile is-child box" id="card3">
 			          <p className="title">Languages</p>
-								<img src={webApp} alt="webApp" style={{position: "relative", top: "0", height: "200px", float: "right"}}></img>
+								<img src={webApp} alt="webApp" style={{position: "relative", top: "0", height: "40vmin", float: "right"}}></img>
 								<div className="has-text-centered" style={{padding: "10px"}}></div>
 			          HTML, CSS, JavaScript, Swift, C, Java, Dart
 			        </article>
 			        <article className="tile is-child box" id="card4">
 			          <p className="title">Development Tools</p>
-								<img src={developer} alt="developer" style={{position: "relative", top: "0", height: "200px", float: "right	"}}></img>
+								<img src={developer} alt="developer" style={{position: "relative", top: "0", height: "40vmin", float: "right	"}}></img>
 								<div className="has-text-centered" style={{padding: "10px"}}></div>
-			          Atom, GitHub, NodeJS, ExpressJS, Firebase, Flutter, Visual Studio Code, Travis, ReactJS, EmberJS, Working Copy (on iOS), Xcode, Bulma, Terminal
+			          Atom, GitHub, NodeJS, ExpressJS, Firebase, Flutter, Visual Studio Code, Travis, ReactJS, EmberJS, Working Copy (on iOS), Xcode, Bulma, Terminal, Arduino (C++)
 			        </article>
 		        	</div>
 						</div>
@@ -154,6 +156,16 @@ class App extends React.Component {
 							</article>
 						</div>
 						<div style={{padding: "5vh"}}></div>
+				 </div>
+				 <div className="tile is-child">
+					 <div className="container box">
+					 <p className="title">Hobby Projects</p>
+						 <div className="columns">
+						 <img src={rocket} style={{height: "200px"}} alt="Rocket"></img>
+						 <div className="column is-8" ><Project title="Arduino Flight Computer" link="https://github.com/scotch115/Arduino-Telemetry.git" img={flightCPU} /></div>
+						 </div>
+					 </div>
+					 <div style={{padding: "2vh"}}></div>
 				 </div>
 				 <div className="section-body">
 					 <form className="container box" action="https://usebasin.com/f/88688e738fdc" method="POST">
