@@ -13,6 +13,7 @@ import hello from './hello.png';
 import munchShow from './munch.png';
 import rocket from './rocket_project.png';
 import flightCPU from './flightComputer.PNG';
+import projectBuild from './build.png';
 
 class App extends React.Component {
 
@@ -146,6 +147,7 @@ class App extends React.Component {
 							<article className="tile is-child container box" id="card">
 							<p className="title">Projects</p>
 								<div className="columns is-multiline">
+								<img src={projectBuild} style={{height: "120px"}} alt="Factory"></img>
 								<div className="column"><Project title="Snowcap Coffee" link="https://snowcap-coffee.web.app" img={sc}/></div>
 									<div className="column"><Project title="Simply Boba" link="https://simply-boba.web.app" img={sb} /></div>
 									<div className="column"><Project title="Trek Noise" link="https://trek-noise.web.app" img={tn}/></div>
