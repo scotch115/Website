@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import fof from './fof';
-import IDS from './IDS';
 import * as serviceWorker from './serviceWorker';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 
@@ -13,7 +12,6 @@ const routing = (
 		<div>
 			<Switch>
 				<Route exact path="/" component={App} />
-				<Route path="/IDS" component={IDS} />
 				<Route component={fof} />
 			</Switch>
 		</div>
