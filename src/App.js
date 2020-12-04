@@ -115,7 +115,7 @@ class App extends React.Component {
 			      <div className="tile is-vertical is-6 is-parent">
 			        <article className="tile is-child box" id="card1">
 			        <p className="title">Hi there! <span role="img" aria-label="wave">👋🏻</span></p>
-							<img src={hello} alt="hello" style={{position: "relative", float: "right", top: "0", height: "45vmin"}}></img>
+							<img src={hello} alt="hello" style={{position: "relative", float: "right", top: "0", height: "40vmin"}}></img>
 							<p>
 			        	I'm Jordan Gamache, a freelance web developer with a passion for front end UI/UX and JavaScript frameworks.
 							</p>
