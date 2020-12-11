@@ -124,7 +124,7 @@ class App extends React.Component {
 			          <p className="title">Experience</p>
 								<img src={wireframe} alt="wireframe" style={{position: "relative", float: "right", top: "0", height: "40vmin"}}></img>
 								<div className="has-text-centered" style={{padding: "10px"}}></div>
-			          I am a Senior at the University of Central Florida studying Interdisciplinary Studies in Computational Science and Commerce, with a Minor in National Intelligence and Security. I am beginning to work as a freelance web developer, looking to bring businesses a beautiful, clean website to reach more customers, and keep them. Check out my resumé or send me an email and let's talk!
+			          I am a graduate from the University of Central Florida where I studied Interdisciplinary Studies in Computational Science and Commerce, and Minored in National Intelligence and Security. I have some experience working as a freelance web developer, and am looking to bring businesses beautiful, clean websites or apps to reach more customers, and keep them. Check out my resumé or send me an email and let's talk!
 			        </article>
 							</div>
 							<div className="tile is-6 is-vertical is-parent">
