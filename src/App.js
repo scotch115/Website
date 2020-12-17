@@ -117,7 +117,7 @@ class App extends React.Component {
 			        <p className="title">Hi there! <span role="img" aria-label="wave">👋🏻</span></p>
 							<img src={hello} alt="hello" style={{position: "relative", float: "right", top: "0", height: "40vmin"}}></img>
 							<p>
-			        	I'm Jordan Gamache, a freelance web developer with a passion for front end UI/UX and JavaScript frameworks.
+			        	I'm Jordan Gamache, a software developer with a passion for front end UI/UX, JavaScript frameworks like React and Angular, and mobile applications (for iOS AND Android!).
 							</p>
 							</article>
 			        <article className="tile is-child box" id="card2">
