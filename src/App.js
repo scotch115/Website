@@ -14,6 +14,7 @@ import munchShow from './munch.png';
 import rocket from './rocket_project.png';
 import flightCPU from './flightComputer.PNG';
 import projectBuild from './build.png';
+import AddToHomescreen from 'react-add-to-homescreen';
 
 class App extends React.Component {
 
@@ -31,6 +32,12 @@ class App extends React.Component {
       headerEl.classList.remove("smaller");
     }
   }
+
+  handleAddToHomescreenClick = () => {
+    alert(`
+      1. Open Share menu
+      2. Tap on "Add to Home Screen" button`);
+  };
 
 	render(){
 		return (
@@ -257,6 +264,7 @@ class App extends React.Component {
 					</div>
 			   </footer>
 			  </section>
+			  <AddToHomescreen onAddToHomescreenClick={this.handleAddToHomescreenClick} />
 			</div>
 	  );
 	}
