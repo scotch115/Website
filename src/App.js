@@ -15,6 +15,8 @@ import rocket from './rocket_project.png';
 import flightCPU from './flightComputer.PNG';
 import projectBuild from './build.png';
 import AddToHomescreen from 'react-add-to-homescreen';
+import appImage from './appImage.jpeg';
+import journal from './journalImage.png';
 
 class App extends React.Component {
 
@@ -154,13 +156,14 @@ class App extends React.Component {
 							<article className="tile is-child container box" id="card">
 							<p className="title">Projects</p>
 								<div className="columns is-multiline">
-								<img src={projectBuild} style={{height: "120px"}} alt="Factory"></img>
+								<img src={projectBuild} style={{height: "80px"}} alt="Factory"></img>
 								<div className="column"><Project title="Snowcap Coffee" link="https://snowcap-coffee.web.app" img={sc}/></div>
 									<div className="column"><Project title="Simply Boba" link="https://simply-boba.web.app" img={sb} /></div>
 									<div className="column"><Project title="Trek Noise" link="https://trek-noise.web.app" img={tn}/></div>
 									<div className="column"><Project title="Daily - To-Do App" link="https://showcase-daily.web.app" img={show}/></div>
 									<div className="column"><Project title="Munch - Restaurant App" link="https://munchshowcase.web.app" img={munchShow}/></div>
 									<div className="column"><Project title="Tom Gamache Books" link="https://tomgamachebooks.web.app" img={tg}/></div>
+									<div className="column"><Project title="Quill Journal Web" link="https://react-journal-cf451.web.app" img={journal}/></div>
 								</div>
 							</article>
 						</div>
@@ -171,7 +174,8 @@ class App extends React.Component {
 					 <p className="title">Hobby Projects</p>
 						 <div className="columns">
 						 <img src={rocket} style={{height: "200px"}} alt="Rocket"></img>
-						 <div className="column is-8" ><Project title="Arduino Flight Computer" link="https://github.com/scotch115/Arduino-Telemetry.git" img={flightCPU} /></div>
+						 <div className="column is-6" ><Project title="Arduino Flight Computer" link="https://github.com/scotch115/Arduino-Telemetry.git" img={flightCPU} /></div>
+						 <div className="column is-3"><Project title="Quill Journal App" link="https://apps.apple.com/us/app/quill-journal/id1552008916?itscg=30200&amp;itsct=apps_box" img={appImage}/></div>
 						 </div>
 					 </div>
 					 <div style={{padding: "2vh"}}></div>
