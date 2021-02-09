@@ -163,7 +163,7 @@ class App extends React.Component {
 									<div className="column"><Project title="Daily - To-Do App" link="https://showcase-daily.web.app" img={show}/></div>
 									<div className="column"><Project title="Munch - Restaurant App" link="https://munchshowcase.web.app" img={munchShow}/></div>
 									<div className="column"><Project title="Tom Gamache Books" link="https://tomgamachebooks.web.app" img={tg}/></div>
-									<div className="column"><Project title="Quill Journal Web" link="https://react-journal-cf451.web.app" img={journal}/></div>
+									<div className="column"><Project title="Quill Journal" link="https://quill-journal.web.app" img={journal}/></div>
 								</div>
 							</article>
 						</div>
@@ -175,7 +175,6 @@ class App extends React.Component {
 						 <div className="columns">
 						 <img src={rocket} style={{height: "200px"}} alt="Rocket"></img>
 						 <div className="column is-6" ><Project title="Arduino Flight Computer" link="https://github.com/scotch115/Arduino-Telemetry.git" img={flightCPU} /></div>
-						 <div className="column is-3"><Project title="Quill Journal App" link="https://apps.apple.com/us/app/quill-journal/id1552008916?itscg=30200&amp;itsct=apps_box" img={appImage}/></div>
 						 </div>
 					 </div>
 					 <div style={{padding: "2vh"}}></div>
