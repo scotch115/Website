@@ -126,14 +126,14 @@ class App extends React.Component {
 			        <p className="title">Hi there! <span role="img" aria-label="wave">👋🏻</span></p>
 							<img src={hello} alt="hello" style={{position: "relative", float: "right", top: "0", height: "40vmin"}}></img>
 							<p>
-			        	I'm Jordan Gamache, a software developer with a passion for front end UI/UX, JavaScript frameworks like React and Angular, and mobile applications (for iOS AND Android!).
+			        	I'm Jordan Gamache, a software engineer with a passion for front end UI/UX design, building websites in JavaScript with frameworks like React, and mobile applications using Dart.
 							</p>
 							</article>
 			        <article className="tile is-child box" id="card2">
 			          <p className="title">Experience</p>
 								<img src={wireframe} alt="wireframe" style={{position: "relative", float: "right", top: "0", height: "40vmin"}}></img>
 								<div className="has-text-centered" style={{padding: "10px"}}></div>
-			          I am a graduate from the University of Central Florida where I studied Interdisciplinary Studies in Computational Science and Commerce, and Minored in National Intelligence and Security. I have some experience working as a freelance web developer, and am looking to bring businesses beautiful, clean websites or apps to reach more customers, and keep them. Check out my resumé or send me an email and let's talk!
+			          I am a graduate from the University of Central Florida where I studied Interdisciplinary Studies in Computational Science and Commerce, and Minored in National Intelligence and Security. I currently work for Itential as a software engineer where I build and maintain UI components (and some backend operations) for <a href="https://www.itential.com/products/automation-platform/" style={{textDecoration: 'none'}}>Itential's network Automation Platform</a>.
 			        </article>
 							</div>
 							<div className="tile is-6 is-vertical is-parent">
@@ -141,13 +141,13 @@ class App extends React.Component {
 			          <p className="title">Languages</p>
 								<img src={webApp} alt="webApp" style={{position: "relative", top: "0", height: "40vmin", float: "right"}}></img>
 								<div className="has-text-centered" style={{padding: "10px"}}></div>
-			          HTML, CSS, JavaScript, Swift, C, Java, Dart
+			          I primarily work with the "standard" web development programming languages such as HTML, CSS, and JavaScript, but I also have experience working with Swift, C, Java, and recently Dart. I enjoy learning new skills, especially when it comes to software and engineering, and plan to continue learning new, applicable languages.
 			        </article>
 			        <article className="tile is-child box" id="card4">
 			          <p className="title">Development Tools</p>
 								<img src={developer} alt="developer" style={{position: "relative", top: "0", height: "40vmin", float: "right	"}}></img>
 								<div className="has-text-centered" style={{padding: "10px"}}></div>
-			          Atom, GitHub, NodeJS, ExpressJS, Firebase, Flutter, Visual Studio Code, Travis, ReactJS, EmberJS, Working Copy (on iOS), Xcode, Bulma, Terminal, Arduino (C++)
+			          Atom, GitHub, NodeJS, ExpressJS, Firebase, Flutter, Visual Studio Code, Travis, ReactJS, Xcode, Bulma/Bootstrap, Terminal, Arduino (C++), GitLab, Jira, Slack, Docker
 			        </article>
 		        	</div>
 						</div>
