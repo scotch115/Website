@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import fof from './fof';
-import Privacy from './Privacy';
-import * as serviceWorker from './serviceWorker';
+import App from './components/App';
+import fof from './components/fof';
+import QuillPrivacy from './components/Privacy';
+import * as serviceWorker from './tests/serviceWorker';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 
 
@@ -13,7 +13,7 @@ const routing = (
 		<div>
 			<Switch>
 				<Route exact path="/" component={App} />
-				<Route exact path="/privacy" component={Privacy} />
+				<Route exact path="/privacy" component={QuillPrivacy} />
 				<Route component={fof} />
 			</Switch>
 		</div>

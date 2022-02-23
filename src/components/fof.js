@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import missing from './page_not_found.png';
+import missing from '../images/page_not_found.png';
 
 class fof extends Component {
 

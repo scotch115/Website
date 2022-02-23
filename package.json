@@ -9,11 +9,15 @@
     "express": "^4.17.1",
     "node-static": "0.7.11",
     "nodemailer": "^6.4.2",
+    "primeflex": "^2.0.0",
+    "primeicons": "^5.0.0",
+    "primereact": "^6.6.0",
     "react": "^16.12.0",
     "react-add-to-homescreen": "^1.1.0",
     "react-dom": "^16.12.0",
     "react-router-dom": "5.2.0",
     "react-scripts": "3.3.0",
+    "react-transition-group": "^4.4.2",
     "styled-components": "^4.4.1"
   },
   "scripts": {

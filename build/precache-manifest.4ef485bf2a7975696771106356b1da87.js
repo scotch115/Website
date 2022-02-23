@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "aebe649e47a75bfdb34c84b91c0e9e0e",
+    "revision": "5319a26310f5dd7d4bd5389f7bb80473",
     "url": "/index.html"
   },
   {
-    "revision": "ff5179ccdb5adfce0f31",
-    "url": "/static/css/main.3a5c4aca.chunk.css"
+    "revision": "6cd3e1a1bde43e621d8a",
+    "url": "/static/css/2.bdb7c931.chunk.css"
   },
   {
-    "revision": "153f06833e9cef612d9d",
-    "url": "/static/js/2.3930200f.chunk.js"
+    "revision": "3ac7d47f34ff9769ff55",
+    "url": "/static/css/main.c4462b67.chunk.css"
+  },
+  {
+    "revision": "6cd3e1a1bde43e621d8a",
+    "url": "/static/js/2.a6cc5fc8.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "/static/js/2.3930200f.chunk.js.LICENSE"
+    "url": "/static/js/2.a6cc5fc8.chunk.js.LICENSE"
   },
   {
-    "revision": "ff5179ccdb5adfce0f31",
-    "url": "/static/js/main.7a03655f.chunk.js"
+    "revision": "3ac7d47f34ff9769ff55",
+    "url": "/static/js/main.26f7db1f.chunk.js"
   },
   {
     "revision": "d3e10cd3d7341a134395",
     "url": "/static/js/runtime-main.a40e5f47.js"
-  },
-  {
-    "revision": "f84a64eb7adfdc4fbfc831fe48622dfb",
-    "url": "/static/media/appImage.f84a64eb.jpeg"
   },
   {
     "revision": "dd572d2f5e493baf96592b42b90d6c35",
@@ -54,6 +54,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d85a51f453c53aadb90307e880b6367d",
     "url": "/static/media/page_not_found.d85a51f4.png"
+  },
+  {
+    "revision": "64b5d470af63a67aa9b9d3e8a866a35e",
+    "url": "/static/media/primeicons.64b5d470.svg"
+  },
+  {
+    "revision": "943c3597cd33be56d53df0d1982fa8ff",
+    "url": "/static/media/primeicons.943c3597.woff"
+  },
+  {
+    "revision": "b29a888ff7f07091c7e08eb0d991e221",
+    "url": "/static/media/primeicons.b29a888f.ttf"
+  },
+  {
+    "revision": "e01fd4133bac49cd2ea07ad6f7c45695",
+    "url": "/static/media/primeicons.e01fd413.eot"
   },
   {
     "revision": "a94fa9797cbe9122dee41bc189b1c6ea",
