@@ -7,7 +7,6 @@ import { SpeedDial } from 'primereact/speeddial';
 import { Dialog } from 'primereact/dialog';
 import { Toast } from 'primereact/toast';
 import { InputText } from 'primereact/inputtext';
-import { InputTextarea } from 'primereact/inputtextarea';
 import { Button } from 'primereact/button';
 
 // PrimeReact Styles
@@ -147,7 +146,7 @@ class App extends React.Component {
 				position={"top-left"}
 			/>
 			<div className="hero is-medium">
-				<div style={{ position: 'absolute', top: '10px', right: '80px'}}>
+				<div style={{ position: 'absolute', top: '20px', right: '70px'}}>
 					<SpeedDial
 						model={menuItems}
 						type="quarter-circle"
@@ -246,7 +245,7 @@ class App extends React.Component {
 								Want to work together?
 							</div><div className="field is-horizontal">
 									<div className="field-label is-normal">
-										<label className="label">From</label>
+										{/* <label className="label">From</label> */}
 									</div>
 									<div className="field-body">
 										<div className="field" style={{ width: '100%' }}>
@@ -267,6 +266,7 @@ class App extends React.Component {
 												<label htmlFor='name'> Name </label>
 											</span>
 										</div>
+										<div style={{ height: '3vw' }} />
 										<div className="field" style={{ width: '100%' }}>
 											<span className='p-float-label p-input-icon-left' style={{ width: '100%' }}>
 												<i className='pi pi-envelope' />
@@ -285,14 +285,15 @@ class App extends React.Component {
 											</span>
 										</div>
 									</div>
+									<div style={{ height: '3vw' }} />
 								</div><div className="field is-horizontal">
 									<div className="field-label is-normal">
-										<label className="label">Subject</label>
+										{/* <label className="label">Subject</label> */}
 									</div>
 									<div className="field-body">
 										<div className="field" style={{ width: '100%' }}>
 											<span className='p-float-label p-input-icon-left' style={{ width: 'inherit' }}>
-												<i className='pi pi-envelope' />
+												<i className='pi pi-id-card' />
 												<InputText
 													id='subject'
 													name="subject"
@@ -308,25 +309,27 @@ class App extends React.Component {
 											</span>
 										</div>
 									</div>
+									<div style={{ height: '3vw' }} />
 								</div><div className="field is-horizontal">
 									<div className="field-label is-normal">
-										<label className="label">Message</label>
+										{/* <label className="label">Message</label> */}
 									</div>
 									<div className="field-body">
 										<div className="field" style={{ width: '100%' }}>
-											<span className='p-input-icon-left' style={{ width: '100%' }}>
+											<span className='p-float-label p-input-icon-left' style={{ width: '100%' }}>
 												<i className='pi pi-pencil' />
-												<InputTextarea
+												<InputText
 													id='fieldMsg'
 													name="message"
 													style={{ width: 'inherit' }}
-													rows={5}
+													className="p-inputtext-lg p-d-block"
 													value={this.state.fieldMsg}
 													onChange={(e) => {
 														this.setState({
 															fieldMsg: e.target.value,
 														})
 													}} />
+													<label htmlFor='messge'> Message </label>
 											</span>
 											<p className="help">
 												*This field is required
