@@ -2,32 +2,32 @@
 	padding: 10px;
 }
 
-header.smaller {
+#header.smaller {
 	position: sticky;
 	top: 0vh;
 	z-index: 1;
-	width: 100vw;
+	width: 100%;
 	height: 120px !important;
 	margin-bottom: 400px;
 }
 
-header.smaller #logo {
+#header.smaller #logo {
 	width: 110px;
 	height: 105px;
 	position: fixed;
-	left: 5px;
-	top: 5px;
+	left: 12px;
+	top: 10px;
 }
 
-header.smaller #subtitle {
+#header.smaller #subtitle {
 	font-size: 20px;
 	position: fixed;
 	left: 130px;
 	top: 62px;
 }
 
-header.smaller #spacer {
-	padding: 0px;
+#header.smaller #spacer {
+	padding-left: 20px;
 }
 
 #spacer {

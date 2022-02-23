@@ -32,6 +32,7 @@ import rocket from '../images/rocket_project.png';
 import flightCPU from '../images/flightComputer.PNG';
 import projectBuild from '../images/build.png';
 import journal from '../images/journalImage.png';
+import es from '../images/embedabble-site.png';
 
 class App extends React.Component {
 	constructor(props) {
@@ -205,7 +206,7 @@ class App extends React.Component {
 								>
 								<img className="cardImage" src={developer} alt="developer"></img>
 								<div className="has-text-centered" style={{padding: "10px"}}></div>
-								Atom, GitHub, NodeJS, ExpressJS, Firebase, Flutter, Visual Studio Code, Travis, ReactJS, Xcode, Bulma/Bootstrap, Terminal, Arduino (C++), GitLab, Jira, Slack, Docker
+								JavaScript, React (and Hooks), Node.JS, PrimeReact, CSS, npm, yarn, MongoDB, Express.JS, Webpack, Rollup, AJV, JSON, C, Swift/SwiftUI, HTML, Java, Dart, Ember.JS, Firebase, Flutter, C++ (Microprocessor Development), Git, GitHub, GitLab, Slack, VS Code, Xcode, Bootstrap, Bulma
 							</Card>
 						</div>
 					</div>
@@ -218,11 +219,12 @@ class App extends React.Component {
 							<img src={projectBuild} style={{height: "80px"}} alt="Factory"></img>
 							<div className="column"><Project title="Snowcap Coffee" link="https://snowcap-coffee.web.app" img={sc}/></div>
 								<div className="column"><Project title="Simply Boba" link="https://simply-boba.web.app" img={sb} /></div>
-								<div className="column"><Project title="Trek Noise" link="https://trek-noise.web.app" img={tn}/></div>
+								<div className="column"><Project title="Embeddable Sites" link="https://embedabble-site.web.app" img={es} /></div>
 								<div className="column"><Project title="Daily - To-Do App" link="https://showcase-daily.web.app" img={show}/></div>
-								<div className="column"><Project title="Munch - Restaurant App" link="https://munchshowcase.web.app" img={munchShow}/></div>
-								<div className="column"><Project title="Tom Gamache Books" link="https://tomgamachebooks.web.app" img={tg}/></div>
 								<div className="column"><Project title="Quill Journal" link="https://quill-journal.web.app" img={journal}/></div>
+								<div className="column"><Project title="Munch - Restaurant App" link="https://munchshowcase.web.app" img={munchShow}/></div>
+								<div className="column"><Project title="Trek Noise - Depracated" link="https://trek-noise.web.app" img={tn}/></div>
+								<div className="column"><Project title="Tom Gamache Books" link="https://tomgamachebooks.web.app" img={tg}/></div>
 							</div>
 						</Card>
 					</div>
