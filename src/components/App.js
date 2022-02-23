@@ -358,11 +358,6 @@ class App extends React.Component {
 			 <footer className="hero-foot">
 				<div className="content has-text-centered">
 				 Made with <i className="fa fa-heart" style={{color: "rgb(235, 43, 86)"}}></i> & <i className="fa fa-coffee" style={{color: "rgb(44, 31, 22)"}}></i> in Orlando
-				<div className=" content has-text-centered">
-					<a href="https://bulma.io">
-					<img src="https://bulma.io/images/made-with-bulma--black.png" alt="Made with Bulma" width="128" height="24" />
-					</a>
-				</div>
 				</div>
 			 </footer>
 			</div>
