@@ -426,7 +426,7 @@ class App extends React.Component {
 			
 			<div id='spacer' />
 
-			<div className="tile is-child">
+			<div className="tile is-child" id="blog">
 				<div className='container box'>
 					<div className='title'> Blog Articles </div>
 					<div className="columns is-multiline" style={{ padding: '30px'}}>

@@ -5,7 +5,7 @@ import App from './components/App';
 import fof from './components/fof';
 import QuillPrivacy from './components/Privacy';
 import * as serviceWorker from './tests/serviceWorker';
-import { Route, BrowserRouter, Switch } from 'react-router-dom';
+import { Route, BrowserRouter, Switch, Link } from 'react-router-dom';
 
 
 const routing = (
@@ -14,6 +14,7 @@ const routing = (
 			<Switch>
 				<Route exact path="/" component={App} />
 				<Route exact path="/privacy" component={QuillPrivacy} />
+				<Link to="/#blog" />
 				<Route component={fof} />
 			</Switch>
 		</div>
