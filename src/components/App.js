@@ -8,6 +8,7 @@ import { Dialog } from 'primereact/dialog';
 import { Toast } from 'primereact/toast';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
+import { Carousel } from 'primereact/carousel';
 
 // PrimeReact Styles
 import 'primeicons/primeicons.css';
@@ -132,6 +133,71 @@ class App extends React.Component {
 			}
 		];
 
+		let carouselItems = [
+			{ 
+				title: "Snowcap Coffee",
+				link: "https://snowcap-coffee.web.app",
+				image: sc,
+			},
+			{
+				title: "Simply Boba",
+				link: "https://simply-boba.web.app",
+				image: sb,
+			},
+			{
+				title: "Embeddable Sites",
+				link: "https://embedabble-site.web.app",
+				image: es,
+			},
+			{
+				title: "Daily - To-Do App",
+				link: "https://showcase-daily.web.app",
+				image: show,
+			},
+			{
+				title: "Quill Journal",
+				link: "https://quill-journal.web.app",
+				image: journal,
+			},
+			{
+				title: "Munch - Restaurant App",
+				link: "https://munchshowcase.web.app",
+				image: munchShow,
+			},
+			{
+				title: "Trek Noise - Depracated",
+				link: "https://trek-noise.web.app",
+				image: tn,
+			},
+			{
+				title: "Tom Gamache Books",
+				link: "https://tomgamachebooks.web.app",
+				image: tg,
+			},
+		];
+
+		const itemTemplate = (template) => {
+			return <Project title={template.title} link={template.link}  img={template.image} />
+		};
+
+		const responsiveOptions = [
+			{
+					breakpoint: '1700px',
+					numVisible: 3,
+					numScroll: 3
+			},
+			{
+					breakpoint: '768px',
+					numVisible: 2,
+					numScroll: 2
+			},
+			{
+					breakpoint: '560px',
+					numVisible: 1,
+					numScroll: 1
+			}
+		];
+
 		return (
 			<div className="App" style={{backgroundColor: "rgb(241, 241, 241)"}}>
 			<Dialog
@@ -214,21 +280,20 @@ class App extends React.Component {
 					<div className="tile is-child">
 						<Card 
 							title="Projects"
-							className="tile is-child container box">
-							<div className="columns is-multiline">
-							<img src={projectBuild} style={{height: "80px"}} alt="Factory"></img>
-							<div className="column"><Project title="Snowcap Coffee" link="https://snowcap-coffee.web.app" img={sc}/></div>
-								<div className="column"><Project title="Simply Boba" link="https://simply-boba.web.app" img={sb} /></div>
-								<div className="column"><Project title="Embeddable Sites" link="https://embedabble-site.web.app" img={es} /></div>
-								<div className="column"><Project title="Daily - To-Do App" link="https://showcase-daily.web.app" img={show}/></div>
-								<div className="column"><Project title="Quill Journal" link="https://quill-journal.web.app" img={journal}/></div>
-								<div className="column"><Project title="Munch - Restaurant App" link="https://munchshowcase.web.app" img={munchShow}/></div>
-								<div className="column"><Project title="Trek Noise - Depracated" link="https://trek-noise.web.app" img={tn}/></div>
-								<div className="column"><Project title="Tom Gamache Books" link="https://tomgamachebooks.web.app" img={tg}/></div>
-							</div>
+							className="container box">
+							<img src={projectBuild} style={{height: "180px"}} alt="Factory"></img>
+							<Carousel
+								value={carouselItems}
+								itemTemplate={itemTemplate}
+								numVisible={3}
+								numScroll={1}
+								responsiveOptions={responsiveOptions}
+								style={{ width: '100%'}}
+							>
+							</Carousel>
 						</Card>
 					</div>
-					<div style={{padding: "5vh"}}></div>
+					<div style={{padding: "2vh"}}></div>
 			 </div>
 			 <div className="tile is-child">
 				 <Card title="Hobby Projects" className='container box'>
@@ -354,6 +419,75 @@ class App extends React.Component {
 								</div>
 							</ form>
 					</div>
+			</div>
+			
+			<div id='spacer' />
+
+			<div className="tile is-child">
+				<div className='container box'>
+					<div className='title'> Blog Articles </div>
+					<div className="columns is-multiline" style={{ padding: '30px'}}>
+						<div
+							className='column'
+							id="project"
+							style={{ cursor: 'pointer' }}
+							onClick={() => window.open('https://deciduous-jester-882.notion.site/Intro-To-Programming-2be9cc74fe65415d8d370c3a097a0050', '_blank')}
+						>
+							<Card
+								title='Intro to Programming'
+								subTitle={`I’ve compiled some resources throughout my journey as a software engineer, and made this list for anyone who might want to start learning how to program given the different fields...`}
+								style={{ height: '100%' }}
+								header={
+									<img
+										alt='blogcard1'
+										src='https://deciduous-jester-882.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F5c8afdbc-f1d4-4da1-a81f-473bc1d2c9c7%2FScreen_Shot_2021-06-06_at_21.05.11.png?table=block&id=2be9cc74-fe65-415d-8d37-0c3a097a0050&spaceId=71db66c3-b812-464e-92b5-e5b8d9bea7b9&width=2000&userId=&cache=v2'
+									/>
+								}
+							>
+							</Card>
+						</div>
+						<div id='spacerH' />
+						<div
+							className='column'
+							id="project"
+							style={{ cursor: 'pointer' }}
+							onClick={() => window.open('https://deciduous-jester-882.notion.site/Learning-Web-Development-4fd437257b444e9bbb40be4f8b4ae293', '_blank')}
+						>
+							<Card
+								title='Learning Web Development'
+								subTitle={`Web Development is such a broad term, with so many sub components, that trying to learn can feel *really* overwhelming, so l’ve split up some of the components that make up developing a website into bite-sized chunks.`}
+								style={{ height: '100%' }}
+								header={
+									<img
+										alt='blogcard2'
+										src='https://deciduous-jester-882.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa8e00a44-6024-45d1-b3dc-9d8224d4886e%2Freact-space.jpg?table=block&id=4fd43725-7b44-4e9b-bb40-be4f8b4ae293&spaceId=71db66c3-b812-464e-92b5-e5b8d9bea7b9&width=2000&userId=&cache=v2'
+									/>
+								}
+							>
+							</Card>
+						</div>
+						<div id='spacerH' />
+						<div
+							className='column'
+							id="project"
+							style={{ cursor: 'pointer' }}
+							onClick={() => window.open('https://deciduous-jester-882.notion.site/Building-an-iOS-App-using-SwiftUI-all-on-an-iPad-500a785d5d074edabd483a4f70e13ee4', '_blank')}
+						>
+							<Card
+								title='Building an iOS App using SwiftUI — all on an iPad'
+								subTitle={`When Swift Playgrounds 4 was announced in June of 2021, I was thrilled to know that the investment I made in my 2019 11” iPad Pro was finally going to be worth it!`}
+								style={{ height: '100%' }}
+								header={
+									<img
+										alt='blogcard3'
+										src='https://deciduous-jester-882.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F02c160d3-4442-4c6a-9115-6ea557c8f354%2FswiftUI.jpg?table=block&id=500a785d-5d07-4eda-bd48-3a4f70e13ee4&spaceId=71db66c3-b812-464e-92b5-e5b8d9bea7b9&width=2000&userId=&cache=v2'
+									/>
+								}
+							>
+							</Card>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<span style={{height: "10vh"}} />
