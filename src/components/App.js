@@ -281,7 +281,7 @@ class App extends React.Component {
 						<Card 
 							title="Projects"
 							className="container box"
-							id="project"
+							style={{ maxWidth: '95vw' }}
 						>
 							<img src={projectBuild} style={{height: "180px"}} alt="Factory"></img>
 								<Carousel
