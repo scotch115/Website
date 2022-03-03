@@ -255,8 +255,8 @@ class App extends React.Component {
 							<img className="cardImage" src={webApp} alt="webApp"></img>
 							I primarily work with the "standard" web development programming languages such as HTML, CSS, and JavaScript, but I also have experience working with Swift, C, Java, and recently Dart. I enjoy learning new skills, especially when it comes to software and engineering, and plan to continue learning new, applicable languages.
 						</Card>
-						</div>
-						<div className="tile is-6 is-vertical is-parent">
+					</div>
+					<div className="tile is-6 is-vertical is-parent">
 						<Card
 							id="card3"
 							title="Experience"
@@ -280,17 +280,20 @@ class App extends React.Component {
 					<div className="tile is-child">
 						<Card 
 							title="Projects"
-							className="container box">
+							className="container box"
+							id="project"
+						>
 							<img src={projectBuild} style={{height: "180px"}} alt="Factory"></img>
-							<Carousel
-								value={carouselItems}
-								itemTemplate={itemTemplate}
-								numVisible={3}
-								numScroll={1}
-								responsiveOptions={responsiveOptions}
-								style={{ width: '100%'}}
-							>
-							</Carousel>
+								<Carousel
+									value={carouselItems}
+									itemTemplate={itemTemplate}
+									numVisible={3}
+									numScroll={1}
+									className="test"
+									responsiveOptions={responsiveOptions}
+									style={{ width: '100%'}}
+								>
+								</Carousel>
 						</Card>
 					</div>
 					<div style={{padding: "2vh"}}></div>
