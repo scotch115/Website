@@ -9,6 +9,7 @@ import { Toast } from 'primereact/toast';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 import { Carousel } from 'primereact/carousel';
+import { Tooltip } from 'primereact/tooltip';
 
 // PrimeReact Styles
 import 'primeicons/primeicons.css';
@@ -425,73 +426,455 @@ class App extends React.Component {
 			</div>
 			
 			<div id='spacer' />
-
-			<div className="tile is-child" id="blog">
+			<div className="tile is-child">
+				<Tooltip
+					target=".gh-badge"
+					position='top'
+					style={{
+						width: '300px',
+					}}
+					autoHide={false}
+				>
+							<span
+					style={{
+						width: '300px',
+						height: 'auto',
+						display: 'flex',
+						padding: '10px',
+						marginTop: '10px',
+						alignContent: 'center',
+						alignItems: 'center',
+					}}
+				>
+					<a href="https://github.com/scotch115" style={{ width: '200px' }}>
+						<img style={{
+							clipPath: 'circle(50%)'
+						}} src="https://avatars.githubusercontent.com/u/22224970?s=120&amp;v=4" alt="@scotch115" width="60" height="60" />
+					</a>      
+					<div
+						style={{
+							display: 'flex',
+							flexDirection: 'column',
+							justifyContent: 'end',
+							alignItems: 'end',
+							flexWrap: 'wrap',
+						}}
+					>
+						<div
+							style={{
+								fontSize: '20px',
+								fontWeight: '700'
+							}}
+						>Arctic Code Vault Contributor </div>
+							<p
+								style={{
+									position: 'relative',
+									right: '0px',
+								}}
+							>
+								<span>
+										Contributed code to a repository in the <a href="https://archiveprogram.github.com/">2020 GitHub Archive Program</a>
+								</span>
+							</p>
+						</div>
+				</span>
+				</Tooltip>
+				<Tooltip
+					target=".google-badge-firebase-flutter"
+					position='top'
+					style={{
+						width: '300px',
+					}}
+					autoHide={false}
+				>
+							<span
+					style={{
+						width: '100%',
+						height: 'auto',
+						display: 'flex',
+						padding: '10px',
+						marginTop: '10px',
+						alignContent: 'center',
+						alignItems: 'center',
+					}}
+				>
+					<a href="https://g.dev/scotch115" style={{ width: '200px' }}>
+						<img style={{
+							clipPath: 'circle(50%)'
+						}} src="https://avatars.githubusercontent.com/u/22224970?s=120&amp;v=4" alt="scotch115" width="60" height="60" />
+					</a>      
+					<div
+						style={{
+							display: 'flex',
+							flexDirection: 'column',
+							justifyContent: 'center',
+							alignItems: 'center',
+							flexWrap: 'wrap',
+						}}
+					>
+						<div
+							style={{
+								fontSize: '20px',
+								fontWeight: '700'
+							}}
+						> 
+							Firebase - Flutter
+						</div>
+							<p>
+								<span>
+									Completed the 'Add Firebase to your Flutter app' developer course
+								</span>
+							</p>
+						</div>
+				</span>
+				</Tooltip>
+				<Tooltip
+					target=".google-badge-firebase-web"
+					position='top'
+					style={{
+						width: '300px',
+					}}
+					autoHide={false}
+				>
+							<span
+					style={{
+						width: '100%',
+						height: 'auto',
+						display: 'flex',
+						padding: '10px',
+						marginTop: '10px',
+						alignContent: 'center',
+						alignItems: 'center',
+					}}
+				>
+					<a href="https://g.dev/scotch115" style={{ width: '200px' }}>
+						<img style={{
+							clipPath: 'circle(50%)'
+						}} src="https://avatars.githubusercontent.com/u/22224970?s=120&amp;v=4" alt="scotch115" width="60" height="60" />
+					</a>      
+					<div
+						style={{
+							display: 'flex',
+							flexDirection: 'column',
+							justifyContent: 'center',
+							alignItems: 'center',
+							flexWrap: 'wrap',
+						}}
+					>
+						<div
+							style={{
+								fontSize: '20px',
+								fontWeight: '700'
+							}}
+						> 
+							Firebase Web
+						</div>
+							<p>
+								<span>
+									Completed the 'Build your first web app with Firebase' developer course
+								</span>
+							</p>
+						</div>
+				</span>
+				</Tooltip>
+				<Tooltip
+					target=".google-badge-firebase-monitor"
+					position='top'
+					style={{
+						width: '300px',
+					}}
+					autoHide={false}
+				>
+							<span
+					style={{
+						width: '100%',
+						height: 'auto',
+						display: 'flex',
+						padding: '10px',
+						marginTop: '10px',
+						alignContent: 'center',
+						alignItems: 'center',
+					}}
+				>
+					<a href="https://g.dev/scotch115" style={{ width: '200px' }}>
+						<img style={{
+							clipPath: 'circle(50%)'
+						}} src="https://avatars.githubusercontent.com/u/22224970?s=120&amp;v=4" alt="scotch115" width="60" height="60" />
+					</a>      
+					<div
+						style={{
+							display: 'flex',
+							flexDirection: 'column',
+							justifyContent: 'center',
+							alignItems: 'center',
+							flexWrap: 'wrap',
+						}}
+					>
+						<div
+							style={{
+								fontSize: '20px',
+								fontWeight: '700'
+							}}
+						> 
+							Firebase Monitoring
+						</div>
+							<p>
+								<span>
+										Completed 'Monitor new features with Firebase Performance Monitoring' developer course
+								</span>
+							</p>
+						</div>
+				</span>
+				</Tooltip>
+				<Tooltip
+					target=".google-badge-firebase-messaging"
+					position='top'
+					style={{
+						width: '300px',
+					}}
+					autoHide={false}
+				>
+							<span
+					style={{
+						width: '100%',
+						height: 'auto',
+						display: 'flex',
+						padding: '10px',
+						marginTop: '10px',
+						alignContent: 'center',
+						alignItems: 'center',
+					}}
+				>
+					<a href="https://g.dev/scotch115" style={{ width: '200px' }}>
+						<img style={{
+							clipPath: 'circle(50%)'
+						}} src="https://avatars.githubusercontent.com/u/22224970?s=120&amp;v=4" alt="scotch115" width="60" height="60" />
+					</a>      
+					<div
+						style={{
+							display: 'flex',
+							flexDirection: 'column',
+							justifyContent: 'center',
+							alignItems: 'center',
+							flexWrap: 'wrap',
+						}}
+					>
+						<div
+							style={{
+								fontSize: '20px',
+								fontWeight: '700'
+							}}
+						> 
+							Firebase Messaging
+						</div>
+							<p>
+								<span>
+									Completed the 'Message users with FCM and FIAM' developer course
+								</span>
+							</p>
+						</div>
+				</span>
+				</Tooltip>
+				<Tooltip
+					target=".hacktoberfest-21"
+					position='top'
+					style={{
+						width: '300px',
+					}}
+					autoHide={false}
+				>
+							<span
+					style={{
+						width: '300px',
+						height: 'auto',
+						display: 'flex',
+						padding: '10px',
+						marginTop: '10px',
+						alignContent: 'center',
+						alignItems: 'center',
+					}}
+				>
+					<a href="https://dev.to/scotch115" style={{ width: '200px' }}>
+						<img style={{
+							clipPath: 'circle(50%)'
+						}} src="https://res.cloudinary.com/practicaldev/image/fetch/s--slf7COFx--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/272502/7aa1a76b-4fd6-485e-89dc-9224e8d3ac58.jpeg" alt="scotch115" width="60" height="60" />
+					</a>      
+					<div
+						style={{
+							display: 'flex',
+							flexDirection: 'column',
+							justifyContent: 'center',
+							alignItems: 'center',
+							flexWrap: 'wrap',
+						}}
+					>
+						<div
+							style={{
+								fontSize: '20px',
+								fontWeight: '700'
+							}}
+						> 
+							Hacktoberfest 2021
+						</div>
+							<p>
+								<span>
+									Participated in Digital Ocean's Hacktoberfest 2021
+								</span>
+							</p>
+						</div>
+				</span>
+				</Tooltip>
+				<Tooltip
+					target=".hacktoberfest-20"
+					position='top'
+					style={{
+						width: '300px',
+					}}
+					autoHide={false}
+				>
+							<span
+					style={{
+						width: '300px',
+						height: 'auto',
+						display: 'flex',
+						padding: '10px',
+						marginTop: '10px',
+						alignContent: 'center',
+						alignItems: 'center',
+					}}
+				>
+					<a href="https://dev.to/scotch115" style={{ width: '200px' }}>
+						<img style={{
+							clipPath: 'circle(50%)'
+						}} src="https://res.cloudinary.com/practicaldev/image/fetch/s--slf7COFx--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/272502/7aa1a76b-4fd6-485e-89dc-9224e8d3ac58.jpeg" alt="scotch115" width="60" height="60" />
+					</a>      
+					<div
+						style={{
+							display: 'flex',
+							flexDirection: 'column',
+							justifyContent: 'center',
+							alignItems: 'center',
+							flexWrap: 'wrap',
+						}}
+					>
+						<div
+							style={{
+								fontSize: '20px',
+								fontWeight: '700'
+							}}
+						> 
+							Hacktoberfest 2020
+						</div>
+							<p>
+								<span>
+									Participated in Digital Ocean's Hacktoberfest 2020
+								</span>
+							</p>
+						</div>
+				</span>
+				</Tooltip>
 				<div className='container box'>
-					<div className='title'> Blog Articles </div>
-					<div className="columns is-multiline" style={{ padding: '30px'}}>
-						<div
-							className='column'
-							id="project"
-							style={{ cursor: 'pointer' }}
-							onClick={() => window.open('https://deciduous-jester-882.notion.site/Intro-To-Programming-2be9cc74fe65415d8d370c3a097a0050', '_blank')}
-						>
-							<Card
-								title='Intro to Programming'
-								subTitle={`I’ve compiled some resources throughout my journey as a software engineer, and made this list for anyone who might want to start learning how to program given the different fields...`}
-								style={{ height: '100%' }}
-								header={
-									<img
-										alt='blogcard1'
-										src='https://deciduous-jester-882.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F5c8afdbc-f1d4-4da1-a81f-473bc1d2c9c7%2FScreen_Shot_2021-06-06_at_21.05.11.png?table=block&id=2be9cc74-fe65-415d-8d37-0c3a097a0050&spaceId=71db66c3-b812-464e-92b5-e5b8d9bea7b9&width=2000&userId=&cache=v2'
-									/>
-								}
-							>
-							</Card>
-						</div>
-						<div id='spacerH' />
-						<div
-							className='column'
-							id="project"
-							style={{ cursor: 'pointer' }}
-							onClick={() => window.open('https://deciduous-jester-882.notion.site/Learning-Web-Development-4fd437257b444e9bbb40be4f8b4ae293', '_blank')}
-						>
-							<Card
-								title='Learning Web Development'
-								subTitle={`Web Development is such a broad term, with so many sub components, that trying to learn can feel *really* overwhelming, so l’ve split up some of the components that make up developing a website into bite-sized chunks.`}
-								style={{ height: '100%' }}
-								header={
-									<img
-										alt='blogcard2'
-										src='https://deciduous-jester-882.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa8e00a44-6024-45d1-b3dc-9d8224d4886e%2Freact-space.jpg?table=block&id=4fd43725-7b44-4e9b-bb40-be4f8b4ae293&spaceId=71db66c3-b812-464e-92b5-e5b8d9bea7b9&width=2000&userId=&cache=v2'
-									/>
-								}
-							>
-							</Card>
-						</div>
-						<div id='spacerH' />
-						<div
-							className='column'
-							id="project"
-							style={{ cursor: 'pointer' }}
-							onClick={() => window.open('https://deciduous-jester-882.notion.site/Building-an-iOS-App-using-SwiftUI-all-on-an-iPad-500a785d5d074edabd483a4f70e13ee4', '_blank')}
-						>
-							<Card
-								title='Building an iOS App using SwiftUI — all on an iPad'
-								subTitle={`When Swift Playgrounds 4 was announced in June of 2021, I was thrilled to know that the investment I made in my 2019 11” iPad Pro was finally going to be worth it!`}
-								style={{ height: '100%' }}
-								header={
-									<img
-										alt='blogcard3'
-										src='https://deciduous-jester-882.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F02c160d3-4442-4c6a-9115-6ea557c8f354%2FswiftUI.jpg?table=block&id=500a785d-5d07-4eda-bd48-3a4f70e13ee4&spaceId=71db66c3-b812-464e-92b5-e5b8d9bea7b9&width=2000&userId=&cache=v2'
-									/>
-								}
-							>
-							</Card>
-						</div>
+					<div className='title'> Developer Badges </div>
+					<div className="columns is-multiline"
+					style={{
+						padding: '30px',
+						display: 'flex',
+						flexDirection: 'row',
+						justifyContent: 'space-evenly',
+					}}>
+						<a href="https://archiveprogram.github.com/" className='gh-badge'>
+							<img alt="Arctic Code Vault Contributor" src="https://github.githubassets.com/images/modules/profile/badge--acv-64.png" width="64px" />
+						</a>
+						<a href="https://developers.google.com/profile/badges/playlists/firebase/add_firebase_to_flutter" className='google-badge-firebase-flutter'>
+							<img alt="Google Developer Badge" src="https://developers.google.com/profile/badges/playlists/firebase/add_firebase_to_flutter/firebase-flutter.svg" width="64px" />
+						</a>
+						<a href="https://developers.google.com/profile/badges/playlists/firebase/web-apps-with-firebase" className='google-badge-firebase-web'>
+							<img alt="Google Developer Badge" src="https://developers.google.com/profile/badges/playlists/firebase/web-apps-with-firebase/badge.svg" width="64px" />
+						</a>
+						<a href="https://developers.google.com/profile/badges/playlists/firebase/firebase-performance-monitoring" className='google-badge-firebase-monitor'>
+							<img alt="Google Developer Badge" src="https://developers.google.com/profile/badges/playlists/firebase/firebase-performance-monitoring/badge.svg" width="64px" />
+						</a>
+						<a href="https://developers.google.com/profile/badges/playlists/firebase/messaging-with-firebase" className='google-badge-firebase-messaging'>
+							<img alt="Google Developer Badge" src="https://developers.google.com/profile/badges/playlists/firebase/messaging-with-firebase/messaging-with-firebase.svg" width="64px" />
+						</a>
+						<a href="https://dev.to/badge/hacktoberfest-2021" className='hacktoberfest-21'>
+							<img alt="Hacktoberfest 21 Badge" src="https://res.cloudinary.com/practicaldev/image/fetch/s--1l8Lf2vD--/c_limit,f_auto,fl_progressive,q_80,w_180/https://dev-to-uploads.s3.amazonaws.com/uploads/badge/badge_image/131/hacktoberfest-2021-badge.png" width="64px" />
+						</a>
+						<a href="https://dev.to/badge/hacktoberfest-2020" className='hacktoberfest-20'>
+							<img alt="Hacktoberfest 20 Badge" src="https://res.cloudinary.com/practicaldev/image/fetch/s--ajGtUgSU--/c_limit,f_auto,fl_progressive,q_80,w_180/https://dev-to-uploads.s3.amazonaws.com/uploads/badge/badge_image/80/hacktoberfest2020-badge_2.png" width="64px" />
+						</a>
 					</div>
 				</div>
 			</div>
+
+			<div id='spacer' />
+				<div className="tile is-child" id="blog">
+					<div className='container box'>
+						<div className='title'> Blog Articles </div>
+						<div className="columns is-multiline" style={{ padding: '30px'}}>
+							<div
+								className='column'
+								id="project"
+								style={{ cursor: 'pointer' }}
+								onClick={() => window.open('https://deciduous-jester-882.notion.site/Intro-To-Programming-2be9cc74fe65415d8d370c3a097a0050', '_blank')}
+							>
+								<Card
+									title='Intro to Programming'
+									subTitle={`I’ve compiled some resources throughout my journey as a software engineer, and made this list for anyone who might want to start learning how to program given the different fields...`}
+									style={{ height: '100%' }}
+									header={
+										<img
+											alt='blogcard1'
+											src='https://deciduous-jester-882.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F5c8afdbc-f1d4-4da1-a81f-473bc1d2c9c7%2FScreen_Shot_2021-06-06_at_21.05.11.png?table=block&id=2be9cc74-fe65-415d-8d37-0c3a097a0050&spaceId=71db66c3-b812-464e-92b5-e5b8d9bea7b9&width=2000&userId=&cache=v2'
+										/>
+									}
+								>
+								</Card>
+							</div>
+							<div id='spacerH' />
+							<div
+								className='column'
+								id="project"
+								style={{ cursor: 'pointer' }}
+								onClick={() => window.open('https://deciduous-jester-882.notion.site/Learning-Web-Development-4fd437257b444e9bbb40be4f8b4ae293', '_blank')}
+							>
+								<Card
+									title='Learning Web Development'
+									subTitle={`Web Development is such a broad term, with so many sub components, that trying to learn can feel *really* overwhelming, so l’ve split up some of the components that make up developing a website into bite-sized chunks.`}
+									style={{ height: '100%' }}
+									header={
+										<img
+											alt='blogcard2'
+											src='https://deciduous-jester-882.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa8e00a44-6024-45d1-b3dc-9d8224d4886e%2Freact-space.jpg?table=block&id=4fd43725-7b44-4e9b-bb40-be4f8b4ae293&spaceId=71db66c3-b812-464e-92b5-e5b8d9bea7b9&width=2000&userId=&cache=v2'
+										/>
+									}
+								>
+								</Card>
+							</div>
+							<div id='spacerH' />
+							<div
+								className='column'
+								id="project"
+								style={{ cursor: 'pointer' }}
+								onClick={() => window.open('https://deciduous-jester-882.notion.site/Building-an-iOS-App-using-SwiftUI-all-on-an-iPad-500a785d5d074edabd483a4f70e13ee4', '_blank')}
+							>
+								<Card
+									title='Building an iOS App using SwiftUI — all on an iPad'
+									subTitle={`When Swift Playgrounds 4 was announced in June of 2021, I was thrilled to know that the investment I made in my 2019 11” iPad Pro was finally going to be worth it!`}
+									style={{ height: '100%' }}
+									header={
+										<img
+											alt='blogcard3'
+											src='https://deciduous-jester-882.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F02c160d3-4442-4c6a-9115-6ea557c8f354%2FswiftUI.jpg?table=block&id=500a785d-5d07-4eda-bd48-3a4f70e13ee4&spaceId=71db66c3-b812-464e-92b5-e5b8d9bea7b9&width=2000&userId=&cache=v2'
+										/>
+									}
+								>
+								</Card>
+							</div>
+						</div>
+					</div>
+				</div>
+			
 
 			<span style={{height: "10vh"}} />
 			 <footer className="hero-foot">

@@ -106,3 +106,7 @@ header {
 			 opacity: 1;
 	 }
 }
+
+.p-tooltip {
+	max-width: 500px;
+}
