@@ -424,8 +424,10 @@ class App extends React.Component {
 							</ form>
 					</div>
 			</div>
-			
-			<div id='spacer' />
+			{/**
+			 * Decided that I hate the idea of these being public, so I'm taking them down temporarily
+			 */}
+			{/* <div id='spacer' />
 			<div className="tile is-child">
 				<Tooltip
 					target=".gh-badge"
@@ -873,7 +875,7 @@ class App extends React.Component {
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> */}
 			
 
 			<span style={{height: "10vh"}} />
