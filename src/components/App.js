@@ -9,15 +9,15 @@ import { Toast } from 'primereact/toast';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 import { Carousel } from 'primereact/carousel';
-import { Tooltip } from 'primereact/tooltip';
 
 // PrimeReact Styles
 import 'primeicons/primeicons.css';
 import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.css';
 
-// Custom component
+// Custom components
 import Project from './Project';
+import Coffee from './Coffee';
 
 // Image sources
 import sb from '../images/simply-sc.png';
@@ -884,6 +884,7 @@ class App extends React.Component {
 				 Made with <i className="fa fa-heart" style={{color: "rgb(235, 43, 86)"}}></i> & <i className="fa fa-coffee" style={{color: "rgb(44, 31, 22)"}}></i> in Orlando
 				</div>
 			 </footer>
+			 <Coffee />
 			</div>
 			<AddToHomescreen onAddToHomescreenClick={this.handleAddToHomescreenClick} />
 		</div>
